@@ -1,0 +1,19 @@
+{
+  "name": "reflex-app",
+  "version": "1.0.0",
+  "description": "Reflex - Delivery Readiness System for Kenyan Retailers",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "seed": "node seed.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.0.3"
+  }
+}

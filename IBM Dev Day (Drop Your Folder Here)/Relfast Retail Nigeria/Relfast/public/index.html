@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RefFast – Delivery Readiness</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <style>
+    :root {
+      --bg: #0f1412;
+      --surface: #1a211e;
+      --border: #2a322e;
+      --ink: #ede9de;
+      --muted: #8a8f86;
+      --accent: #a8d95e;
+      --amber: #e8a54a;
+      --danger: #e85a5a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.25rem; margin: 1.5rem 0 0.75rem; color: var(--accent); }
+    .muted { color: var(--muted); font-size: 0.9rem; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #0f1412;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    .btn:hover { filter: brightness(1.1); }
+    .btn-secondary { background: transparent; border: 1px solid var(--border); color: var(--ink); }
+    .btn-amber { background: var(--amber); }
+    .btn-sm { padding: 0.35rem 0.75rem; font-size: 0.85rem; }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.6rem 0.8rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+    }
+    label { display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.25rem; }
+    .status {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .status-pending { background: #3a3a20; color: #e8d54a; }
+    .status-assigned { background: #1e3a4a; color: #5ac8e8; }
+    .status-picked_up { background: #2a3a1e; color: var(--accent); }
+    .status-delivered { background: #1e3a2a; color: #5ae88a; }
+    .row { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
+    .hidden { display: none !important; }
+    #login-view, #app-view { min-height: 80vh; }
+    .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+    .badge { background: var(--surface); border: 1px solid var(--border); padding: 0.3rem 0.7rem; border-radius: 6px; font-size: 0.85rem; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 0.6rem 0.4rem; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+    th { color: var(--muted); font-weight: 500; }
+    .toast {
+      position: fixed; bottom: 1.5rem; right: 1.5rem;
+      background: var(--accent); color: #0f1412;
+      padding: 0.75rem 1.25rem; border-radius: 8px;
+      font-weight: 600; opacity: 0; transition: opacity 0.3s;
+      z-index: 100;
+    }
+    .toast.show { opacity: 1; }
+    #qr-modal {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.8);
+      display: flex; align-items: center; justify-content: center; z-index: 50;
+    }
+    #qr-modal .card { max-width: 320px; text-align: center; }
+    #qr-modal img { max-width: 100%; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- LOGIN -->
+    <div id="login-view">
+      <h1>RelFast</h1>
+      <p class="muted" style="margin-bottom:1.5rem">Delivery readiness for Nigerian retailers</p>
+      <div class="card" style="max-width:400px">
+    <label>Name (exact as seeded)</label>
+    <input id="login-name" placeholder="e.g. Emeka Obi" />
+    <label>Password</label>
+    <input id="login-pass" type="password" placeholder="rider123" />
+    <button class="btn" style="width:100%;margin-top:0.5rem" onclick="login()">Sign in</button>
+    <p class="muted" style="margin-top:1.2rem;font-size:0.8rem;text-align:center">
+      Demo accounts<br>
+      Chioma Electronics / retailer123<br>
+      Tunde Adebayo / dispatch123<br>
+      Emeka Obi / rider123
+    </p>
+  </div>
+</div>
+
+    <!-- APP -->
+    <div id="app-view" class="hidden">
+      <div class="header">
+        <div>
+          <h1>RelFast</h1>
+          <p class="muted" id="user-label"></p>
+        </div>
+        <div class="row">
+          <span class="badge" id="role-badge"></span>
+          <button class="btn btn-secondary btn-sm" onclick="logout()">Logout</button>
+        </div>
+      </div>
+
+      <!-- RETAILER -->
+      <div id="retailer-panel" class="hidden">
+        <h2>New Delivery Request</h2>
+        <div class="card">
+          <label>Customer Name</label>
+          <input id="cust-name" />
+          <label>Customer Phone</label>
+          <input id="cust-phone" placeholder="+234..." />
+          <label>Address</label>
+          <input id="cust-address" />
+          <label>Item Description</label>
+          <textarea id="item-desc" rows="2"></textarea>
+          <button class="btn" onclick="createDelivery()">Log Request</button>
+        </div>
+        <h2>My Deliveries</h2>
+        <div id="retailer-list"></div>
+      </div>
+
+      <!-- DISPATCHER -->
+      <div id="dispatcher-panel" class="hidden">
+        <h2>Open Requests</h2>
+        <div id="dispatcher-list"></div>
+      </div>
+
+      <!-- RIDER -->
+      <div id="rider-panel" class="hidden">
+        <h2>My Assignments</h2>
+        <div class="row" style="margin-bottom:1rem">
+          <button class="btn btn-secondary btn-sm" onclick="startScan()">Scan QR to Confirm</button>
+        </div>
+        <div id="rider-list"></div>
+        <input type="file" id="scan-input" accept="image/*" capture="environment" class="hidden" onchange="handleScan(event)" />
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <div id="qr-modal" class="hidden">
+    <div class="card">
+      <h3 style="margin-bottom:0.75rem">Proof of Delivery QR</h3>
+      <img id="qr-img" alt="QR" />
+      <p class="muted" style="margin:0.75rem 0;font-size:0.8rem" id="qr-id"></p>
+      <button class="btn btn-secondary" onclick="closeQr()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    let token = localStorage.getItem('reflex_token');
+    let user = JSON.parse(localStorage.getItem('reflex_user') || 'null');
+    let riders = [];
+    const socket = io();
+
+    function toast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2500);
+    }
+
+    async function api(path, opts = {}) {
+      const headers = { 'Content-Type': 'application/json', ...(opts.headers || {}) };
+      if (token) headers['Authorization'] = 'Bearer ' + token;
+      const res = await fetch('/api' + path, { ...opts, headers });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || 'Request failed');
+      return data;
+    }
+
+    async function login() {
+      const name = document.getElementById('login-name').value.trim();
+      const password = document.getElementById('login-pass').value;
+      try {
+        const data = await api('/login', { method: 'POST', body: JSON.stringify({ name, password }) });
+        token = data.token;
+        user = data.user;
+        localStorage.setItem('reflex_token', token);
+        localStorage.setItem('reflex_user', JSON.stringify(user));
+        showApp();
+      } catch (e) {
+        toast(e.message);
+      }
+    }
+
+    function logout() {
+      token = null; user = null;
+      localStorage.removeItem('reflex_token');
+      localStorage.removeItem('reflex_user');
+      document.getElementById('login-view').classList.remove('hidden');
+      document.getElementById('app-view').classList.add('hidden');
+    }
+
+    function showApp() {
+      document.getElementById('login-view').classList.add('hidden');
+      document.getElementById('app-view').classList.remove('hidden');
+      document.getElementById('user-label').textContent = user.name;
+      document.getElementById('role-badge').textContent = user.role.toUpperCase();
+      document.getElementById('retailer-panel').classList.add('hidden');
+      document.getElementById('dispatcher-panel').classList.add('hidden');
+      document.getElementById('rider-panel').classList.add('hidden');
+      if (user.role === 'retailer') {
+        document.getElementById('retailer-panel').classList.remove('hidden');
+        loadDeliveries();
+      } else if (user.role === 'dispatcher') {
+        document.getElementById('dispatcher-panel').classList.remove('hidden');
+        loadRiders().then(loadDeliveries);
+      } else if (user.role === 'rider') {
+        document.getElementById('rider-panel').classList.remove('hidden');
+        loadDeliveries();
+      }
+    }
+
+    async function loadRiders() {
+      riders = await api('/riders');
+    }
+
+    async function loadDeliveries() {
+      const list = await api('/deliveries');
+      if (user.role === 'retailer') renderRetailer(list);
+      else if (user.role === 'dispatcher') renderDispatcher(list);
+      else if (user.role === 'rider') renderRider(list);
+    }
+
+    function statusBadge(s) {
+      return `<span class="status status-${s}">${s.replace('_', ' ')}</span>`;
+    }
+
+    function renderRetailer(list) {
+      const el = document.getElementById('retailer-list');
+      if (!list.length) { el.innerHTML = '<p class="muted">No deliveries yet.</p>'; return; }
+      el.innerHTML = list.map(d => `
+        <div class="card">
+          <div class="row" style="justify-content:space-between">
+            <strong>${d.customer_name}</strong>
+            ${statusBadge(d.status)}
+          </div>
+          <p class="muted" style="margin:0.4rem 0">${d.item_description}</p>
+          <p style="font-size:0.9rem">${d.address}</p>
+          ${d.rider_name ? `<p class="muted">Rider: ${d.rider_name}</p>` : ''}
+          <button class="btn btn-secondary btn-sm" style="margin-top:0.5rem" onclick="showQr('${d.id}')">Show QR</button>
+        </div>
+      `).join('');
+    }
+
+    function renderDispatcher(list) {
+      const el = document.getElementById('dispatcher-list');
+      const pending = list.filter(d => d.status === 'pending');
+      const others = list.filter(d => d.status !== 'pending');
+      let html = '';
+      if (pending.length) {
+        html += pending.map(d => `
+          <div class="card">
+            <div class="row" style="justify-content:space-between">
+              <strong>${d.customer_name}</strong>
+              ${statusBadge(d.status)}
+            </div>
+            <p class="muted">${d.item_description} · ${d.address}</p>
+            <p class="muted" style="font-size:0.8rem">From: ${d.retailer_name || '—'}</p>
+            <div class="row" style="margin-top:0.75rem">
+              <select id="rider-${d.id}" style="flex:1;margin:0">
+                <option value="">Select rider…</option>
+                ${riders.map(r => `<option value="${r.id}">${r.name}</option>`).join('')}
+              </select>
+              <button class="btn btn-sm" onclick="assign('${d.id}')">Assign</button>
+            </div>
+          </div>
+        `).join('');
+      } else {
+        html += '<p class="muted">No open requests.</p>';
+      }
+      if (others.length) {
+        html += '<h2 style="margin-top:1.5rem">In Progress / Done</h2>';
+        html += others.map(d => `
+          <div class="card">
+            <div class="row" style="justify-content:space-between">
+              <strong>${d.customer_name}</strong>
+              ${statusBadge(d.status)}
+            </div>
+            <p class="muted">${d.item_description}</p>
+            <p class="muted" style="font-size:0.85rem">Rider: ${d.rider_name || '—'} · ${d.address}</p>
+          </div>
+        `).join('');
+      }
+      el.innerHTML = html;
+    }
+
+    function renderRider(list) {
+      const el = document.getElementById('rider-list');
+      if (!list.length) { el.innerHTML = '<p class="muted">No assignments yet.</p>'; return; }
+      el.innerHTML = list.map(d => `
+        <div class="card">
+          <div class="row" style="justify-content:space-between">
+            <strong>${d.customer_name}</strong>
+            ${statusBadge(d.status)}
+          </div>
+          <p class="muted">${d.item_description}</p>
+          <p>${d.address}</p>
+          <p class="muted" style="font-size:0.85rem">${d.customer_phone || ''}</p>
+          <div class="row" style="margin-top:0.75rem">
+            ${d.status === 'assigned' ? `<button class="btn btn-sm" onclick="updateStatus('${d.id}','picked_up')">Mark Picked Up</button>` : ''}
+            ${d.status === 'picked_up' ? `<button class="btn btn-sm" onclick="updateStatus('${d.id}','delivered')">Mark Delivered</button>` : ''}
+            <button class="btn btn-secondary btn-sm" onclick="showQr('${d.id}')">QR</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    async function createDelivery() {
+      try {
+        await api('/deliveries', {
+          method: 'POST',
+          body: JSON.stringify({
+            customer_name: document.getElementById('cust-name').value,
+            customer_phone: document.getElementById('cust-phone').value,
+            address: document.getElementById('cust-address').value,
+            item_description: document.getElementById('item-desc').value
+          })
+        });
+        toast('Request logged');
+        document.getElementById('cust-name').value = '';
+        document.getElementById('cust-phone').value = '';
+        document.getElementById('cust-address').value = '';
+        document.getElementById('item-desc').value = '';
+        loadDeliveries();
+      } catch (e) { toast(e.message); }
+    }
+
+    async function assign(id) {
+      const rider_id = document.getElementById('rider-' + id).value;
+      if (!rider_id) return toast('Select a rider');
+      try {
+        await api('/deliveries/' + id + '/assign', { method: 'POST', body: JSON.stringify({ rider_id }) });
+        toast('Assigned');
+        loadDeliveries();
+      } catch (e) { toast(e.message); }
+    }
+
+    async function updateStatus(id, status) {
+      try {
+        await api('/deliveries/' + id + '/status', { method: 'POST', body: JSON.stringify({ status }) });
+        toast('Status updated');
+        loadDeliveries();
+      } catch (e) { toast(e.message); }
+    }
+
+    async function showQr(id) {
+      try {
+        const data = await api('/deliveries/' + id + '/qr');
+        document.getElementById('qr-img').src = data.qr;
+        document.getElementById('qr-id').textContent = data.deliveryId;
+        document.getElementById('qr-modal').classList.remove('hidden');
+      } catch (e) { toast(e.message); }
+    }
+    function closeQr() { document.getElementById('qr-modal').classList.add('hidden'); }
+
+    function startScan() {
+      document.getElementById('scan-input').click();
+    }
+
+    // Simple image-based scan is limited without a QR library; for demo we accept pasting ID or use a basic approach.
+    // In a real build we'd use jsQR or html5-qrcode. Here we prompt for ID as fallback.
+    async function handleScan(e) {
+      // For the sprint demo we fall back to manual ID entry after "scan" intent
+      const id = prompt('Paste delivery ID from QR (or enter manually for demo):');
+      if (!id) return;
+      try {
+        await api('/deliveries/confirm-scan', { method: 'POST', body: JSON.stringify({ deliveryId: id.trim() }) });
+        toast('Confirmed via scan');
+        loadDeliveries();
+      } catch (err) { toast(err.message); }
+    }
+
+    // Real-time
+    socket.on('delivery:new', () => { if (user) loadDeliveries(); toast('New request'); });
+    socket.on('delivery:updated', () => { if (user) loadDeliveries(); });
+
+    // Boot
+    if (token && user) showApp();
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Runtime / generated data
+reflex-data.json
+reflex.db
+*.db
+*.sqlite
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build / cache (if any)
+dist/
+build/
+.cache/
+coverage/
