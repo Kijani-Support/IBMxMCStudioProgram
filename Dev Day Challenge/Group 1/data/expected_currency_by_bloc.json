@@ -1,0 +1,17 @@
+{
+  "CEMAC": {
+    "currencies": ["XAF"],
+    "central_bank": "BEAC",
+    "monetary_union": true
+  },
+  "WAEMU": {
+    "currencies": ["XOF"],
+    "central_bank": "BCEAO",
+    "monetary_union": true
+  },
+  "CMA": {
+    "currencies": ["ZAR", "NAD", "LSL", "SZL"],
+    "central_bank": null,
+    "monetary_union": true
+  }
+}

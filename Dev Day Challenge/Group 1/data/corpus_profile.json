@@ -1,0 +1,6503 @@
+{
+  "dossier_count": 54,
+  "a_missing_or_unparseable": [
+    {
+      "file": "eswatini.md",
+      "country": "Eswatini",
+      "note_count": 1,
+      "notes": [
+        {
+          "file": "eswatini.md",
+          "section": "1",
+          "line": 12,
+          "kind": "currency_zone_no_bank",
+          "message": "Monetary zone 'CMA (Rand Monetary Area)' has no '/ bank' separator; stored as currency_bloc with currency_bank=None.",
+          "raw": "| Currency | Lilangeni (SZL) (CMA (Rand Monetary Area)) |"
+        }
+      ]
+    },
+    {
+      "file": "lesotho.md",
+      "country": "Lesotho",
+      "note_count": 1,
+      "notes": [
+        {
+          "file": "lesotho.md",
+          "section": "1",
+          "line": 12,
+          "kind": "currency_zone_no_bank",
+          "message": "Monetary zone 'CMA (Rand Monetary Area)' has no '/ bank' separator; stored as currency_bloc with currency_bank=None.",
+          "raw": "| Currency | Loti (LSL) (CMA (Rand Monetary Area)) |"
+        }
+      ]
+    },
+    {
+      "file": "namibia.md",
+      "country": "Namibia",
+      "note_count": 1,
+      "notes": [
+        {
+          "file": "namibia.md",
+          "section": "1",
+          "line": 12,
+          "kind": "currency_zone_no_bank",
+          "message": "Monetary zone 'CMA (Rand Monetary Area)' has no '/ bank' separator; stored as currency_bloc with currency_bank=None.",
+          "raw": "| Currency | Namibian Dollar (NAD) (CMA (Rand Monetary Area)) |"
+        }
+      ]
+    },
+    {
+      "file": "south-africa.md",
+      "country": "South Africa",
+      "note_count": 1,
+      "notes": [
+        {
+          "file": "south-africa.md",
+          "section": "1",
+          "line": 12,
+          "kind": "currency_zone_no_bank",
+          "message": "Monetary zone 'CMA (Rand Monetary Area)' has no '/ bank' separator; stored as currency_bloc with currency_bank=None.",
+          "raw": "| Currency | South African Rand (ZAR) (CMA (Rand Monetary Area)) |"
+        }
+      ]
+    },
+    {
+      "file": "zimbabwe.md",
+      "country": "Zimbabwe",
+      "note_count": 1,
+      "notes": [
+        {
+          "file": "zimbabwe.md",
+          "section": "1",
+          "line": 12,
+          "kind": "non_iso_currency_code",
+          "message": "Currency code 'ZiG' is mixed-case rather than a standard uppercase ISO 4217 3-letter code.",
+          "raw": "| Currency | Zimbabwe Gold (ZiG) (national currency) |"
+        }
+      ]
+    }
+  ],
+  "b_currency_codes": {
+    "AOA": [
+      "Angola"
+    ],
+    "BIF": [
+      "Burundi"
+    ],
+    "BWP": [
+      "Botswana"
+    ],
+    "CDF": [
+      "DRC"
+    ],
+    "CVE": [
+      "Cabo Verde"
+    ],
+    "DJF": [
+      "Djibouti"
+    ],
+    "DZD": [
+      "Algeria"
+    ],
+    "EGP": [
+      "Egypt"
+    ],
+    "ERN": [
+      "Eritrea"
+    ],
+    "ETB": [
+      "Ethiopia"
+    ],
+    "GHS": [
+      "Ghana"
+    ],
+    "GMD": [
+      "Gambia"
+    ],
+    "GNF": [
+      "Guinea"
+    ],
+    "KES": [
+      "Kenya"
+    ],
+    "KMF": [
+      "Comoros"
+    ],
+    "LRD": [
+      "Liberia"
+    ],
+    "LSL": [
+      "Lesotho"
+    ],
+    "LYD": [
+      "Libya"
+    ],
+    "MAD": [
+      "Morocco"
+    ],
+    "MGA": [
+      "Madagascar"
+    ],
+    "MRU": [
+      "Mauritania"
+    ],
+    "MUR": [
+      "Mauritius"
+    ],
+    "MWK": [
+      "Malawi"
+    ],
+    "MZN": [
+      "Mozambique"
+    ],
+    "NAD": [
+      "Namibia"
+    ],
+    "NGN": [
+      "Nigeria"
+    ],
+    "RWF": [
+      "Rwanda"
+    ],
+    "SCR": [
+      "Seychelles"
+    ],
+    "SDG": [
+      "Sudan"
+    ],
+    "SLE": [
+      "Sierra Leone"
+    ],
+    "SOS": [
+      "Somalia"
+    ],
+    "SSP": [
+      "South Sudan"
+    ],
+    "STN": [
+      "São Tomé and Príncipe"
+    ],
+    "SZL": [
+      "Eswatini"
+    ],
+    "TND": [
+      "Tunisia"
+    ],
+    "TZS": [
+      "Tanzania"
+    ],
+    "UGX": [
+      "Uganda"
+    ],
+    "XAF": [
+      "Cameroon",
+      "Central African Republic",
+      "Chad",
+      "Congo (Republic)",
+      "Equatorial Guinea",
+      "Gabon"
+    ],
+    "XOF": [
+      "Benin",
+      "Burkina Faso",
+      "Côte d'Ivoire",
+      "Guinea-Bissau",
+      "Mali",
+      "Niger",
+      "Senegal",
+      "Togo"
+    ],
+    "ZAR": [
+      "South Africa"
+    ],
+    "ZMW": [
+      "Zambia"
+    ],
+    "ZiG": [
+      "Zimbabwe"
+    ]
+  },
+  "c_currency_bloc_bank_combos": [
+    {
+      "currency_code": "AOA",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Angola"
+      ]
+    },
+    {
+      "currency_code": "BIF",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Burundi"
+      ]
+    },
+    {
+      "currency_code": "BWP",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Botswana"
+      ]
+    },
+    {
+      "currency_code": "CDF",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "DRC"
+      ]
+    },
+    {
+      "currency_code": "CVE",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Cabo Verde"
+      ]
+    },
+    {
+      "currency_code": "DJF",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Djibouti"
+      ]
+    },
+    {
+      "currency_code": "DZD",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Algeria"
+      ]
+    },
+    {
+      "currency_code": "EGP",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Egypt"
+      ]
+    },
+    {
+      "currency_code": "ERN",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Eritrea"
+      ]
+    },
+    {
+      "currency_code": "ETB",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Ethiopia"
+      ]
+    },
+    {
+      "currency_code": "GHS",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Ghana"
+      ]
+    },
+    {
+      "currency_code": "GMD",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Gambia"
+      ]
+    },
+    {
+      "currency_code": "GNF",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Guinea"
+      ]
+    },
+    {
+      "currency_code": "KES",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Kenya"
+      ]
+    },
+    {
+      "currency_code": "KMF",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Comoros"
+      ]
+    },
+    {
+      "currency_code": "LRD",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Liberia"
+      ]
+    },
+    {
+      "currency_code": "LSL",
+      "bloc": "CMA (Rand Monetary Area)",
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Lesotho"
+      ]
+    },
+    {
+      "currency_code": "LYD",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Libya"
+      ]
+    },
+    {
+      "currency_code": "MAD",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Morocco"
+      ]
+    },
+    {
+      "currency_code": "MGA",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Madagascar"
+      ]
+    },
+    {
+      "currency_code": "MRU",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Mauritania"
+      ]
+    },
+    {
+      "currency_code": "MUR",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Mauritius"
+      ]
+    },
+    {
+      "currency_code": "MWK",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Malawi"
+      ]
+    },
+    {
+      "currency_code": "MZN",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Mozambique"
+      ]
+    },
+    {
+      "currency_code": "NAD",
+      "bloc": "CMA (Rand Monetary Area)",
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Namibia"
+      ]
+    },
+    {
+      "currency_code": "NGN",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Nigeria"
+      ]
+    },
+    {
+      "currency_code": "RWF",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Rwanda"
+      ]
+    },
+    {
+      "currency_code": "SCR",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Seychelles"
+      ]
+    },
+    {
+      "currency_code": "SDG",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Sudan"
+      ]
+    },
+    {
+      "currency_code": "SLE",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Sierra Leone"
+      ]
+    },
+    {
+      "currency_code": "SOS",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Somalia"
+      ]
+    },
+    {
+      "currency_code": "SSP",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "South Sudan"
+      ]
+    },
+    {
+      "currency_code": "STN",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "São Tomé and Príncipe"
+      ]
+    },
+    {
+      "currency_code": "SZL",
+      "bloc": "CMA (Rand Monetary Area)",
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Eswatini"
+      ]
+    },
+    {
+      "currency_code": "TND",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Tunisia"
+      ]
+    },
+    {
+      "currency_code": "TZS",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Tanzania"
+      ]
+    },
+    {
+      "currency_code": "UGX",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Uganda"
+      ]
+    },
+    {
+      "currency_code": "XAF",
+      "bloc": "CEMAC",
+      "bank": "BEAC",
+      "count": 6,
+      "singleton": false,
+      "countries": [
+        "Cameroon",
+        "Central African Republic",
+        "Chad",
+        "Congo (Republic)",
+        "Equatorial Guinea",
+        "Gabon"
+      ]
+    },
+    {
+      "currency_code": "XOF",
+      "bloc": "WAEMU",
+      "bank": "BCEAO",
+      "count": 8,
+      "singleton": false,
+      "countries": [
+        "Benin",
+        "Burkina Faso",
+        "Côte d'Ivoire",
+        "Guinea-Bissau",
+        "Mali",
+        "Niger",
+        "Senegal",
+        "Togo"
+      ]
+    },
+    {
+      "currency_code": "ZAR",
+      "bloc": "CMA (Rand Monetary Area)",
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "South Africa"
+      ]
+    },
+    {
+      "currency_code": "ZMW",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Zambia"
+      ]
+    },
+    {
+      "currency_code": "ZiG",
+      "bloc": null,
+      "bank": null,
+      "count": 1,
+      "singleton": true,
+      "countries": [
+        "Zimbabwe"
+      ]
+    }
+  ],
+  "d_bloc_tokens": {
+    "raw": {
+      "African Union": {
+        "count": 54,
+        "countries": [
+          "Algeria",
+          "Angola",
+          "Benin",
+          "Botswana",
+          "Burkina Faso",
+          "Burundi",
+          "Cabo Verde",
+          "Cameroon",
+          "Central African Republic",
+          "Chad",
+          "Comoros",
+          "Congo (Republic)",
+          "Côte d'Ivoire",
+          "DRC",
+          "Djibouti",
+          "Egypt",
+          "Equatorial Guinea",
+          "Eritrea",
+          "Eswatini",
+          "Ethiopia",
+          "Gabon",
+          "Gambia",
+          "Ghana",
+          "Guinea",
+          "Guinea-Bissau",
+          "Kenya",
+          "Lesotho",
+          "Liberia",
+          "Libya",
+          "Madagascar",
+          "Malawi",
+          "Mali",
+          "Mauritania",
+          "Mauritius",
+          "Morocco",
+          "Mozambique",
+          "Namibia",
+          "Niger",
+          "Nigeria",
+          "Rwanda",
+          "Senegal",
+          "Seychelles",
+          "Sierra Leone",
+          "Somalia",
+          "South Africa",
+          "South Sudan",
+          "Sudan",
+          "São Tomé and Príncipe",
+          "Tanzania",
+          "Togo",
+          "Tunisia",
+          "Uganda",
+          "Zambia",
+          "Zimbabwe"
+        ]
+      },
+      "COMESA": {
+        "count": 21,
+        "countries": [
+          "Algeria",
+          "Comoros",
+          "DRC",
+          "Djibouti",
+          "Egypt",
+          "Eritrea",
+          "Eswatini",
+          "Ethiopia",
+          "Kenya",
+          "Libya",
+          "Madagascar",
+          "Malawi",
+          "Mauritius",
+          "Rwanda",
+          "Seychelles",
+          "Somalia",
+          "Sudan",
+          "Tunisia",
+          "Uganda",
+          "Zambia",
+          "Zimbabwe"
+        ]
+      },
+      "SADC": {
+        "count": 16,
+        "countries": [
+          "Angola",
+          "Botswana",
+          "Comoros",
+          "DRC",
+          "Eswatini",
+          "Lesotho",
+          "Madagascar",
+          "Malawi",
+          "Mauritius",
+          "Mozambique",
+          "Namibia",
+          "Seychelles",
+          "South Africa",
+          "Tanzania",
+          "Zambia",
+          "Zimbabwe"
+        ]
+      },
+      "ECOWAS": {
+        "count": 15,
+        "countries": [
+          "Benin",
+          "Burkina Faso",
+          "Cabo Verde",
+          "Côte d'Ivoire",
+          "Gambia",
+          "Ghana",
+          "Guinea",
+          "Guinea-Bissau",
+          "Liberia",
+          "Mali",
+          "Niger",
+          "Nigeria",
+          "Senegal",
+          "Sierra Leone",
+          "Togo"
+        ]
+      },
+      "EAC": {
+        "count": 8,
+        "countries": [
+          "Burundi",
+          "DRC",
+          "Kenya",
+          "Rwanda",
+          "Somalia",
+          "South Sudan",
+          "Tanzania",
+          "Uganda"
+        ]
+      },
+      "WAEMU (UEMOA)": {
+        "count": 8,
+        "countries": [
+          "Benin",
+          "Burkina Faso",
+          "Côte d'Ivoire",
+          "Guinea-Bissau",
+          "Mali",
+          "Niger",
+          "Senegal",
+          "Togo"
+        ]
+      },
+      "Arab League": {
+        "count": 7,
+        "countries": [
+          "Comoros",
+          "Djibouti",
+          "Egypt",
+          "Libya",
+          "Mauritania",
+          "Somalia",
+          "Sudan"
+        ]
+      },
+      "CEMAC": {
+        "count": 6,
+        "countries": [
+          "Cameroon",
+          "Central African Republic",
+          "Chad",
+          "Congo (Republic)",
+          "Equatorial Guinea",
+          "Gabon"
+        ]
+      },
+      "IGAD": {
+        "count": 5,
+        "countries": [
+          "Djibouti",
+          "Eritrea",
+          "Ethiopia",
+          "Somalia",
+          "South Sudan"
+        ]
+      },
+      "SACU": {
+        "count": 5,
+        "countries": [
+          "Botswana",
+          "Eswatini",
+          "Lesotho",
+          "Namibia",
+          "South Africa"
+        ]
+      },
+      "AMU (dormant)": {
+        "count": 4,
+        "countries": [
+          "Libya",
+          "Mauritania",
+          "Morocco",
+          "Tunisia"
+        ]
+      },
+      "COMESA (observer)": {
+        "count": 2,
+        "countries": [
+          "Benin",
+          "Morocco"
+        ]
+      },
+      "Arab Maghreb Union (dormant)": {
+        "count": 1,
+        "countries": [
+          "Algeria"
+        ]
+      },
+      "BRICS": {
+        "count": 1,
+        "countries": [
+          "South Africa"
+        ]
+      },
+      "CEN-SAD (verify)": {
+        "count": 1,
+        "countries": [
+          "São Tomé and Príncipe"
+        ]
+      },
+      "ECOWAS (observer)": {
+        "count": 1,
+        "countries": [
+          "Cameroon"
+        ]
+      }
+    },
+    "canonical": {
+      "African Union": {
+        "count": 54,
+        "countries": [
+          "Algeria",
+          "Angola",
+          "Benin",
+          "Botswana",
+          "Burkina Faso",
+          "Burundi",
+          "Cabo Verde",
+          "Cameroon",
+          "Central African Republic",
+          "Chad",
+          "Comoros",
+          "Congo (Republic)",
+          "Côte d'Ivoire",
+          "DRC",
+          "Djibouti",
+          "Egypt",
+          "Equatorial Guinea",
+          "Eritrea",
+          "Eswatini",
+          "Ethiopia",
+          "Gabon",
+          "Gambia",
+          "Ghana",
+          "Guinea",
+          "Guinea-Bissau",
+          "Kenya",
+          "Lesotho",
+          "Liberia",
+          "Libya",
+          "Madagascar",
+          "Malawi",
+          "Mali",
+          "Mauritania",
+          "Mauritius",
+          "Morocco",
+          "Mozambique",
+          "Namibia",
+          "Niger",
+          "Nigeria",
+          "Rwanda",
+          "Senegal",
+          "Seychelles",
+          "Sierra Leone",
+          "Somalia",
+          "South Africa",
+          "South Sudan",
+          "Sudan",
+          "São Tomé and Príncipe",
+          "Tanzania",
+          "Togo",
+          "Tunisia",
+          "Uganda",
+          "Zambia",
+          "Zimbabwe"
+        ]
+      },
+      "COMESA": {
+        "count": 23,
+        "countries": [
+          "Algeria",
+          "Benin",
+          "Comoros",
+          "DRC",
+          "Djibouti",
+          "Egypt",
+          "Eritrea",
+          "Eswatini",
+          "Ethiopia",
+          "Kenya",
+          "Libya",
+          "Madagascar",
+          "Malawi",
+          "Mauritius",
+          "Morocco",
+          "Rwanda",
+          "Seychelles",
+          "Somalia",
+          "Sudan",
+          "Tunisia",
+          "Uganda",
+          "Zambia",
+          "Zimbabwe"
+        ]
+      },
+      "ECOWAS": {
+        "count": 16,
+        "countries": [
+          "Benin",
+          "Burkina Faso",
+          "Cabo Verde",
+          "Cameroon",
+          "Côte d'Ivoire",
+          "Gambia",
+          "Ghana",
+          "Guinea",
+          "Guinea-Bissau",
+          "Liberia",
+          "Mali",
+          "Niger",
+          "Nigeria",
+          "Senegal",
+          "Sierra Leone",
+          "Togo"
+        ]
+      },
+      "SADC": {
+        "count": 16,
+        "countries": [
+          "Angola",
+          "Botswana",
+          "Comoros",
+          "DRC",
+          "Eswatini",
+          "Lesotho",
+          "Madagascar",
+          "Malawi",
+          "Mauritius",
+          "Mozambique",
+          "Namibia",
+          "Seychelles",
+          "South Africa",
+          "Tanzania",
+          "Zambia",
+          "Zimbabwe"
+        ]
+      },
+      "EAC": {
+        "count": 8,
+        "countries": [
+          "Burundi",
+          "DRC",
+          "Kenya",
+          "Rwanda",
+          "Somalia",
+          "South Sudan",
+          "Tanzania",
+          "Uganda"
+        ]
+      },
+      "WAEMU": {
+        "count": 8,
+        "countries": [
+          "Benin",
+          "Burkina Faso",
+          "Côte d'Ivoire",
+          "Guinea-Bissau",
+          "Mali",
+          "Niger",
+          "Senegal",
+          "Togo"
+        ]
+      },
+      "Arab League": {
+        "count": 7,
+        "countries": [
+          "Comoros",
+          "Djibouti",
+          "Egypt",
+          "Libya",
+          "Mauritania",
+          "Somalia",
+          "Sudan"
+        ]
+      },
+      "CEMAC": {
+        "count": 6,
+        "countries": [
+          "Cameroon",
+          "Central African Republic",
+          "Chad",
+          "Congo (Republic)",
+          "Equatorial Guinea",
+          "Gabon"
+        ]
+      },
+      "IGAD": {
+        "count": 5,
+        "countries": [
+          "Djibouti",
+          "Eritrea",
+          "Ethiopia",
+          "Somalia",
+          "South Sudan"
+        ]
+      },
+      "SACU": {
+        "count": 5,
+        "countries": [
+          "Botswana",
+          "Eswatini",
+          "Lesotho",
+          "Namibia",
+          "South Africa"
+        ]
+      },
+      "AMU": {
+        "count": 4,
+        "countries": [
+          "Libya",
+          "Mauritania",
+          "Morocco",
+          "Tunisia"
+        ]
+      },
+      "Arab Maghreb Union": {
+        "count": 1,
+        "countries": [
+          "Algeria"
+        ]
+      },
+      "BRICS": {
+        "count": 1,
+        "countries": [
+          "South Africa"
+        ]
+      },
+      "CEN-SAD": {
+        "count": 1,
+        "countries": [
+          "São Tomé and Príncipe"
+        ]
+      }
+    }
+  },
+  "e_central_banks": {
+    "BCEAO": {
+      "count": 7,
+      "countries": [
+        "Burkina Faso",
+        "Côte d'Ivoire",
+        "Guinea-Bissau",
+        "Mali",
+        "Niger",
+        "Senegal",
+        "Togo"
+      ]
+    },
+    "BEAC": {
+      "count": 5,
+      "countries": [
+        "Central African Republic",
+        "Chad",
+        "Congo (Republic)",
+        "Equatorial Guinea",
+        "Gabon"
+      ]
+    },
+    "Banco Central de São Tomé e Príncipe": {
+      "count": 1,
+      "countries": [
+        "São Tomé and Príncipe"
+      ]
+    },
+    "Banco Nacional de Angola (BNA)": {
+      "count": 1,
+      "countries": [
+        "Angola"
+      ]
+    },
+    "Banco de Cabo Verde": {
+      "count": 1,
+      "countries": [
+        "Cabo Verde"
+      ]
+    },
+    "Banco de Moçambique": {
+      "count": 1,
+      "countries": [
+        "Mozambique"
+      ]
+    },
+    "Bank Al-Maghrib": {
+      "count": 1,
+      "countries": [
+        "Morocco"
+      ]
+    },
+    "Bank of Botswana": {
+      "count": 1,
+      "countries": [
+        "Botswana"
+      ]
+    },
+    "Bank of Eritrea": {
+      "count": 1,
+      "countries": [
+        "Eritrea"
+      ]
+    },
+    "Bank of Ghana": {
+      "count": 1,
+      "countries": [
+        "Ghana"
+      ]
+    },
+    "Bank of Mauritius": {
+      "count": 1,
+      "countries": [
+        "Mauritius"
+      ]
+    },
+    "Bank of Namibia": {
+      "count": 1,
+      "countries": [
+        "Namibia"
+      ]
+    },
+    "Bank of Sierra Leone": {
+      "count": 1,
+      "countries": [
+        "Sierra Leone"
+      ]
+    },
+    "Bank of South Sudan": {
+      "count": 1,
+      "countries": [
+        "South Sudan"
+      ]
+    },
+    "Bank of Tanzania": {
+      "count": 1,
+      "countries": [
+        "Tanzania"
+      ]
+    },
+    "Bank of Uganda": {
+      "count": 1,
+      "countries": [
+        "Uganda"
+      ]
+    },
+    "Bank of Zambia": {
+      "count": 1,
+      "countries": [
+        "Zambia"
+      ]
+    },
+    "Banky Foiben'i Madagasikara (Central Bank of Madagascar)": {
+      "count": 1,
+      "countries": [
+        "Madagascar"
+      ]
+    },
+    "Banque Centrale de Djibouti": {
+      "count": 1,
+      "countries": [
+        "Djibouti"
+      ]
+    },
+    "Banque Centrale de Mauritanie": {
+      "count": 1,
+      "countries": [
+        "Mauritania"
+      ]
+    },
+    "Banque Centrale de Tunisie": {
+      "count": 1,
+      "countries": [
+        "Tunisia"
+      ]
+    },
+    "Banque Centrale de la République de Guinée": {
+      "count": 1,
+      "countries": [
+        "Guinea"
+      ]
+    },
+    "Banque Centrale des Comores": {
+      "count": 1,
+      "countries": [
+        "Comoros"
+      ]
+    },
+    "Banque Centrale des États de l'Afrique de l'Ouest (BCEAO)": {
+      "count": 1,
+      "countries": [
+        "Benin"
+      ]
+    },
+    "Banque Centrale du Congo": {
+      "count": 1,
+      "countries": [
+        "DRC"
+      ]
+    },
+    "Banque d'Algérie": {
+      "count": 1,
+      "countries": [
+        "Algeria"
+      ]
+    },
+    "Banque de la République du Burundi": {
+      "count": 1,
+      "countries": [
+        "Burundi"
+      ]
+    },
+    "Banque des États de l'Afrique Centrale (BEAC)": {
+      "count": 1,
+      "countries": [
+        "Cameroon"
+      ]
+    },
+    "Central Bank of Egypt": {
+      "count": 1,
+      "countries": [
+        "Egypt"
+      ]
+    },
+    "Central Bank of Eswatini": {
+      "count": 1,
+      "countries": [
+        "Eswatini"
+      ]
+    },
+    "Central Bank of Kenya (CBK)": {
+      "count": 1,
+      "countries": [
+        "Kenya"
+      ]
+    },
+    "Central Bank of Lesotho": {
+      "count": 1,
+      "countries": [
+        "Lesotho"
+      ]
+    },
+    "Central Bank of Liberia": {
+      "count": 1,
+      "countries": [
+        "Liberia"
+      ]
+    },
+    "Central Bank of Libya": {
+      "count": 1,
+      "countries": [
+        "Libya"
+      ]
+    },
+    "Central Bank of Nigeria (CBN)": {
+      "count": 1,
+      "countries": [
+        "Nigeria"
+      ]
+    },
+    "Central Bank of Seychelles": {
+      "count": 1,
+      "countries": [
+        "Seychelles"
+      ]
+    },
+    "Central Bank of Somalia": {
+      "count": 1,
+      "countries": [
+        "Somalia"
+      ]
+    },
+    "Central Bank of Sudan": {
+      "count": 1,
+      "countries": [
+        "Sudan"
+      ]
+    },
+    "Central Bank of The Gambia": {
+      "count": 1,
+      "countries": [
+        "Gambia"
+      ]
+    },
+    "National Bank of Ethiopia": {
+      "count": 1,
+      "countries": [
+        "Ethiopia"
+      ]
+    },
+    "National Bank of Rwanda (BNR)": {
+      "count": 1,
+      "countries": [
+        "Rwanda"
+      ]
+    },
+    "Reserve Bank of Malawi": {
+      "count": 1,
+      "countries": [
+        "Malawi"
+      ]
+    },
+    "Reserve Bank of Zimbabwe": {
+      "count": 1,
+      "countries": [
+        "Zimbabwe"
+      ]
+    },
+    "South African Reserve Bank (SARB)": {
+      "count": 1,
+      "countries": [
+        "South Africa"
+      ]
+    }
+  },
+  "f_data_protection_acronyms": {
+    "all": {
+      "APD": {
+        "total_countries": 1,
+        "expansions": {
+          "Autoridade de Protecção de Dados": [
+            "Angola"
+          ]
+        }
+      },
+      "APDP": {
+        "total_countries": 2,
+        "expansions": {
+          "Autorité de Protection des Données Personnelles": [
+            "Benin"
+          ],
+          "Autorité de Protection des Données à caractère Personnel": [
+            "Mali"
+          ]
+        }
+      },
+      "ARCT": {
+        "total_countries": 1,
+        "expansions": {
+          "telecom regulator, verify data mandate": [
+            "Burundi"
+          ]
+        }
+      },
+      "ARTCI": {
+        "total_countries": 1,
+        "expansions": {
+          "designated data protection authority": [
+            "Côte d'Ivoire"
+          ]
+        }
+      },
+      "CDP": {
+        "total_countries": 1,
+        "expansions": {
+          "Commission de Protection des Données Personnelles": [
+            "Senegal"
+          ]
+        }
+      },
+      "CIL": {
+        "total_countries": 2,
+        "expansions": {
+          "Commission Nationale de l'Informatique et des Libertés": [
+            "Niger"
+          ],
+          "Commission de l'Informatique et des Libertés": [
+            "Burkina Faso"
+          ]
+        }
+      },
+      "CNDP": {
+        "total_countries": 1,
+        "expansions": {
+          "Commission Nationale de Contrôle de la Protection des Données à Caractère Personnel": [
+            "Morocco"
+          ]
+        }
+      },
+      "CNIL": {
+        "total_countries": 1,
+        "expansions": {
+          "National Data Protection Commission": [
+            "Algeria"
+          ]
+        }
+      },
+      "CNPD": {
+        "total_countries": 4,
+        "expansions": {
+          "Comissão Nacional de Proteção de Dados": [
+            "Cabo Verde"
+          ],
+          "Commission Nationale pour la Protection des Données": [
+            "Gabon"
+          ],
+          "Commission Nationale pour la Protection des Données à Caractère Personnel": [
+            "Cameroon"
+          ],
+          "verify current status": [
+            "Madagascar"
+          ]
+        }
+      },
+      "DPC": {
+        "total_countries": 1,
+        "expansions": {
+          "Data Protection Commission": [
+            "Ghana"
+          ]
+        }
+      },
+      "DPO": {
+        "total_countries": 1,
+        "expansions": {
+          "Data Protection Office": [
+            "Mauritius"
+          ]
+        }
+      },
+      "INPDP": {
+        "total_countries": 1,
+        "expansions": {
+          "Instance Nationale de Protection des Données Personnelles": [
+            "Tunisia"
+          ]
+        }
+      },
+      "INSA": {
+        "total_countries": 1,
+        "expansions": {
+          "Information Network Security Administration; verify data mandate": [
+            "Ethiopia"
+          ]
+        }
+      },
+      "IR": {
+        "total_countries": 1,
+        "expansions": {
+          "Information Regulator": [
+            "South Africa"
+          ]
+        }
+      },
+      "NCSA": {
+        "total_countries": 1,
+        "expansions": {
+          "National Cyber Security Authority": [
+            "Rwanda"
+          ]
+        }
+      },
+      "NDPC": {
+        "total_countries": 1,
+        "expansions": {
+          "Nigeria Data Protection Commission": [
+            "Nigeria"
+          ]
+        }
+      },
+      "ODPC": {
+        "total_countries": 1,
+        "expansions": {
+          "Office of the Data Protection Commissioner": [
+            "Kenya"
+          ]
+        }
+      },
+      "PDPC": {
+        "total_countries": 1,
+        "expansions": {
+          "Personal Data Protection Commission": [
+            "Tanzania"
+          ]
+        }
+      },
+      "PDPO": {
+        "total_countries": 1,
+        "expansions": {
+          "Personal Data Protection Office": [
+            "Uganda"
+          ]
+        }
+      },
+      "ZICTA": {
+        "total_countries": 1,
+        "expansions": {
+          "registrar under data protection law; verify": [
+            "Zambia"
+          ]
+        }
+      }
+    },
+    "shared_by_2_plus": {
+      "APDP": {
+        "total_countries": 2,
+        "expansions": {
+          "Autorité de Protection des Données Personnelles": [
+            "Benin"
+          ],
+          "Autorité de Protection des Données à caractère Personnel": [
+            "Mali"
+          ]
+        }
+      },
+      "CIL": {
+        "total_countries": 2,
+        "expansions": {
+          "Commission Nationale de l'Informatique et des Libertés": [
+            "Niger"
+          ],
+          "Commission de l'Informatique et des Libertés": [
+            "Burkina Faso"
+          ]
+        }
+      },
+      "CNPD": {
+        "total_countries": 4,
+        "expansions": {
+          "Comissão Nacional de Proteção de Dados": [
+            "Cabo Verde"
+          ],
+          "Commission Nationale pour la Protection des Données": [
+            "Gabon"
+          ],
+          "Commission Nationale pour la Protection des Données à Caractère Personnel": [
+            "Cameroon"
+          ],
+          "verify current status": [
+            "Madagascar"
+          ]
+        }
+      }
+    },
+    "without_acronym": [
+      {
+        "file": "botswana.md",
+        "country": "Botswana",
+        "line": 21,
+        "value": "Ministry of Communications (verify current authority)"
+      },
+      {
+        "file": "central-african-republic.md",
+        "country": "Central African Republic",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "chad.md",
+        "country": "Chad",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "comoros.md",
+        "country": "Comoros",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "democratic-republic-of-congo.md",
+        "country": "DRC",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "djibouti.md",
+        "country": "Djibouti",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "egypt.md",
+        "country": "Egypt",
+        "line": 21,
+        "value": "Data Protection Authority (Law 151/2020; verify operational status)"
+      },
+      {
+        "file": "equatorial-guinea.md",
+        "country": "Equatorial Guinea",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "eritrea.md",
+        "country": "Eritrea",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "eswatini.md",
+        "country": "Eswatini",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "gambia.md",
+        "country": "Gambia",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "guinea.md",
+        "country": "Guinea",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "guinea-bissau.md",
+        "country": "Guinea-Bissau",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "lesotho.md",
+        "country": "Lesotho",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "liberia.md",
+        "country": "Liberia",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "libya.md",
+        "country": "Libya",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "malawi.md",
+        "country": "Malawi",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "mauritania.md",
+        "country": "Mauritania",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "mozambique.md",
+        "country": "Mozambique",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "namibia.md",
+        "country": "Namibia",
+        "line": 21,
+        "value": "Ministry of Information (verify data mandate)"
+      },
+      {
+        "file": "republic-of-congo.md",
+        "country": "Congo (Republic)",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "sao-tome-and-principe.md",
+        "country": "São Tomé and Príncipe",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "seychelles.md",
+        "country": "Seychelles",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "sierra-leone.md",
+        "country": "Sierra Leone",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "somalia.md",
+        "country": "Somalia",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "south-sudan.md",
+        "country": "South Sudan",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "sudan.md",
+        "country": "Sudan",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "togo.md",
+        "country": "Togo",
+        "line": 21,
+        "value": "Verify national authority"
+      },
+      {
+        "file": "zimbabwe.md",
+        "country": "Zimbabwe",
+        "line": 21,
+        "value": "Data Protection Authority (verify current status)"
+      }
+    ]
+  },
+  "g_taxes": {
+    "per_country": {
+      "Algeria": {
+        "file": "algeria.md",
+        "cit": "26% (19% for production activities)",
+        "cit_numbers": [
+          26.0,
+          19.0
+        ],
+        "vat": "19%",
+        "vat_numbers": [
+          19.0
+        ]
+      },
+      "Angola": {
+        "file": "angola.md",
+        "cit": "25%",
+        "cit_numbers": [
+          25.0
+        ],
+        "vat": "14%",
+        "vat_numbers": [
+          14.0
+        ]
+      },
+      "Benin": {
+        "file": "benin.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "Botswana": {
+        "file": "botswana.md",
+        "cit": "22%",
+        "cit_numbers": [
+          22.0
+        ],
+        "vat": "14%",
+        "vat_numbers": [
+          14.0
+        ]
+      },
+      "Burkina Faso": {
+        "file": "burkina-faso.md",
+        "cit": "27.5%",
+        "cit_numbers": [
+          27.5
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "Burundi": {
+        "file": "burundi.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "Cabo Verde": {
+        "file": "cabo-verde.md",
+        "cit": "25%",
+        "cit_numbers": [
+          25.0
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "Cameroon": {
+        "file": "cameroon.md",
+        "cit": "30% (33% for some sectors)",
+        "cit_numbers": [
+          30.0,
+          33.0
+        ],
+        "vat": "19.25%",
+        "vat_numbers": [
+          19.25
+        ]
+      },
+      "Central African Republic": {
+        "file": "central-african-republic.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "19%",
+        "vat_numbers": [
+          19.0
+        ]
+      },
+      "Chad": {
+        "file": "chad.md",
+        "cit": "35%",
+        "cit_numbers": [
+          35.0
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "Comoros": {
+        "file": "comoros.md",
+        "cit": "50%",
+        "cit_numbers": [
+          50.0
+        ],
+        "vat": "None (verify sales-tax regime)",
+        "vat_numbers": []
+      },
+      "Côte d'Ivoire": {
+        "file": "cote-divoire.md",
+        "cit": "25%",
+        "cit_numbers": [
+          25.0
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "DRC": {
+        "file": "democratic-republic-of-congo.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "16%",
+        "vat_numbers": [
+          16.0
+        ]
+      },
+      "Djibouti": {
+        "file": "djibouti.md",
+        "cit": "25%",
+        "cit_numbers": [
+          25.0
+        ],
+        "vat": "10%",
+        "vat_numbers": [
+          10.0
+        ]
+      },
+      "Egypt": {
+        "file": "egypt.md",
+        "cit": "22.5%",
+        "cit_numbers": [
+          22.5
+        ],
+        "vat": "14%",
+        "vat_numbers": [
+          14.0
+        ]
+      },
+      "Equatorial Guinea": {
+        "file": "equatorial-guinea.md",
+        "cit": "35%",
+        "cit_numbers": [
+          35.0
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "Eritrea": {
+        "file": "eritrea.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "None (sales tax regime)",
+        "vat_numbers": []
+      },
+      "Eswatini": {
+        "file": "eswatini.md",
+        "cit": "27.5%",
+        "cit_numbers": [
+          27.5
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "Ethiopia": {
+        "file": "ethiopia.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "Gabon": {
+        "file": "gabon.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "Gambia": {
+        "file": "gambia.md",
+        "cit": "27%",
+        "cit_numbers": [
+          27.0
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "Ghana": {
+        "file": "ghana.md",
+        "cit": "25%",
+        "cit_numbers": [
+          25.0
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "Guinea": {
+        "file": "guinea.md",
+        "cit": "35%",
+        "cit_numbers": [
+          35.0
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "Guinea-Bissau": {
+        "file": "guinea-bissau.md",
+        "cit": "25%",
+        "cit_numbers": [
+          25.0
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "Kenya": {
+        "file": "kenya.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "16%",
+        "vat_numbers": [
+          16.0
+        ]
+      },
+      "Lesotho": {
+        "file": "lesotho.md",
+        "cit": "25%",
+        "cit_numbers": [
+          25.0
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "Liberia": {
+        "file": "liberia.md",
+        "cit": "25%",
+        "cit_numbers": [
+          25.0
+        ],
+        "vat": "10%",
+        "vat_numbers": [
+          10.0
+        ]
+      },
+      "Libya": {
+        "file": "libya.md",
+        "cit": "20%",
+        "cit_numbers": [
+          20.0
+        ],
+        "vat": "None (no VAT framework)",
+        "vat_numbers": []
+      },
+      "Madagascar": {
+        "file": "madagascar.md",
+        "cit": "20%",
+        "cit_numbers": [
+          20.0
+        ],
+        "vat": "20%",
+        "vat_numbers": [
+          20.0
+        ]
+      },
+      "Malawi": {
+        "file": "malawi.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "16.5%",
+        "vat_numbers": [
+          16.5
+        ]
+      },
+      "Mali": {
+        "file": "mali.md",
+        "cit": "30% (35% for certain sectors)",
+        "cit_numbers": [
+          30.0,
+          35.0
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "Mauritania": {
+        "file": "mauritania.md",
+        "cit": "25%",
+        "cit_numbers": [
+          25.0
+        ],
+        "vat": "16%",
+        "vat_numbers": [
+          16.0
+        ]
+      },
+      "Mauritius": {
+        "file": "mauritius.md",
+        "cit": "15%",
+        "cit_numbers": [
+          15.0
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "Morocco": {
+        "file": "morocco.md",
+        "cit": "20–31% by bracket",
+        "cit_numbers": [
+          20.0,
+          31.0
+        ],
+        "vat": "20%",
+        "vat_numbers": [
+          20.0
+        ]
+      },
+      "Mozambique": {
+        "file": "mozambique.md",
+        "cit": "32%",
+        "cit_numbers": [
+          32.0
+        ],
+        "vat": "16%",
+        "vat_numbers": [
+          16.0
+        ]
+      },
+      "Namibia": {
+        "file": "namibia.md",
+        "cit": "31–32%",
+        "cit_numbers": [
+          31.0,
+          32.0
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "Niger": {
+        "file": "niger.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "19%",
+        "vat_numbers": [
+          19.0
+        ]
+      },
+      "Nigeria": {
+        "file": "nigeria.md",
+        "cit": "30% (25% for qualifying SMEs)",
+        "cit_numbers": [
+          30.0,
+          25.0
+        ],
+        "vat": "7.5%",
+        "vat_numbers": [
+          7.5
+        ]
+      },
+      "Congo (Republic)": {
+        "file": "republic-of-congo.md",
+        "cit": "28%",
+        "cit_numbers": [
+          28.0
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "Rwanda": {
+        "file": "rwanda.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "São Tomé and Príncipe": {
+        "file": "sao-tome-and-principe.md",
+        "cit": "25%",
+        "cit_numbers": [
+          25.0
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "Senegal": {
+        "file": "senegal.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "Seychelles": {
+        "file": "seychelles.md",
+        "cit": "25%",
+        "cit_numbers": [
+          25.0
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "Sierra Leone": {
+        "file": "sierra-leone.md",
+        "cit": "30% (25% for certain sectors)",
+        "cit_numbers": [
+          30.0,
+          25.0
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "Somalia": {
+        "file": "somalia.md",
+        "cit": "None at federal level (municipal levies; verify)",
+        "cit_numbers": [],
+        "vat": "None at federal level (verify)",
+        "vat_numbers": []
+      },
+      "South Africa": {
+        "file": "south-africa.md",
+        "cit": "27%",
+        "cit_numbers": [
+          27.0
+        ],
+        "vat": "15%",
+        "vat_numbers": [
+          15.0
+        ]
+      },
+      "South Sudan": {
+        "file": "south-sudan.md",
+        "cit": "25% (30% petroleum; verify)",
+        "cit_numbers": [
+          25.0,
+          30.0
+        ],
+        "vat": "18% (verify)",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "Sudan": {
+        "file": "sudan.md",
+        "cit": "35% (verify recent reforms)",
+        "cit_numbers": [
+          35.0
+        ],
+        "vat": "17% (verify)",
+        "vat_numbers": [
+          17.0
+        ]
+      },
+      "Tanzania": {
+        "file": "tanzania.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "Togo": {
+        "file": "togo.md",
+        "cit": "27%",
+        "cit_numbers": [
+          27.0
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "Tunisia": {
+        "file": "tunisia.md",
+        "cit": "15–35% by activity (25% standard)",
+        "cit_numbers": [
+          15.0,
+          35.0,
+          25.0
+        ],
+        "vat": "19%",
+        "vat_numbers": [
+          19.0
+        ]
+      },
+      "Uganda": {
+        "file": "uganda.md",
+        "cit": "30%",
+        "cit_numbers": [
+          30.0
+        ],
+        "vat": "18%",
+        "vat_numbers": [
+          18.0
+        ]
+      },
+      "Zambia": {
+        "file": "zambia.md",
+        "cit": "30% (35% mining)",
+        "cit_numbers": [
+          30.0,
+          35.0
+        ],
+        "vat": "16%",
+        "vat_numbers": [
+          16.0
+        ]
+      },
+      "Zimbabwe": {
+        "file": "zimbabwe.md",
+        "cit": "24% (verify)",
+        "cit_numbers": [
+          24.0
+        ],
+        "vat": "14.5%",
+        "vat_numbers": [
+          14.5
+        ]
+      }
+    },
+    "anomalies": {
+      "non_numeric": [
+        {
+          "file": "comoros.md",
+          "country": "Comoros",
+          "tax": "VAT",
+          "line": 45,
+          "value": "None (verify sales-tax regime)",
+          "numbers": []
+        },
+        {
+          "file": "eritrea.md",
+          "country": "Eritrea",
+          "tax": "VAT",
+          "line": 45,
+          "value": "None (sales tax regime)",
+          "numbers": []
+        },
+        {
+          "file": "libya.md",
+          "country": "Libya",
+          "tax": "VAT",
+          "line": 45,
+          "value": "None (no VAT framework)",
+          "numbers": []
+        },
+        {
+          "file": "somalia.md",
+          "country": "Somalia",
+          "tax": "CIT",
+          "line": 44,
+          "value": "None at federal level (municipal levies; verify)",
+          "numbers": []
+        },
+        {
+          "file": "somalia.md",
+          "country": "Somalia",
+          "tax": "VAT",
+          "line": 45,
+          "value": "None at federal level (verify)",
+          "numbers": []
+        }
+      ],
+      "compound": [
+        {
+          "file": "algeria.md",
+          "country": "Algeria",
+          "tax": "CIT",
+          "line": 44,
+          "value": "26% (19% for production activities)",
+          "numbers": [
+            26.0,
+            19.0
+          ]
+        },
+        {
+          "file": "cameroon.md",
+          "country": "Cameroon",
+          "tax": "CIT",
+          "line": 44,
+          "value": "30% (33% for some sectors)",
+          "numbers": [
+            30.0,
+            33.0
+          ]
+        },
+        {
+          "file": "mali.md",
+          "country": "Mali",
+          "tax": "CIT",
+          "line": 44,
+          "value": "30% (35% for certain sectors)",
+          "numbers": [
+            30.0,
+            35.0
+          ]
+        },
+        {
+          "file": "morocco.md",
+          "country": "Morocco",
+          "tax": "CIT",
+          "line": 44,
+          "value": "20–31% by bracket",
+          "numbers": [
+            20.0,
+            31.0
+          ]
+        },
+        {
+          "file": "namibia.md",
+          "country": "Namibia",
+          "tax": "CIT",
+          "line": 44,
+          "value": "31–32%",
+          "numbers": [
+            31.0,
+            32.0
+          ]
+        },
+        {
+          "file": "nigeria.md",
+          "country": "Nigeria",
+          "tax": "CIT",
+          "line": 44,
+          "value": "30% (25% for qualifying SMEs)",
+          "numbers": [
+            30.0,
+            25.0
+          ]
+        },
+        {
+          "file": "sierra-leone.md",
+          "country": "Sierra Leone",
+          "tax": "CIT",
+          "line": 44,
+          "value": "30% (25% for certain sectors)",
+          "numbers": [
+            30.0,
+            25.0
+          ]
+        },
+        {
+          "file": "south-sudan.md",
+          "country": "South Sudan",
+          "tax": "CIT",
+          "line": 44,
+          "value": "25% (30% petroleum; verify)",
+          "numbers": [
+            25.0,
+            30.0
+          ]
+        },
+        {
+          "file": "south-sudan.md",
+          "country": "South Sudan",
+          "tax": "VAT",
+          "line": 45,
+          "value": "18% (verify)",
+          "numbers": [
+            18.0
+          ]
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "tax": "CIT",
+          "line": 44,
+          "value": "35% (verify recent reforms)",
+          "numbers": [
+            35.0
+          ]
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "tax": "VAT",
+          "line": 45,
+          "value": "17% (verify)",
+          "numbers": [
+            17.0
+          ]
+        },
+        {
+          "file": "tunisia.md",
+          "country": "Tunisia",
+          "tax": "CIT",
+          "line": 44,
+          "value": "15–35% by activity (25% standard)",
+          "numbers": [
+            15.0,
+            35.0,
+            25.0
+          ]
+        },
+        {
+          "file": "zambia.md",
+          "country": "Zambia",
+          "tax": "CIT",
+          "line": 44,
+          "value": "30% (35% mining)",
+          "numbers": [
+            30.0,
+            35.0
+          ]
+        },
+        {
+          "file": "zimbabwe.md",
+          "country": "Zimbabwe",
+          "tax": "CIT",
+          "line": 44,
+          "value": "24% (verify)",
+          "numbers": [
+            24.0
+          ]
+        }
+      ],
+      "zero": [],
+      "above_40": [
+        {
+          "file": "comoros.md",
+          "country": "Comoros",
+          "tax": "CIT",
+          "line": 44,
+          "value": "50%",
+          "numbers": [
+            50.0
+          ]
+        }
+      ]
+    }
+  },
+  "h_languages": {
+    "per_country": {
+      "Algeria": {
+        "file": "algeria.md",
+        "official": [
+          "Arabic",
+          "Tamazight (Berber)"
+        ],
+        "dominant": [
+          "Algerian Arabic (Darja)",
+          "Tamazight",
+          "French (business/administration)"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ARAB MAGHREB UNION",
+          "COMESA"
+        ]
+      },
+      "Angola": {
+        "file": "angola.md",
+        "official": [
+          "Portuguese"
+        ],
+        "dominant": [
+          "Portuguese",
+          "Umbundu",
+          "Kimbundu",
+          "Kikongo"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "SADC"
+        ]
+      },
+      "Benin": {
+        "file": "benin.md",
+        "official": [
+          "French"
+        ],
+        "dominant": [
+          "French",
+          "Fon",
+          "Yoruba",
+          "Bariba",
+          "Dendi"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "ECOWAS",
+          "WAEMU"
+        ]
+      },
+      "Botswana": {
+        "file": "botswana.md",
+        "official": [
+          "English"
+        ],
+        "dominant": [
+          "Setswana",
+          "English"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "SACU",
+          "SADC"
+        ]
+      },
+      "Burkina Faso": {
+        "file": "burkina-faso.md",
+        "official": [
+          "French"
+        ],
+        "dominant": [
+          "French",
+          "Mooré",
+          "Dioula",
+          "Fulfulde"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS",
+          "WAEMU"
+        ]
+      },
+      "Burundi": {
+        "file": "burundi.md",
+        "official": [
+          "Kirundi",
+          "French"
+        ],
+        "dominant": [
+          "Kirundi",
+          "Swahili",
+          "French"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "EAC"
+        ]
+      },
+      "Cabo Verde": {
+        "file": "cabo-verde.md",
+        "official": [
+          "Portuguese"
+        ],
+        "dominant": [
+          "Portuguese",
+          "Cape Verdean Creole (Kriolu)"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS"
+        ]
+      },
+      "Cameroon": {
+        "file": "cameroon.md",
+        "official": [
+          "English",
+          "French"
+        ],
+        "dominant": [
+          "French",
+          "English",
+          "Cameroonian Pidgin",
+          "Fulfulde",
+          "Ewondo",
+          "Duala"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "CEMAC",
+          "ECOWAS"
+        ]
+      },
+      "Central African Republic": {
+        "file": "central-african-republic.md",
+        "official": [
+          "French",
+          "Sango"
+        ],
+        "dominant": [
+          "Sango",
+          "French"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "CEMAC"
+        ]
+      },
+      "Chad": {
+        "file": "chad.md",
+        "official": [
+          "French",
+          "Arabic"
+        ],
+        "dominant": [
+          "Chadian Arabic",
+          "French",
+          "Sara languages"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "CEMAC"
+        ]
+      },
+      "Comoros": {
+        "file": "comoros.md",
+        "official": [
+          "Comorian (Shikomori)",
+          "Arabic",
+          "French"
+        ],
+        "dominant": [
+          "Comorian",
+          "French",
+          "Arabic"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ARAB LEAGUE",
+          "COMESA",
+          "SADC"
+        ]
+      },
+      "Côte d'Ivoire": {
+        "file": "cote-divoire.md",
+        "official": [
+          "French"
+        ],
+        "dominant": [
+          "French",
+          "Dioula",
+          "Baoulé",
+          "Anyin",
+          "Senoufo"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS",
+          "WAEMU"
+        ]
+      },
+      "DRC": {
+        "file": "democratic-republic-of-congo.md",
+        "official": [
+          "French"
+        ],
+        "dominant": [
+          "French (administration)",
+          "Lingala",
+          "Swahili",
+          "Kikongo",
+          "Tshiluba"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "EAC",
+          "SADC"
+        ]
+      },
+      "Djibouti": {
+        "file": "djibouti.md",
+        "official": [
+          "French",
+          "Arabic"
+        ],
+        "dominant": [
+          "Somali",
+          "Afar",
+          "French",
+          "Arabic"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ARAB LEAGUE",
+          "COMESA",
+          "IGAD"
+        ]
+      },
+      "Egypt": {
+        "file": "egypt.md",
+        "official": [
+          "Arabic"
+        ],
+        "dominant": [
+          "Egyptian Arabic; English and French in business"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ARAB LEAGUE",
+          "COMESA"
+        ]
+      },
+      "Equatorial Guinea": {
+        "file": "equatorial-guinea.md",
+        "official": [
+          "Spanish",
+          "French",
+          "Portuguese"
+        ],
+        "dominant": [
+          "Spanish",
+          "Fang",
+          "Bubi",
+          "Pidgin English"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "CEMAC"
+        ]
+      },
+      "Eritrea": {
+        "file": "eritrea.md",
+        "official": [
+          "No official language; working languages Tigrinya",
+          "Arabic",
+          "English"
+        ],
+        "dominant": [
+          "Tigrinya",
+          "Tigre",
+          "Saho",
+          "Afar",
+          "Arabic"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "IGAD"
+        ]
+      },
+      "Eswatini": {
+        "file": "eswatini.md",
+        "official": [
+          "siSwati",
+          "English"
+        ],
+        "dominant": [
+          "siSwati",
+          "English"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "SACU",
+          "SADC"
+        ]
+      },
+      "Ethiopia": {
+        "file": "ethiopia.md",
+        "official": [
+          "Amharic (federal working language); multiple state languages"
+        ],
+        "dominant": [
+          "Amharic",
+          "Oromo",
+          "Tigrinya",
+          "Somali",
+          "Afar; English in education/business"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "IGAD"
+        ]
+      },
+      "Gabon": {
+        "file": "gabon.md",
+        "official": [
+          "French"
+        ],
+        "dominant": [
+          "French",
+          "Fang",
+          "Myene",
+          "Punu",
+          "Nzebi"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "CEMAC"
+        ]
+      },
+      "Gambia": {
+        "file": "gambia.md",
+        "official": [
+          "English"
+        ],
+        "dominant": [
+          "English",
+          "Mandinka",
+          "Wolof",
+          "Fula"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS"
+        ]
+      },
+      "Ghana": {
+        "file": "ghana.md",
+        "official": [
+          "English"
+        ],
+        "dominant": [
+          "English",
+          "Twi",
+          "Fante",
+          "Ewe",
+          "Ga",
+          "Dagbani"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS"
+        ]
+      },
+      "Guinea": {
+        "file": "guinea.md",
+        "official": [
+          "French"
+        ],
+        "dominant": [
+          "French",
+          "Fula (Pular)",
+          "Mandinka (Maninka)",
+          "Susu"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS"
+        ]
+      },
+      "Guinea-Bissau": {
+        "file": "guinea-bissau.md",
+        "official": [
+          "Portuguese"
+        ],
+        "dominant": [
+          "Portuguese",
+          "Guinea-Bissau Creole (Kriol)",
+          "Fula",
+          "Balanta"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS",
+          "WAEMU"
+        ]
+      },
+      "Kenya": {
+        "file": "kenya.md",
+        "official": [
+          "Swahili",
+          "English"
+        ],
+        "dominant": [
+          "Swahili",
+          "English",
+          "Kikuyu",
+          "Luhya",
+          "Luo",
+          "Kamba",
+          "Kalenjin"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "EAC"
+        ]
+      },
+      "Lesotho": {
+        "file": "lesotho.md",
+        "official": [
+          "Sesotho",
+          "English"
+        ],
+        "dominant": [
+          "Sesotho",
+          "English"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "SACU",
+          "SADC"
+        ]
+      },
+      "Liberia": {
+        "file": "liberia.md",
+        "official": [
+          "English"
+        ],
+        "dominant": [
+          "English",
+          "Liberian Kreyol",
+          "Kpelle",
+          "Bassa",
+          "Grebo"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS"
+        ]
+      },
+      "Libya": {
+        "file": "libya.md",
+        "official": [
+          "Arabic"
+        ],
+        "dominant": [
+          "Libyan Arabic",
+          "Berber (Amazigh)"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "AMU",
+          "ARAB LEAGUE",
+          "COMESA"
+        ]
+      },
+      "Madagascar": {
+        "file": "madagascar.md",
+        "official": [
+          "Malagasy",
+          "French"
+        ],
+        "dominant": [
+          "Malagasy",
+          "French"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "SADC"
+        ]
+      },
+      "Malawi": {
+        "file": "malawi.md",
+        "official": [
+          "English",
+          "Chichewa (Chewa)"
+        ],
+        "dominant": [
+          "Chichewa",
+          "English",
+          "Tumbuka",
+          "Yao"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "SADC"
+        ]
+      },
+      "Mali": {
+        "file": "mali.md",
+        "official": [
+          "French (plus 13 national languages)"
+        ],
+        "dominant": [
+          "French",
+          "Bambara",
+          "Fulfulde",
+          "Songhay",
+          "Tamasheq"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS",
+          "WAEMU"
+        ]
+      },
+      "Mauritania": {
+        "file": "mauritania.md",
+        "official": [
+          "Arabic"
+        ],
+        "dominant": [
+          "Hassaniya Arabic",
+          "French (business)",
+          "Pulaar",
+          "Soninke",
+          "Wolof"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "AMU",
+          "ARAB LEAGUE"
+        ]
+      },
+      "Mauritius": {
+        "file": "mauritius.md",
+        "official": [
+          "English",
+          "French (de facto)"
+        ],
+        "dominant": [
+          "Mauritian Creole",
+          "French",
+          "English",
+          "Bhojpuri"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "SADC"
+        ]
+      },
+      "Morocco": {
+        "file": "morocco.md",
+        "official": [
+          "Arabic",
+          "Berber (Tamazight)"
+        ],
+        "dominant": [
+          "Moroccan Arabic (Darija)",
+          "Tamazight",
+          "French (business/administration)"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "AMU",
+          "COMESA"
+        ]
+      },
+      "Mozambique": {
+        "file": "mozambique.md",
+        "official": [
+          "Portuguese"
+        ],
+        "dominant": [
+          "Portuguese",
+          "Makhuwa",
+          "Tsonga",
+          "Sena",
+          "Lomwe"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "SADC"
+        ]
+      },
+      "Namibia": {
+        "file": "namibia.md",
+        "official": [
+          "English"
+        ],
+        "dominant": [
+          "English",
+          "Afrikaans",
+          "Oshiwambo",
+          "German",
+          "Herero",
+          "Nama"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "SACU",
+          "SADC"
+        ]
+      },
+      "Niger": {
+        "file": "niger.md",
+        "official": [
+          "French"
+        ],
+        "dominant": [
+          "French",
+          "Hausa",
+          "Zarma",
+          "Fulfulde",
+          "Tamasheq"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS",
+          "WAEMU"
+        ]
+      },
+      "Nigeria": {
+        "file": "nigeria.md",
+        "official": [
+          "English"
+        ],
+        "dominant": [
+          "English",
+          "Hausa",
+          "Yoruba",
+          "Igbo",
+          "Nigerian Pidgin"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS"
+        ]
+      },
+      "Congo (Republic)": {
+        "file": "republic-of-congo.md",
+        "official": [
+          "French"
+        ],
+        "dominant": [
+          "French",
+          "Kituba",
+          "Lingala"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "CEMAC"
+        ]
+      },
+      "Rwanda": {
+        "file": "rwanda.md",
+        "official": [
+          "Kinyarwanda",
+          "English",
+          "French",
+          "Swahili"
+        ],
+        "dominant": [
+          "Kinyarwanda",
+          "Swahili",
+          "English",
+          "French"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "EAC"
+        ]
+      },
+      "São Tomé and Príncipe": {
+        "file": "sao-tome-and-principe.md",
+        "official": [
+          "Portuguese"
+        ],
+        "dominant": [
+          "Portuguese",
+          "Forro (Creole)"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "CEN-SAD"
+        ]
+      },
+      "Senegal": {
+        "file": "senegal.md",
+        "official": [
+          "French"
+        ],
+        "dominant": [
+          "French",
+          "Wolof",
+          "Pulaar",
+          "Serer",
+          "Jola",
+          "Mandinka"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS",
+          "WAEMU"
+        ]
+      },
+      "Seychelles": {
+        "file": "seychelles.md",
+        "official": [
+          "Seychellois Creole",
+          "English",
+          "French"
+        ],
+        "dominant": [
+          "Seychellois Creole",
+          "English",
+          "French"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "SADC"
+        ]
+      },
+      "Sierra Leone": {
+        "file": "sierra-leone.md",
+        "official": [
+          "English"
+        ],
+        "dominant": [
+          "English",
+          "Krio",
+          "Mende",
+          "Temne"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS"
+        ]
+      },
+      "Somalia": {
+        "file": "somalia.md",
+        "official": [
+          "Somali",
+          "Arabic"
+        ],
+        "dominant": [
+          "Somali",
+          "Arabic",
+          "English (business)"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ARAB LEAGUE",
+          "COMESA",
+          "EAC",
+          "IGAD"
+        ]
+      },
+      "South Africa": {
+        "file": "south-africa.md",
+        "official": [
+          "11 official languages (English",
+          "Afrikaans",
+          "isiZulu",
+          "isiXhosa and others)"
+        ],
+        "dominant": [
+          "isiZulu",
+          "isiXhosa",
+          "Afrikaans",
+          "English (business/administration)"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "BRICS",
+          "SACU",
+          "SADC"
+        ]
+      },
+      "South Sudan": {
+        "file": "south-sudan.md",
+        "official": [
+          "English"
+        ],
+        "dominant": [
+          "English",
+          "Juba Arabic",
+          "Dinka",
+          "Nuer",
+          "Bari"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "EAC",
+          "IGAD"
+        ]
+      },
+      "Sudan": {
+        "file": "sudan.md",
+        "official": [
+          "Arabic",
+          "English"
+        ],
+        "dominant": [
+          "Sudanese Arabic",
+          "English",
+          "Nubian",
+          "Beja",
+          "Fur"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ARAB LEAGUE",
+          "COMESA"
+        ]
+      },
+      "Tanzania": {
+        "file": "tanzania.md",
+        "official": [
+          "Swahili",
+          "English"
+        ],
+        "dominant": [
+          "Swahili",
+          "English",
+          "Sukuma",
+          "Chaga",
+          "Haya"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "EAC",
+          "SADC"
+        ]
+      },
+      "Togo": {
+        "file": "togo.md",
+        "official": [
+          "French"
+        ],
+        "dominant": [
+          "French",
+          "Ewe",
+          "Kabiye"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "ECOWAS",
+          "WAEMU"
+        ]
+      },
+      "Tunisia": {
+        "file": "tunisia.md",
+        "official": [
+          "Arabic"
+        ],
+        "dominant": [
+          "Tunisian Arabic (Darija)",
+          "French (business/administration)",
+          "Tamazight"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "AMU",
+          "COMESA"
+        ]
+      },
+      "Uganda": {
+        "file": "uganda.md",
+        "official": [
+          "English",
+          "Swahili"
+        ],
+        "dominant": [
+          "English",
+          "Swahili",
+          "Luganda",
+          "Runyankole",
+          "Acholi"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "EAC"
+        ]
+      },
+      "Zambia": {
+        "file": "zambia.md",
+        "official": [
+          "English"
+        ],
+        "dominant": [
+          "English",
+          "Bemba",
+          "Nyanja",
+          "Tonga",
+          "Lozi"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "SADC"
+        ]
+      },
+      "Zimbabwe": {
+        "file": "zimbabwe.md",
+        "official": [
+          "16 official languages (English",
+          "Shona",
+          "Ndebele and others)"
+        ],
+        "dominant": [
+          "English",
+          "Shona",
+          "Ndebele"
+        ],
+        "blocs": [
+          "AFRICAN UNION",
+          "COMESA",
+          "SADC"
+        ]
+      }
+    },
+    "no_french_in_francophone_bloc": [
+      {
+        "file": "guinea-bissau.md",
+        "country": "Guinea-Bissau",
+        "blocs": [
+          "WAEMU"
+        ],
+        "official": [
+          "Portuguese"
+        ],
+        "dominant": [
+          "Portuguese",
+          "Guinea-Bissau Creole (Kriol)",
+          "Fula",
+          "Balanta"
+        ]
+      }
+    ],
+    "english_in_francophone_bloc": [
+      {
+        "file": "cameroon.md",
+        "country": "Cameroon",
+        "blocs": [
+          "CEMAC"
+        ],
+        "official": [
+          "English",
+          "French"
+        ],
+        "dominant": [
+          "French",
+          "English",
+          "Cameroonian Pidgin",
+          "Fulfulde",
+          "Ewondo",
+          "Duala"
+        ]
+      }
+    ]
+  },
+  "i_updated_dates": {
+    "distinct_counts": {
+      "2026-07-31": 54
+    },
+    "modal_date": "2026-07-31",
+    "differing_files": {}
+  },
+  "j_placeholders_by_section": {
+    "2": {
+      "count": 34,
+      "items": [
+        {
+          "file": "botswana.md",
+          "country": "Botswana",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Communications (verify current authority)"
+        },
+        {
+          "file": "burundi.md",
+          "country": "Burundi",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "ARCT (telecom regulator, verify data mandate)"
+        },
+        {
+          "file": "central-african-republic.md",
+          "country": "Central African Republic",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "chad.md",
+          "country": "Chad",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "comoros.md",
+          "country": "Comoros",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "democratic-republic-of-congo.md",
+          "country": "DRC",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "djibouti.md",
+          "country": "Djibouti",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "egypt.md",
+          "country": "Egypt",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Data Protection Authority (Law 151/2020; verify operational status)"
+        },
+        {
+          "file": "equatorial-guinea.md",
+          "country": "Equatorial Guinea",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "eritrea.md",
+          "country": "Eritrea",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "eswatini.md",
+          "country": "Eswatini",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "ethiopia.md",
+          "country": "Ethiopia",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "INSA (Information Network Security Administration; verify data mandate)"
+        },
+        {
+          "file": "gambia.md",
+          "country": "Gambia",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "guinea.md",
+          "country": "Guinea",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "guinea-bissau.md",
+          "country": "Guinea-Bissau",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "lesotho.md",
+          "country": "Lesotho",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "liberia.md",
+          "country": "Liberia",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "libya.md",
+          "country": "Libya",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "madagascar.md",
+          "country": "Madagascar",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "CNPD (verify current status)"
+        },
+        {
+          "file": "malawi.md",
+          "country": "Malawi",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "mauritania.md",
+          "country": "Mauritania",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "mozambique.md",
+          "country": "Mozambique",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "namibia.md",
+          "country": "Namibia",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Information (verify data mandate)"
+        },
+        {
+          "file": "republic-of-congo.md",
+          "country": "Congo (Republic)",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "sao-tome-and-principe.md",
+          "country": "São Tomé and Príncipe",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "seychelles.md",
+          "country": "Seychelles",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "sierra-leone.md",
+          "country": "Sierra Leone",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "somalia.md",
+          "country": "Somalia",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "south-sudan.md",
+          "country": "South Sudan",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "tanzania.md",
+          "country": "Tanzania",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Personal Data Protection Commission (PDPC; verify operational status)"
+        },
+        {
+          "file": "togo.md",
+          "country": "Togo",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority"
+        },
+        {
+          "file": "zambia.md",
+          "country": "Zambia",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "ZICTA (registrar under data protection law; verify)"
+        },
+        {
+          "file": "zimbabwe.md",
+          "country": "Zimbabwe",
+          "field": "data_protection",
+          "line": 21,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Data Protection Authority (verify current status)"
+        }
+      ]
+    },
+    "3": {
+      "count": 16,
+      "items": [
+        {
+          "file": "central-african-republic.md",
+          "country": "Central African Republic",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Energy (regulator status to verify"
+        },
+        {
+          "file": "chad.md",
+          "country": "Chad",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Petroleum and Energy (regulator status to verify"
+        },
+        {
+          "file": "comoros.md",
+          "country": "Comoros",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Energy (verify current regulator"
+        },
+        {
+          "file": "djibouti.md",
+          "country": "Djibouti",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Energy (verify current regulator"
+        },
+        {
+          "file": "equatorial-guinea.md",
+          "country": "Equatorial Guinea",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Mines and Energy (verify current regulator"
+        },
+        {
+          "file": "eritrea.md",
+          "country": "Eritrea",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Energy and Mines (verify current regulator"
+        },
+        {
+          "file": "gabon.md",
+          "country": "Gabon",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Energy (verify current regulator"
+        },
+        {
+          "file": "guinea.md",
+          "country": "Guinea",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Energy (verify current regulator"
+        },
+        {
+          "file": "guinea-bissau.md",
+          "country": "Guinea-Bissau",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Energy (verify current regulator"
+        },
+        {
+          "file": "libya.md",
+          "country": "Libya",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Energy (verify current regulator"
+        },
+        {
+          "file": "niger.md",
+          "country": "Niger",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "ARSE (Autorité de Régulation du Secteur de l'Énergie; verify"
+        },
+        {
+          "file": "republic-of-congo.md",
+          "country": "Congo (Republic)",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Energy (regulator status to verify"
+        },
+        {
+          "file": "somalia.md",
+          "country": "Somalia",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Energy (verify current regulator"
+        },
+        {
+          "file": "south-sudan.md",
+          "country": "South Sudan",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Energy and Dams (verify current regulator"
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Energy and Petroleum (verify current regulator"
+        },
+        {
+          "file": "togo.md",
+          "country": "Togo",
+          "field": "energy_regulator",
+          "line": 25,
+          "tokens": [
+            "verify"
+          ],
+          "value": "ARSE (Autorité de Réglementation du Secteur de l'Électricité; verify"
+        }
+      ]
+    },
+    "4": {
+      "count": 38,
+      "items": [
+        {
+          "file": "botswana.md",
+          "country": "Botswana",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Communications (verify current authority) licensing for payments and lending; AML/CFT compliance; data protection registration (14%); consumer protection."
+        },
+        {
+          "file": "burundi.md",
+          "country": "Burundi",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "ARCT (telecom regulator, verify data mandate) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection."
+        },
+        {
+          "file": "central-african-republic.md",
+          "country": "Central African Republic",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (19%); consumer protection."
+        },
+        {
+          "file": "chad.md",
+          "country": "Chad",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection."
+        },
+        {
+          "file": "comoros.md",
+          "country": "Comoros",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (None (verify sales-tax regime)); consumer protection."
+        },
+        {
+          "file": "democratic-republic-of-congo.md",
+          "country": "DRC",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (16%); consumer protection."
+        },
+        {
+          "file": "djibouti.md",
+          "country": "Djibouti",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (10%); consumer protection."
+        },
+        {
+          "file": "egypt.md",
+          "country": "Egypt",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Data Protection Authority (Law 151/2020; verify operational status) licensing for payments and lending; AML/CFT compliance; data protection registration (14%); consumer protection."
+        },
+        {
+          "file": "equatorial-guinea.md",
+          "country": "Equatorial Guinea",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (15%); consumer protection."
+        },
+        {
+          "file": "eritrea.md",
+          "country": "Eritrea",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (None (sales tax regime)); consumer protection."
+        },
+        {
+          "file": "eswatini.md",
+          "country": "Eswatini",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (15%); consumer protection."
+        },
+        {
+          "file": "ethiopia.md",
+          "country": "Ethiopia",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "INSA (Information Network Security Administration; verify data mandate) licensing for payments and lending; AML/CFT compliance; data protection registration (15%); consumer protection."
+        },
+        {
+          "file": "gambia.md",
+          "country": "Gambia",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (15%); consumer protection."
+        },
+        {
+          "file": "guinea.md",
+          "country": "Guinea",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection."
+        },
+        {
+          "file": "guinea-bissau.md",
+          "country": "Guinea-Bissau",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (15%); consumer protection."
+        },
+        {
+          "file": "lesotho.md",
+          "country": "Lesotho",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (15%); consumer protection."
+        },
+        {
+          "file": "liberia.md",
+          "country": "Liberia",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (10%); consumer protection."
+        },
+        {
+          "file": "libya.md",
+          "country": "Libya",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (None (no VAT framework)); consumer protection."
+        },
+        {
+          "file": "madagascar.md",
+          "country": "Madagascar",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "CNPD (verify current status) licensing for payments and lending; AML/CFT compliance; data protection registration (20%); consumer protection."
+        },
+        {
+          "file": "malawi.md",
+          "country": "Malawi",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (16.5%); consumer protection."
+        },
+        {
+          "file": "mauritania.md",
+          "country": "Mauritania",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (16%); consumer protection."
+        },
+        {
+          "file": "mozambique.md",
+          "country": "Mozambique",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (16%); consumer protection."
+        },
+        {
+          "file": "namibia.md",
+          "country": "Namibia",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Ministry of Information (verify data mandate) licensing for payments and lending; AML/CFT compliance; data protection registration (15%); consumer protection."
+        },
+        {
+          "file": "republic-of-congo.md",
+          "country": "Congo (Republic)",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection."
+        },
+        {
+          "file": "sao-tome-and-principe.md",
+          "country": "São Tomé and Príncipe",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (15%); consumer protection."
+        },
+        {
+          "file": "seychelles.md",
+          "country": "Seychelles",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (15%); consumer protection."
+        },
+        {
+          "file": "sierra-leone.md",
+          "country": "Sierra Leone",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (15%); consumer protection."
+        },
+        {
+          "file": "somalia.md",
+          "country": "Somalia",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (None at federal level (verify)); consumer protection."
+        },
+        {
+          "file": "somalia.md",
+          "country": "Somalia",
+          "field": "sector:energy & manufacturing",
+          "line": 38,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Energy regulator: None at federal level (municipal levies; verify); environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available."
+        },
+        {
+          "file": "south-sudan.md",
+          "country": "South Sudan",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (18% (verify)); consumer protection."
+        },
+        {
+          "file": "south-sudan.md",
+          "country": "South Sudan",
+          "field": "sector:energy & manufacturing",
+          "line": 38,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Energy regulator: 25% (30% petroleum; verify); environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available."
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (17% (verify)); consumer protection."
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "field": "sector:energy & manufacturing",
+          "line": 38,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Energy regulator: 35% (verify recent reforms); environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available."
+        },
+        {
+          "file": "tanzania.md",
+          "country": "Tanzania",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Personal Data Protection Commission (PDPC; verify operational status) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection."
+        },
+        {
+          "file": "togo.md",
+          "country": "Togo",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify national authority licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection."
+        },
+        {
+          "file": "zambia.md",
+          "country": "Zambia",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "ZICTA (registrar under data protection law; verify) licensing for payments and lending; AML/CFT compliance; data protection registration (16%); consumer protection."
+        },
+        {
+          "file": "zimbabwe.md",
+          "country": "Zimbabwe",
+          "field": "sector:fintech",
+          "line": 33,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Data Protection Authority (verify current status) licensing for payments and lending; AML/CFT compliance; data protection registration (14.5%); consumer protection."
+        },
+        {
+          "file": "zimbabwe.md",
+          "country": "Zimbabwe",
+          "field": "sector:energy & manufacturing",
+          "line": 38,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Energy regulator: 24% (verify); environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available."
+        }
+      ]
+    },
+    "5": {
+      "count": 28,
+      "items": [
+        {
+          "file": "burkina-faso.md",
+          "country": "Burkina Faso",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "APEE (verify current agency)"
+        },
+        {
+          "file": "burundi.md",
+          "country": "Burundi",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Investments Promotion Agency (verify current name)"
+        },
+        {
+          "file": "central-african-republic.md",
+          "country": "Central African Republic",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify current agency"
+        },
+        {
+          "file": "chad.md",
+          "country": "Chad",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify current agency"
+        },
+        {
+          "file": "comoros.md",
+          "country": "Comoros",
+          "field": "vat",
+          "line": 45,
+          "tokens": [
+            "verify"
+          ],
+          "value": "None (verify sales-tax regime)"
+        },
+        {
+          "file": "comoros.md",
+          "country": "Comoros",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify current agency"
+        },
+        {
+          "file": "djibouti.md",
+          "country": "Djibouti",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Djibouti Investment Promotion Agency (verify)"
+        },
+        {
+          "file": "equatorial-guinea.md",
+          "country": "Equatorial Guinea",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify current agency"
+        },
+        {
+          "file": "eritrea.md",
+          "country": "Eritrea",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify current agency"
+        },
+        {
+          "file": "gabon.md",
+          "country": "Gabon",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify current agency"
+        },
+        {
+          "file": "guinea-bissau.md",
+          "country": "Guinea-Bissau",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify current agency"
+        },
+        {
+          "file": "libya.md",
+          "country": "Libya",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Libyan Investment Authority / Verify current agency"
+        },
+        {
+          "file": "mali.md",
+          "country": "Mali",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "API-Mali (verify current agency)"
+        },
+        {
+          "file": "mauritania.md",
+          "country": "Mauritania",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify current agency"
+        },
+        {
+          "file": "niger.md",
+          "country": "Niger",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify current agency"
+        },
+        {
+          "file": "republic-of-congo.md",
+          "country": "Congo (Republic)",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify current agency"
+        },
+        {
+          "file": "sao-tome-and-principe.md",
+          "country": "São Tomé and Príncipe",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify current agency"
+        },
+        {
+          "file": "somalia.md",
+          "country": "Somalia",
+          "field": "cit",
+          "line": 44,
+          "tokens": [
+            "verify"
+          ],
+          "value": "None at federal level (municipal levies; verify)"
+        },
+        {
+          "file": "somalia.md",
+          "country": "Somalia",
+          "field": "vat",
+          "line": 45,
+          "tokens": [
+            "verify"
+          ],
+          "value": "None at federal level (verify)"
+        },
+        {
+          "file": "somalia.md",
+          "country": "Somalia",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Somali Investment Promotion Office (verify)"
+        },
+        {
+          "file": "south-sudan.md",
+          "country": "South Sudan",
+          "field": "cit",
+          "line": 44,
+          "tokens": [
+            "verify"
+          ],
+          "value": "25% (30% petroleum; verify)"
+        },
+        {
+          "file": "south-sudan.md",
+          "country": "South Sudan",
+          "field": "vat",
+          "line": 45,
+          "tokens": [
+            "verify"
+          ],
+          "value": "18% (verify)"
+        },
+        {
+          "file": "south-sudan.md",
+          "country": "South Sudan",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "South Sudan Investment Promotion Agency (verify)"
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "field": "cit",
+          "line": 44,
+          "tokens": [
+            "verify"
+          ],
+          "value": "35% (verify recent reforms)"
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "field": "vat",
+          "line": 45,
+          "tokens": [
+            "verify"
+          ],
+          "value": "17% (verify)"
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify current agency"
+        },
+        {
+          "file": "togo.md",
+          "country": "Togo",
+          "field": "investment_agency",
+          "line": 47,
+          "tokens": [
+            "verify"
+          ],
+          "value": "Verify current agency"
+        },
+        {
+          "file": "zimbabwe.md",
+          "country": "Zimbabwe",
+          "field": "cit",
+          "line": 44,
+          "tokens": [
+            "verify"
+          ],
+          "value": "24% (verify)"
+        }
+      ]
+    }
+  },
+  "k_systemic_defects": {
+    "dpa_as_payments_licensor": {
+      "count": 54,
+      "out_of": 54,
+      "items": [
+        {
+          "file": "algeria.md",
+          "country": "Algeria",
+          "line": 33
+        },
+        {
+          "file": "angola.md",
+          "country": "Angola",
+          "line": 33
+        },
+        {
+          "file": "benin.md",
+          "country": "Benin",
+          "line": 33
+        },
+        {
+          "file": "botswana.md",
+          "country": "Botswana",
+          "line": 33
+        },
+        {
+          "file": "burkina-faso.md",
+          "country": "Burkina Faso",
+          "line": 33
+        },
+        {
+          "file": "burundi.md",
+          "country": "Burundi",
+          "line": 33
+        },
+        {
+          "file": "cabo-verde.md",
+          "country": "Cabo Verde",
+          "line": 33
+        },
+        {
+          "file": "cameroon.md",
+          "country": "Cameroon",
+          "line": 33
+        },
+        {
+          "file": "central-african-republic.md",
+          "country": "Central African Republic",
+          "line": 33
+        },
+        {
+          "file": "chad.md",
+          "country": "Chad",
+          "line": 33
+        },
+        {
+          "file": "comoros.md",
+          "country": "Comoros",
+          "line": 33
+        },
+        {
+          "file": "cote-divoire.md",
+          "country": "Côte d'Ivoire",
+          "line": 33
+        },
+        {
+          "file": "democratic-republic-of-congo.md",
+          "country": "DRC",
+          "line": 33
+        },
+        {
+          "file": "djibouti.md",
+          "country": "Djibouti",
+          "line": 33
+        },
+        {
+          "file": "egypt.md",
+          "country": "Egypt",
+          "line": 33
+        },
+        {
+          "file": "equatorial-guinea.md",
+          "country": "Equatorial Guinea",
+          "line": 33
+        },
+        {
+          "file": "eritrea.md",
+          "country": "Eritrea",
+          "line": 33
+        },
+        {
+          "file": "eswatini.md",
+          "country": "Eswatini",
+          "line": 33
+        },
+        {
+          "file": "ethiopia.md",
+          "country": "Ethiopia",
+          "line": 33
+        },
+        {
+          "file": "gabon.md",
+          "country": "Gabon",
+          "line": 33
+        },
+        {
+          "file": "gambia.md",
+          "country": "Gambia",
+          "line": 33
+        },
+        {
+          "file": "ghana.md",
+          "country": "Ghana",
+          "line": 33
+        },
+        {
+          "file": "guinea.md",
+          "country": "Guinea",
+          "line": 33
+        },
+        {
+          "file": "guinea-bissau.md",
+          "country": "Guinea-Bissau",
+          "line": 33
+        },
+        {
+          "file": "kenya.md",
+          "country": "Kenya",
+          "line": 33
+        },
+        {
+          "file": "lesotho.md",
+          "country": "Lesotho",
+          "line": 33
+        },
+        {
+          "file": "liberia.md",
+          "country": "Liberia",
+          "line": 33
+        },
+        {
+          "file": "libya.md",
+          "country": "Libya",
+          "line": 33
+        },
+        {
+          "file": "madagascar.md",
+          "country": "Madagascar",
+          "line": 33
+        },
+        {
+          "file": "malawi.md",
+          "country": "Malawi",
+          "line": 33
+        },
+        {
+          "file": "mali.md",
+          "country": "Mali",
+          "line": 33
+        },
+        {
+          "file": "mauritania.md",
+          "country": "Mauritania",
+          "line": 33
+        },
+        {
+          "file": "mauritius.md",
+          "country": "Mauritius",
+          "line": 33
+        },
+        {
+          "file": "morocco.md",
+          "country": "Morocco",
+          "line": 33
+        },
+        {
+          "file": "mozambique.md",
+          "country": "Mozambique",
+          "line": 33
+        },
+        {
+          "file": "namibia.md",
+          "country": "Namibia",
+          "line": 33
+        },
+        {
+          "file": "niger.md",
+          "country": "Niger",
+          "line": 33
+        },
+        {
+          "file": "nigeria.md",
+          "country": "Nigeria",
+          "line": 33
+        },
+        {
+          "file": "republic-of-congo.md",
+          "country": "Congo (Republic)",
+          "line": 33
+        },
+        {
+          "file": "rwanda.md",
+          "country": "Rwanda",
+          "line": 33
+        },
+        {
+          "file": "sao-tome-and-principe.md",
+          "country": "São Tomé and Príncipe",
+          "line": 33
+        },
+        {
+          "file": "senegal.md",
+          "country": "Senegal",
+          "line": 33
+        },
+        {
+          "file": "seychelles.md",
+          "country": "Seychelles",
+          "line": 33
+        },
+        {
+          "file": "sierra-leone.md",
+          "country": "Sierra Leone",
+          "line": 33
+        },
+        {
+          "file": "somalia.md",
+          "country": "Somalia",
+          "line": 33
+        },
+        {
+          "file": "south-africa.md",
+          "country": "South Africa",
+          "line": 33
+        },
+        {
+          "file": "south-sudan.md",
+          "country": "South Sudan",
+          "line": 33
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "line": 33
+        },
+        {
+          "file": "tanzania.md",
+          "country": "Tanzania",
+          "line": 33
+        },
+        {
+          "file": "togo.md",
+          "country": "Togo",
+          "line": 33
+        },
+        {
+          "file": "tunisia.md",
+          "country": "Tunisia",
+          "line": 33
+        },
+        {
+          "file": "uganda.md",
+          "country": "Uganda",
+          "line": 33
+        },
+        {
+          "file": "zambia.md",
+          "country": "Zambia",
+          "line": 33
+        },
+        {
+          "file": "zimbabwe.md",
+          "country": "Zimbabwe",
+          "line": 33
+        }
+      ]
+    },
+    "vat_in_fee_slot": {
+      "count": 54,
+      "out_of": 54,
+      "items": [
+        {
+          "file": "algeria.md",
+          "country": "Algeria",
+          "line": 33,
+          "vat": "19%"
+        },
+        {
+          "file": "angola.md",
+          "country": "Angola",
+          "line": 33,
+          "vat": "14%"
+        },
+        {
+          "file": "benin.md",
+          "country": "Benin",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "botswana.md",
+          "country": "Botswana",
+          "line": 33,
+          "vat": "14%"
+        },
+        {
+          "file": "burkina-faso.md",
+          "country": "Burkina Faso",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "burundi.md",
+          "country": "Burundi",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "cabo-verde.md",
+          "country": "Cabo Verde",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "cameroon.md",
+          "country": "Cameroon",
+          "line": 33,
+          "vat": "19.25%"
+        },
+        {
+          "file": "central-african-republic.md",
+          "country": "Central African Republic",
+          "line": 33,
+          "vat": "19%"
+        },
+        {
+          "file": "chad.md",
+          "country": "Chad",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "comoros.md",
+          "country": "Comoros",
+          "line": 33,
+          "vat": "None (verify sales-tax regime)"
+        },
+        {
+          "file": "cote-divoire.md",
+          "country": "Côte d'Ivoire",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "democratic-republic-of-congo.md",
+          "country": "DRC",
+          "line": 33,
+          "vat": "16%"
+        },
+        {
+          "file": "djibouti.md",
+          "country": "Djibouti",
+          "line": 33,
+          "vat": "10%"
+        },
+        {
+          "file": "egypt.md",
+          "country": "Egypt",
+          "line": 33,
+          "vat": "14%"
+        },
+        {
+          "file": "equatorial-guinea.md",
+          "country": "Equatorial Guinea",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "eritrea.md",
+          "country": "Eritrea",
+          "line": 33,
+          "vat": "None (sales tax regime)"
+        },
+        {
+          "file": "eswatini.md",
+          "country": "Eswatini",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "ethiopia.md",
+          "country": "Ethiopia",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "gabon.md",
+          "country": "Gabon",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "gambia.md",
+          "country": "Gambia",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "ghana.md",
+          "country": "Ghana",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "guinea.md",
+          "country": "Guinea",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "guinea-bissau.md",
+          "country": "Guinea-Bissau",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "kenya.md",
+          "country": "Kenya",
+          "line": 33,
+          "vat": "16%"
+        },
+        {
+          "file": "lesotho.md",
+          "country": "Lesotho",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "liberia.md",
+          "country": "Liberia",
+          "line": 33,
+          "vat": "10%"
+        },
+        {
+          "file": "libya.md",
+          "country": "Libya",
+          "line": 33,
+          "vat": "None (no VAT framework)"
+        },
+        {
+          "file": "madagascar.md",
+          "country": "Madagascar",
+          "line": 33,
+          "vat": "20%"
+        },
+        {
+          "file": "malawi.md",
+          "country": "Malawi",
+          "line": 33,
+          "vat": "16.5%"
+        },
+        {
+          "file": "mali.md",
+          "country": "Mali",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "mauritania.md",
+          "country": "Mauritania",
+          "line": 33,
+          "vat": "16%"
+        },
+        {
+          "file": "mauritius.md",
+          "country": "Mauritius",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "morocco.md",
+          "country": "Morocco",
+          "line": 33,
+          "vat": "20%"
+        },
+        {
+          "file": "mozambique.md",
+          "country": "Mozambique",
+          "line": 33,
+          "vat": "16%"
+        },
+        {
+          "file": "namibia.md",
+          "country": "Namibia",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "niger.md",
+          "country": "Niger",
+          "line": 33,
+          "vat": "19%"
+        },
+        {
+          "file": "nigeria.md",
+          "country": "Nigeria",
+          "line": 33,
+          "vat": "7.5%"
+        },
+        {
+          "file": "republic-of-congo.md",
+          "country": "Congo (Republic)",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "rwanda.md",
+          "country": "Rwanda",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "sao-tome-and-principe.md",
+          "country": "São Tomé and Príncipe",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "senegal.md",
+          "country": "Senegal",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "seychelles.md",
+          "country": "Seychelles",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "sierra-leone.md",
+          "country": "Sierra Leone",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "somalia.md",
+          "country": "Somalia",
+          "line": 33,
+          "vat": "None at federal level (verify)"
+        },
+        {
+          "file": "south-africa.md",
+          "country": "South Africa",
+          "line": 33,
+          "vat": "15%"
+        },
+        {
+          "file": "south-sudan.md",
+          "country": "South Sudan",
+          "line": 33,
+          "vat": "18% (verify)"
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "line": 33,
+          "vat": "17% (verify)"
+        },
+        {
+          "file": "tanzania.md",
+          "country": "Tanzania",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "togo.md",
+          "country": "Togo",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "tunisia.md",
+          "country": "Tunisia",
+          "line": 33,
+          "vat": "19%"
+        },
+        {
+          "file": "uganda.md",
+          "country": "Uganda",
+          "line": 33,
+          "vat": "18%"
+        },
+        {
+          "file": "zambia.md",
+          "country": "Zambia",
+          "line": 33,
+          "vat": "16%"
+        },
+        {
+          "file": "zimbabwe.md",
+          "country": "Zimbabwe",
+          "line": 33,
+          "vat": "14.5%"
+        }
+      ]
+    },
+    "cit_in_energy_regulator_slot": {
+      "count": 54,
+      "out_of": 54,
+      "items": [
+        {
+          "file": "algeria.md",
+          "country": "Algeria",
+          "line": 38,
+          "cit": "26% (19% for production activities)"
+        },
+        {
+          "file": "angola.md",
+          "country": "Angola",
+          "line": 38,
+          "cit": "25%"
+        },
+        {
+          "file": "benin.md",
+          "country": "Benin",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "botswana.md",
+          "country": "Botswana",
+          "line": 38,
+          "cit": "22%"
+        },
+        {
+          "file": "burkina-faso.md",
+          "country": "Burkina Faso",
+          "line": 38,
+          "cit": "27.5%"
+        },
+        {
+          "file": "burundi.md",
+          "country": "Burundi",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "cabo-verde.md",
+          "country": "Cabo Verde",
+          "line": 38,
+          "cit": "25%"
+        },
+        {
+          "file": "cameroon.md",
+          "country": "Cameroon",
+          "line": 38,
+          "cit": "30% (33% for some sectors)"
+        },
+        {
+          "file": "central-african-republic.md",
+          "country": "Central African Republic",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "chad.md",
+          "country": "Chad",
+          "line": 38,
+          "cit": "35%"
+        },
+        {
+          "file": "comoros.md",
+          "country": "Comoros",
+          "line": 38,
+          "cit": "50%"
+        },
+        {
+          "file": "cote-divoire.md",
+          "country": "Côte d'Ivoire",
+          "line": 38,
+          "cit": "25%"
+        },
+        {
+          "file": "democratic-republic-of-congo.md",
+          "country": "DRC",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "djibouti.md",
+          "country": "Djibouti",
+          "line": 38,
+          "cit": "25%"
+        },
+        {
+          "file": "egypt.md",
+          "country": "Egypt",
+          "line": 38,
+          "cit": "22.5%"
+        },
+        {
+          "file": "equatorial-guinea.md",
+          "country": "Equatorial Guinea",
+          "line": 38,
+          "cit": "35%"
+        },
+        {
+          "file": "eritrea.md",
+          "country": "Eritrea",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "eswatini.md",
+          "country": "Eswatini",
+          "line": 38,
+          "cit": "27.5%"
+        },
+        {
+          "file": "ethiopia.md",
+          "country": "Ethiopia",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "gabon.md",
+          "country": "Gabon",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "gambia.md",
+          "country": "Gambia",
+          "line": 38,
+          "cit": "27%"
+        },
+        {
+          "file": "ghana.md",
+          "country": "Ghana",
+          "line": 38,
+          "cit": "25%"
+        },
+        {
+          "file": "guinea.md",
+          "country": "Guinea",
+          "line": 38,
+          "cit": "35%"
+        },
+        {
+          "file": "guinea-bissau.md",
+          "country": "Guinea-Bissau",
+          "line": 38,
+          "cit": "25%"
+        },
+        {
+          "file": "kenya.md",
+          "country": "Kenya",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "lesotho.md",
+          "country": "Lesotho",
+          "line": 38,
+          "cit": "25%"
+        },
+        {
+          "file": "liberia.md",
+          "country": "Liberia",
+          "line": 38,
+          "cit": "25%"
+        },
+        {
+          "file": "libya.md",
+          "country": "Libya",
+          "line": 38,
+          "cit": "20%"
+        },
+        {
+          "file": "madagascar.md",
+          "country": "Madagascar",
+          "line": 38,
+          "cit": "20%"
+        },
+        {
+          "file": "malawi.md",
+          "country": "Malawi",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "mali.md",
+          "country": "Mali",
+          "line": 38,
+          "cit": "30% (35% for certain sectors)"
+        },
+        {
+          "file": "mauritania.md",
+          "country": "Mauritania",
+          "line": 38,
+          "cit": "25%"
+        },
+        {
+          "file": "mauritius.md",
+          "country": "Mauritius",
+          "line": 38,
+          "cit": "15%"
+        },
+        {
+          "file": "morocco.md",
+          "country": "Morocco",
+          "line": 38,
+          "cit": "20–31% by bracket"
+        },
+        {
+          "file": "mozambique.md",
+          "country": "Mozambique",
+          "line": 38,
+          "cit": "32%"
+        },
+        {
+          "file": "namibia.md",
+          "country": "Namibia",
+          "line": 38,
+          "cit": "31–32%"
+        },
+        {
+          "file": "niger.md",
+          "country": "Niger",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "nigeria.md",
+          "country": "Nigeria",
+          "line": 38,
+          "cit": "30% (25% for qualifying SMEs)"
+        },
+        {
+          "file": "republic-of-congo.md",
+          "country": "Congo (Republic)",
+          "line": 38,
+          "cit": "28%"
+        },
+        {
+          "file": "rwanda.md",
+          "country": "Rwanda",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "sao-tome-and-principe.md",
+          "country": "São Tomé and Príncipe",
+          "line": 38,
+          "cit": "25%"
+        },
+        {
+          "file": "senegal.md",
+          "country": "Senegal",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "seychelles.md",
+          "country": "Seychelles",
+          "line": 38,
+          "cit": "25%"
+        },
+        {
+          "file": "sierra-leone.md",
+          "country": "Sierra Leone",
+          "line": 38,
+          "cit": "30% (25% for certain sectors)"
+        },
+        {
+          "file": "somalia.md",
+          "country": "Somalia",
+          "line": 38,
+          "cit": "None at federal level (municipal levies; verify)"
+        },
+        {
+          "file": "south-africa.md",
+          "country": "South Africa",
+          "line": 38,
+          "cit": "27%"
+        },
+        {
+          "file": "south-sudan.md",
+          "country": "South Sudan",
+          "line": 38,
+          "cit": "25% (30% petroleum; verify)"
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "line": 38,
+          "cit": "35% (verify recent reforms)"
+        },
+        {
+          "file": "tanzania.md",
+          "country": "Tanzania",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "togo.md",
+          "country": "Togo",
+          "line": 38,
+          "cit": "27%"
+        },
+        {
+          "file": "tunisia.md",
+          "country": "Tunisia",
+          "line": 38,
+          "cit": "15–35% by activity (25% standard)"
+        },
+        {
+          "file": "uganda.md",
+          "country": "Uganda",
+          "line": 38,
+          "cit": "30%"
+        },
+        {
+          "file": "zambia.md",
+          "country": "Zambia",
+          "line": 38,
+          "cit": "30% (35% mining)"
+        },
+        {
+          "file": "zimbabwe.md",
+          "country": "Zimbabwe",
+          "line": 38,
+          "cit": "24% (verify)"
+        }
+      ]
+    },
+    "waemu_ecowas_eac_text_in_non_waemu": {
+      "count": 46,
+      "out_of": 54,
+      "items": [
+        {
+          "file": "algeria.md",
+          "country": "Algeria",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ARAB MAGHREB UNION",
+            "COMESA"
+          ]
+        },
+        {
+          "file": "angola.md",
+          "country": "Angola",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "SADC"
+          ]
+        },
+        {
+          "file": "botswana.md",
+          "country": "Botswana",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "SACU",
+            "SADC"
+          ]
+        },
+        {
+          "file": "burundi.md",
+          "country": "Burundi",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "EAC"
+          ]
+        },
+        {
+          "file": "cabo-verde.md",
+          "country": "Cabo Verde",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ECOWAS"
+          ]
+        },
+        {
+          "file": "cameroon.md",
+          "country": "Cameroon",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "CEMAC",
+            "ECOWAS"
+          ]
+        },
+        {
+          "file": "central-african-republic.md",
+          "country": "Central African Republic",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "CEMAC"
+          ]
+        },
+        {
+          "file": "chad.md",
+          "country": "Chad",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "CEMAC"
+          ]
+        },
+        {
+          "file": "comoros.md",
+          "country": "Comoros",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ARAB LEAGUE",
+            "COMESA",
+            "SADC"
+          ]
+        },
+        {
+          "file": "democratic-republic-of-congo.md",
+          "country": "DRC",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "EAC",
+            "SADC"
+          ]
+        },
+        {
+          "file": "djibouti.md",
+          "country": "Djibouti",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ARAB LEAGUE",
+            "COMESA",
+            "IGAD"
+          ]
+        },
+        {
+          "file": "egypt.md",
+          "country": "Egypt",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ARAB LEAGUE",
+            "COMESA"
+          ]
+        },
+        {
+          "file": "equatorial-guinea.md",
+          "country": "Equatorial Guinea",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "CEMAC"
+          ]
+        },
+        {
+          "file": "eritrea.md",
+          "country": "Eritrea",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "IGAD"
+          ]
+        },
+        {
+          "file": "eswatini.md",
+          "country": "Eswatini",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SACU",
+            "SADC"
+          ]
+        },
+        {
+          "file": "ethiopia.md",
+          "country": "Ethiopia",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "IGAD"
+          ]
+        },
+        {
+          "file": "gabon.md",
+          "country": "Gabon",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "CEMAC"
+          ]
+        },
+        {
+          "file": "gambia.md",
+          "country": "Gambia",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ECOWAS"
+          ]
+        },
+        {
+          "file": "ghana.md",
+          "country": "Ghana",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ECOWAS"
+          ]
+        },
+        {
+          "file": "guinea.md",
+          "country": "Guinea",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ECOWAS"
+          ]
+        },
+        {
+          "file": "kenya.md",
+          "country": "Kenya",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "EAC"
+          ]
+        },
+        {
+          "file": "lesotho.md",
+          "country": "Lesotho",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "SACU",
+            "SADC"
+          ]
+        },
+        {
+          "file": "liberia.md",
+          "country": "Liberia",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ECOWAS"
+          ]
+        },
+        {
+          "file": "libya.md",
+          "country": "Libya",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "AMU",
+            "ARAB LEAGUE",
+            "COMESA"
+          ]
+        },
+        {
+          "file": "madagascar.md",
+          "country": "Madagascar",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SADC"
+          ]
+        },
+        {
+          "file": "malawi.md",
+          "country": "Malawi",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SADC"
+          ]
+        },
+        {
+          "file": "mauritania.md",
+          "country": "Mauritania",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "AMU",
+            "ARAB LEAGUE"
+          ]
+        },
+        {
+          "file": "mauritius.md",
+          "country": "Mauritius",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SADC"
+          ]
+        },
+        {
+          "file": "morocco.md",
+          "country": "Morocco",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "AMU",
+            "COMESA"
+          ]
+        },
+        {
+          "file": "mozambique.md",
+          "country": "Mozambique",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "SADC"
+          ]
+        },
+        {
+          "file": "namibia.md",
+          "country": "Namibia",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "SACU",
+            "SADC"
+          ]
+        },
+        {
+          "file": "nigeria.md",
+          "country": "Nigeria",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ECOWAS"
+          ]
+        },
+        {
+          "file": "republic-of-congo.md",
+          "country": "Congo (Republic)",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "CEMAC"
+          ]
+        },
+        {
+          "file": "rwanda.md",
+          "country": "Rwanda",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "EAC"
+          ]
+        },
+        {
+          "file": "sao-tome-and-principe.md",
+          "country": "São Tomé and Príncipe",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "CEN-SAD"
+          ]
+        },
+        {
+          "file": "seychelles.md",
+          "country": "Seychelles",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SADC"
+          ]
+        },
+        {
+          "file": "sierra-leone.md",
+          "country": "Sierra Leone",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ECOWAS"
+          ]
+        },
+        {
+          "file": "somalia.md",
+          "country": "Somalia",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ARAB LEAGUE",
+            "COMESA",
+            "EAC",
+            "IGAD"
+          ]
+        },
+        {
+          "file": "south-africa.md",
+          "country": "South Africa",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "BRICS",
+            "SACU",
+            "SADC"
+          ]
+        },
+        {
+          "file": "south-sudan.md",
+          "country": "South Sudan",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "EAC",
+            "IGAD"
+          ]
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ARAB LEAGUE",
+            "COMESA"
+          ]
+        },
+        {
+          "file": "tanzania.md",
+          "country": "Tanzania",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "EAC",
+            "SADC"
+          ]
+        },
+        {
+          "file": "tunisia.md",
+          "country": "Tunisia",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "AMU",
+            "COMESA"
+          ]
+        },
+        {
+          "file": "uganda.md",
+          "country": "Uganda",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "EAC"
+          ]
+        },
+        {
+          "file": "zambia.md",
+          "country": "Zambia",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SADC"
+          ]
+        },
+        {
+          "file": "zimbabwe.md",
+          "country": "Zimbabwe",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SADC"
+          ]
+        }
+      ]
+    },
+    "waemu_ecowas_eac_text_in_none_of_the_three": {
+      "count": 30,
+      "out_of": 54,
+      "items": [
+        {
+          "file": "algeria.md",
+          "country": "Algeria",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ARAB MAGHREB UNION",
+            "COMESA"
+          ]
+        },
+        {
+          "file": "angola.md",
+          "country": "Angola",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "SADC"
+          ]
+        },
+        {
+          "file": "botswana.md",
+          "country": "Botswana",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "SACU",
+            "SADC"
+          ]
+        },
+        {
+          "file": "central-african-republic.md",
+          "country": "Central African Republic",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "CEMAC"
+          ]
+        },
+        {
+          "file": "chad.md",
+          "country": "Chad",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "CEMAC"
+          ]
+        },
+        {
+          "file": "comoros.md",
+          "country": "Comoros",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ARAB LEAGUE",
+            "COMESA",
+            "SADC"
+          ]
+        },
+        {
+          "file": "djibouti.md",
+          "country": "Djibouti",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ARAB LEAGUE",
+            "COMESA",
+            "IGAD"
+          ]
+        },
+        {
+          "file": "egypt.md",
+          "country": "Egypt",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ARAB LEAGUE",
+            "COMESA"
+          ]
+        },
+        {
+          "file": "equatorial-guinea.md",
+          "country": "Equatorial Guinea",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "CEMAC"
+          ]
+        },
+        {
+          "file": "eritrea.md",
+          "country": "Eritrea",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "IGAD"
+          ]
+        },
+        {
+          "file": "eswatini.md",
+          "country": "Eswatini",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SACU",
+            "SADC"
+          ]
+        },
+        {
+          "file": "ethiopia.md",
+          "country": "Ethiopia",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "IGAD"
+          ]
+        },
+        {
+          "file": "gabon.md",
+          "country": "Gabon",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "CEMAC"
+          ]
+        },
+        {
+          "file": "lesotho.md",
+          "country": "Lesotho",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "SACU",
+            "SADC"
+          ]
+        },
+        {
+          "file": "libya.md",
+          "country": "Libya",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "AMU",
+            "ARAB LEAGUE",
+            "COMESA"
+          ]
+        },
+        {
+          "file": "madagascar.md",
+          "country": "Madagascar",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SADC"
+          ]
+        },
+        {
+          "file": "malawi.md",
+          "country": "Malawi",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SADC"
+          ]
+        },
+        {
+          "file": "mauritania.md",
+          "country": "Mauritania",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "AMU",
+            "ARAB LEAGUE"
+          ]
+        },
+        {
+          "file": "mauritius.md",
+          "country": "Mauritius",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SADC"
+          ]
+        },
+        {
+          "file": "morocco.md",
+          "country": "Morocco",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "AMU",
+            "COMESA"
+          ]
+        },
+        {
+          "file": "mozambique.md",
+          "country": "Mozambique",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "SADC"
+          ]
+        },
+        {
+          "file": "namibia.md",
+          "country": "Namibia",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "SACU",
+            "SADC"
+          ]
+        },
+        {
+          "file": "republic-of-congo.md",
+          "country": "Congo (Republic)",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "CEMAC"
+          ]
+        },
+        {
+          "file": "sao-tome-and-principe.md",
+          "country": "São Tomé and Príncipe",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "CEN-SAD"
+          ]
+        },
+        {
+          "file": "seychelles.md",
+          "country": "Seychelles",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SADC"
+          ]
+        },
+        {
+          "file": "south-africa.md",
+          "country": "South Africa",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "BRICS",
+            "SACU",
+            "SADC"
+          ]
+        },
+        {
+          "file": "sudan.md",
+          "country": "Sudan",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "ARAB LEAGUE",
+            "COMESA"
+          ]
+        },
+        {
+          "file": "tunisia.md",
+          "country": "Tunisia",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "AMU",
+            "COMESA"
+          ]
+        },
+        {
+          "file": "zambia.md",
+          "country": "Zambia",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SADC"
+          ]
+        },
+        {
+          "file": "zimbabwe.md",
+          "country": "Zimbabwe",
+          "line": 19,
+          "blocs": [
+            "AFRICAN UNION",
+            "COMESA",
+            "SADC"
+          ]
+        }
+      ]
+    }
+  },
+  "l_section4_deviations": {
+    "modal_patterns": {
+      "agritech": {
+        "modal_skeleton": "Ministry of Agriculture and plant-health authority (phytosanitary); land use and lease diligence; export/customs compliance where cross-border.",
+        "count": 54
+      },
+      "edtech": {
+        "modal_skeleton": "Ministry of Education content and curriculum accreditation; data protection with specific attention to minors' data; intellectual property and content licensing.",
+        "count": 54
+      },
+      "energy & manufacturing": {
+        "modal_skeleton": "Energy regulator: <CIT>; environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available.",
+        "count": 54
+      },
+      "fintech": {
+        "modal_skeleton": "<DPA> licensing for payments and lending; AML/CFT compliance; data protection registration (<VAT>); consumer protection.",
+        "count": 54
+      },
+      "healthtech": {
+        "modal_skeleton": "Ministry of Health approval for products and services; medicines/pharmacy board where applicable; data protection for sensitive health data; medical device registration where relevant.",
+        "count": 54
+      },
+      "retail & ecommerce": {
+        "modal_skeleton": "National revenue authority (VAT and digital-service taxes); consumer-protection authority; data protection at consumer scale; standards bureau for product compliance.",
+        "count": 54
+      }
+    },
+    "deviations": []
+  }
+}

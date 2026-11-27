@@ -1,0 +1,3 @@
+# Passerelle runtime uses Python 3.11 standard library only (works 100% offline).
+# Test runner dependency pinned per Hard Rule R6:
+pytest==8.4.2

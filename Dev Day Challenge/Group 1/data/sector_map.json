@@ -1,0 +1,75 @@
+{
+  "sectors": {
+    "fintech": {
+      "display_en": "Fintech",
+      "display_fr": "Fintech",
+      "dossier_row_key": "fintech",
+      "licensing_section": "2",
+      "licensing_slot": "central_bank",
+      "role_en": "Central bank (primary licensing contact for payments and lending)",
+      "role_fr": "Banque centrale (contact principal pour l'agrément des paiements et du crédit)"
+    },
+    "healthtech": {
+      "display_en": "Healthtech",
+      "display_fr": "Healthtech (santé numérique)",
+      "dossier_row_key": "healthtech",
+      "licensing_section": "4",
+      "licensing_slot": "sector_row",
+      "role_en": "Ministry of Health / pharmacy authority (from section 4)",
+      "role_fr": "Ministère de la Santé / autorité pharmaceutique (section 4)"
+    },
+    "edtech": {
+      "display_en": "Edtech",
+      "display_fr": "Edtech (éducation numérique)",
+      "dossier_row_key": "edtech",
+      "licensing_section": "4",
+      "licensing_slot": "sector_row",
+      "role_en": "Ministry of Education (from section 4)",
+      "role_fr": "Ministère de l'Éducation (section 4)"
+    },
+    "agritech": {
+      "display_en": "Agritech",
+      "display_fr": "Agritech (agriculture)",
+      "dossier_row_key": "agritech",
+      "licensing_section": "4",
+      "licensing_slot": "sector_row",
+      "role_en": "Ministry of Agriculture / plant-health authority (from section 4)",
+      "role_fr": "Ministère de l'Agriculture / autorité phytosanitaire (section 4)"
+    },
+    "retail & ecommerce": {
+      "display_en": "Retail & ecommerce",
+      "display_fr": "Commerce & e-commerce",
+      "dossier_row_key": "retail & ecommerce",
+      "licensing_section": "4",
+      "licensing_slot": "sector_row",
+      "role_en": "National revenue & consumer-protection authorities (from section 4)",
+      "role_fr": "Administration fiscale et autorité de protection des consommateurs (section 4)"
+    },
+    "energy & manufacturing": {
+      "display_en": "Energy & manufacturing",
+      "display_fr": "Énergie & industrie",
+      "dossier_row_key": "energy & manufacturing",
+      "licensing_section": "3",
+      "licensing_slot": "energy_regulator",
+      "role_en": "National energy regulator (from section 3)",
+      "role_fr": "Régulateur national de l'énergie (section 3)"
+    }
+  },
+  "aliases": {
+    "fintech": "fintech",
+    "healthtech": "healthtech",
+    "health": "healthtech",
+    "edtech": "edtech",
+    "education": "edtech",
+    "agritech": "agritech",
+    "agriculture": "agritech",
+    "retail": "retail & ecommerce",
+    "ecommerce": "retail & ecommerce",
+    "retail & ecommerce": "retail & ecommerce",
+    "retail-ecommerce": "retail & ecommerce",
+    "energy": "energy & manufacturing",
+    "manufacturing": "energy & manufacturing",
+    "energy & manufacturing": "energy & manufacturing",
+    "energy-manufacturing": "energy & manufacturing"
+  }
+}

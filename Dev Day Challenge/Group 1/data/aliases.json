@@ -1,0 +1,55 @@
+{
+  "central_banks": {
+    "BEAC": "BEAC",
+    "Banque des États de l'Afrique Centrale (BEAC)": "BEAC",
+    "Banque des États de l'Afrique Centrale": "BEAC",
+    "BCEAO": "BCEAO",
+    "Banque Centrale des États de l'Afrique de l'Ouest (BCEAO)": "BCEAO",
+    "Banque Centrale des États de l'Afrique de l'Ouest": "BCEAO",
+    "Central Bank of Kenya (CBK)": "CBK",
+    "Central Bank of Nigeria (CBN)": "CBN",
+    "South African Reserve Bank (SARB)": "SARB",
+    "National Bank of Rwanda (BNR)": "BNR",
+    "Banco Nacional de Angola (BNA)": "BNA",
+    "Banky Foiben'i Madagasikara (Central Bank of Madagascar)": "Banky Foiben'i Madagasikara"
+  },
+  "central_bank_display": {
+    "BEAC": "BEAC (Banque des États de l'Afrique Centrale)",
+    "BCEAO": "BCEAO (Banque Centrale des États de l'Afrique de l'Ouest)",
+    "CBK": "Central Bank of Kenya (CBK)",
+    "CBN": "Central Bank of Nigeria (CBN)",
+    "SARB": "South African Reserve Bank (SARB)",
+    "BNR": "National Bank of Rwanda (BNR)",
+    "BNA": "Banco Nacional de Angola (BNA)"
+  },
+  "blocs": {
+    "African Union": "African Union",
+    "AU": "African Union",
+    "UA": "African Union",
+    "CEMAC": "CEMAC",
+    "WAEMU": "WAEMU",
+    "UEMOA": "WAEMU",
+    "ECOWAS": "ECOWAS",
+    "CEDEAO": "ECOWAS",
+    "EAC": "EAC",
+    "COMESA": "COMESA",
+    "SADC": "SADC",
+    "SACU": "SACU",
+    "IGAD": "IGAD",
+    "AMU": "AMU",
+    "UMA": "AMU",
+    "Arab Maghreb Union": "AMU",
+    "Arab League": "Arab League",
+    "BRICS": "BRICS",
+    "CEN-SAD": "CEN-SAD",
+    "CMA": "CMA",
+    "CMA (Rand Monetary Area)": "CMA"
+  },
+  "qualifier_words": [
+    "observer",
+    "dormant",
+    "verify",
+    "candidate",
+    "suspended"
+  ]
+}

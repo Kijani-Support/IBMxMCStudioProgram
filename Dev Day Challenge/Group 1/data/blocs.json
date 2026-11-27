@@ -1,0 +1,128 @@
+{
+  "African Union": {
+    "name_en": "African Union",
+    "name_fr": "Union africaine",
+    "meaning_en": "Continent-wide political body backing the African Continental Free Trade Area (AfCFTA), though day-to-day company licensing still happens at the country or sub-regional level.",
+    "meaning_fr": "Organisation continentale soutenant la Zone de libre-échange continentale africaine (ZLECAf), mais les agréments quotidiens restent délivrés au niveau national ou sous-régional.",
+    "regional_supervisor": null,
+    "regional_supervisor_status": "unverified",
+    "monetary_union": false
+  },
+  "CEMAC": {
+    "name_en": "CEMAC (Central African Economic and Monetary Community)",
+    "name_fr": "CEMAC (Communauté Économique et Monétaire de l'Afrique Centrale)",
+    "meaning_en": "Shared currency zone (XAF) and single central bank (BEAC), meaning no foreign-exchange conversion risk between members and shared regional banking rules.",
+    "meaning_fr": "Zone monétaire commune (XAF) avec une banque centrale unique (BEAC), ce qui supprime le risque de change entre pays membres et harmonise les règles bancaires régionales.",
+    "regional_supervisor": "COBAC (Commission Bancaire de l'Afrique Centrale)",
+    "regional_supervisor_status": "unverified",
+    "monetary_union": true
+  },
+  "WAEMU": {
+    "name_en": "WAEMU / UEMOA (West African Economic and Monetary Union)",
+    "name_fr": "UEMOA (Union Économique et Monétaire Ouest-Africaine)",
+    "meaning_en": "Shared currency zone (XOF) under BCEAO with unified payment-service rules and a single regional banking framework across member states.",
+    "meaning_fr": "Zone monétaire commune (XOF) pilotée par la BCEAO, dotée de règles harmonisées pour les services de paiement et d'un cadre bancaire régional unique.",
+    "regional_supervisor": "Commission Bancaire de l'UMOA",
+    "regional_supervisor_status": "unverified",
+    "monetary_union": true
+  },
+  "ECOWAS": {
+    "name_en": "ECOWAS (Economic Community of West African States)",
+    "name_fr": "CEDEAO (Communauté Économique des États de l'Afrique de l'Ouest)",
+    "meaning_en": "West African trade and free-movement bloc that eases staff travel and regional customs, while financial licensing remains national or under WAEMU where applicable.",
+    "meaning_fr": "Bloc ouest-africain de commerce et de libre circulation facilitant les déplacements d'équipes et les douanes, tandis que les licences financières restent nationales ou UEMOA.",
+    "regional_supervisor": null,
+    "regional_supervisor_status": "unverified",
+    "monetary_union": false
+  },
+  "EAC": {
+    "name_en": "EAC (East African Community)",
+    "name_fr": "CAE (Communauté d'Afrique de l'Est)",
+    "meaning_en": "East African customs union and common market easing regional trade and talent movement, though each country still licenses fintechs through its own central bank.",
+    "meaning_fr": "Union douanière et marché commun d'Afrique de l'Est facilitant le commerce et la mobilité, mais chaque pays agrée encore les fintechs via sa propre banque centrale.",
+    "regional_supervisor": null,
+    "regional_supervisor_status": "unverified",
+    "monetary_union": false
+  },
+  "COMESA": {
+    "name_en": "COMESA (Common Market for Eastern and Southern Africa)",
+    "name_fr": "COMESA (Marché commun de l'Afrique orientale et australe)",
+    "meaning_en": "Large preferential trade area lowering cross-border tariffs and supporting regional payment clearing, with business licensing still handled nationally.",
+    "meaning_fr": "Vaste zone commerciale préférentielle réduisant les droits de douane et facilitant les paiements régionaux, tandis que les agréments restent nationaux.",
+    "regional_supervisor": null,
+    "regional_supervisor_status": "unverified",
+    "monetary_union": false
+  },
+  "SADC": {
+    "name_en": "SADC (Southern African Development Community)",
+    "name_fr": "SADC (Communauté de développement d'Afrique australe)",
+    "meaning_en": "Southern African economic bloc coordinating trade tariffs and regional payment settlement (SADC-RTGS), while national regulators still issue operating licences.",
+    "meaning_fr": "Bloc économique d'Afrique australe coordonnant les tarifs douaniers et les règlements régionaux, tandis que les régulateurs nationaux délivrent les agréments.",
+    "regional_supervisor": null,
+    "regional_supervisor_status": "unverified",
+    "monetary_union": false
+  },
+  "SACU": {
+    "name_en": "SACU (Southern African Customs Union)",
+    "name_fr": "SACU (Union douanière d'Afrique australe)",
+    "meaning_en": "Customs union with a common external tariff and duty-free movement of goods among members, reducing friction for physical commerce.",
+    "meaning_fr": "Union douanière dotée d'un tarif extérieur commun et de la libre circulation des marchandises entre pays membres.",
+    "regional_supervisor": null,
+    "regional_supervisor_status": "unverified",
+    "monetary_union": false
+  },
+  "IGAD": {
+    "name_en": "IGAD (Intergovernmental Authority on Development)",
+    "name_fr": "IGAD (Autorité intergouvernementale pour le développement)",
+    "meaning_en": "Horn of Africa cooperation forum focused on trade corridors and stability rather than unified business licensing.",
+    "meaning_fr": "Forum de coopération de la Corne de l'Afrique axé sur les corridors commerciaux et la stabilité plutôt que sur un agrément unique.",
+    "regional_supervisor": null,
+    "regional_supervisor_status": "unverified",
+    "monetary_union": false
+  },
+  "AMU": {
+    "name_en": "AMU (Arab Maghreb Union)",
+    "name_fr": "UMA (Union du Maghreb arabe)",
+    "meaning_en": "North African trade pact currently dormant in practice, so founders should plan around national rules and bilateral treaties instead.",
+    "meaning_fr": "Pacte commercial nord-africain actuellement en sommeil : les fondateurs doivent s'appuyer sur les règles nationales et les conventions bilatérales.",
+    "regional_supervisor": null,
+    "regional_supervisor_status": "unverified",
+    "monetary_union": false
+  },
+  "Arab League": {
+    "name_en": "Arab League",
+    "name_fr": "Ligue arabe",
+    "meaning_en": "Political and trade cooperation forum (including the Greater Arab Free Trade Area) that does not replace national financial or company licensing.",
+    "meaning_fr": "Organisation politique et commerciale qui ne remplace pas les agréments financiers ou commerciaux nationaux.",
+    "regional_supervisor": null,
+    "regional_supervisor_status": "unverified",
+    "monetary_union": false
+  },
+  "BRICS": {
+    "name_en": "BRICS",
+    "name_fr": "BRICS",
+    "meaning_en": "Intergovernmental economic grouping focused on development finance and diplomatic cooperation rather than domestic startup licensing.",
+    "meaning_fr": "Groupement économique intergouvernemental axé sur la finance de développement plutôt que sur les autorisations locales d'activité.",
+    "regional_supervisor": null,
+    "regional_supervisor_status": "unverified",
+    "monetary_union": false
+  },
+  "CEN-SAD": {
+    "name_en": "CEN-SAD (Community of Sahel-Saharan States)",
+    "name_fr": "CEN-SAD (Communauté des États sahélo-sahariens)",
+    "meaning_en": "Broad Sahel-Saharan cooperation bloc with limited operational harmonisation for day-to-day startup compliance.",
+    "meaning_fr": "Bloc de coopération sahélo-saharien offrant peu d'harmonisation opérationnelle pour la conformité quotidienne des startups.",
+    "regional_supervisor": null,
+    "regional_supervisor_status": "unverified",
+    "monetary_union": false
+  },
+  "CMA": {
+    "name_en": "CMA (Common Monetary Area)",
+    "name_fr": "CMA (Zone monétaire commune d'Afrique australe)",
+    "meaning_en": "Currency-peg arrangement linking member currencies 1:1 with the South African Rand, lowering exchange-rate volatility within the area.",
+    "meaning_fr": "Accord monétaire arrimant à parité 1:1 les devises membres au rand sud-africain, limitant la volatilité de change dans la zone.",
+    "regional_supervisor": null,
+    "regional_supervisor_status": "unverified",
+    "monetary_union": true
+  }
+}

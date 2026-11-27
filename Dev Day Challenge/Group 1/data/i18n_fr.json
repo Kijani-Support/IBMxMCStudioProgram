@@ -1,0 +1,158 @@
+{
+  "title": "Passerelle — Note de lancement transfrontalier",
+  "tagline": "Franchir la frontière, vérifier d'abord.",
+  "disclaimer": "Référence de planification uniquement — ce document ne constitue pas un conseil juridique, fiscal ou financier. Vérifiez chaque élément auprès des autorités compétentes avant d'agir.",
+  "template_banner_title": "Défauts systémiques du modèle de dossier (hors score pays)",
+  "template_banner_intro": "Ces anomalies touchent la plupart des 54 dossiers d'origine (erreurs de génération du modèle) et sont affichées séparément de la confiance propre à votre itinéraire :",
+  "template_banner_item": "[{v_number}] {count} dossiers sur {total} partagent ce défaut : {summary}",
+  "sec0_title": "0. Vue d'ensemble",
+  "sec1_title": "1. Régulateurs à contacter",
+  "sec2_title": "2. Étapes de conformité sectorielle (Premières démarches)",
+  "sec3_title": "3. Écarts fiscaux (IS et TVA)",
+  "sec4_title": "4. Langues officielles et langues d'affaires",
+  "sec5_title": "5. Blocs régionaux partagés et effets pratiques",
+  "sec6_title": "6. Points à vérifier en priorité",
+  "our_checks_title": "Nos vérifications externes (non vérifié)",
+  "our_checks_intro": "Les points ci-dessous reposent sur des connaissances extérieures aux dossiers (jamais présentés comme des faits issus des dossiers). Statut : non vérifié tant qu'une source officielle n'est pas jointe.",
+  "what_this_means": "Ce que cela signifie pour vous",
+  "labels": {
+    "route": "Itinéraire",
+    "sector": "Secteur",
+    "home": "Pays d'origine",
+    "target": "Pays cible",
+    "shared_blocs": "Blocs partagés",
+    "none": "Aucun",
+    "flags_by_severity": "Alertes « Vérifier d'abord » (pays & bloc)",
+    "data_confidence": "Fiabilité des données du dossier",
+    "confidence_note": "Mesure uniquement la qualité des dossiers sources pour cet itinéraire (pays et bloc), jamais le risque juridique.",
+    "high": "Élevée",
+    "medium": "Moyenne",
+    "low": "Faible",
+    "sev_high": "Élevée",
+    "sev_med": "Moyenne",
+    "sev_low": "Faible",
+    "central_bank": "Banque centrale",
+    "currency": "Devise",
+    "template_banner_short": "bannière modèle",
+    "data_protection": "Autorité de protection des données",
+    "sector_regulator": "Régulateur sectoriel (contact d'agrément)",
+    "section4_conflict": "Autorité citée en section 4 (conflit détecté)",
+    "normalized": "normalisé",
+    "same": "Identique",
+    "differs": "Diffère",
+    "uncomparable": "Non comparable en l'état",
+    "same_headline_rate": "Même taux principal ({rate}%)",
+    "variant_rates_caveat": "Attention : taux variantes présents ({variants}) ; aucun écart chiffré calculé au-delà du taux principal",
+    "cit": "Impôt sur les sociétés (IS)",
+    "vat": "TVA / taxe sur les ventes",
+    "delta": "Écart (cible − origine)",
+    "points": "points de pourcentage",
+    "all_numbers": "Tous les taux détectés",
+    "official_languages": "Langues officielles",
+    "dominant_languages": "Langues parlées / d'affaires",
+    "dropped_languages": "Langues présentes à l'origine mais absentes dans le pays cible",
+    "added_languages": "Nouvelles langues officielles dans le pays cible",
+    "shared_languages": "Langues officielles communes",
+    "only_in_home": "Uniquement dans le pays d'origine",
+    "only_in_target": "Uniquement dans le pays cible",
+    "qualifier": "qualificatif",
+    "status": "Statut",
+    "unverified": "non vérifié",
+    "source_url": "URL source",
+    "no_source_url": "aucune URL enregistrée",
+    "evidence": "Preuve",
+    "why_it_matters": "Pourquoi c'est important",
+    "suggested_check": "Qui interroger",
+    "scope": "Portée",
+    "confidence": "Origine",
+    "no_flags": "Aucune alerte pays ou bloc enregistrée pour cet itinéraire.",
+    "template_flagged_warning": "Attention : la ligne section 4 de ce secteur comporte un défaut connu du modèle de dossier (signalé ci-dessous). Les étapes concernées sont marquées « À vérifier — défaut du modèle » et ne doivent pas être prises pour des faits établis.",
+    "step_untrusted_tag": "[À vérifier — défaut du modèle]",
+    "not_reported": "Non renseigné dans le dossier",
+    "dpa_same_acronym_diff_exp": "Même acronyme ({acronym}) mais intitulés complets différents entre les deux dossiers",
+    "bloc_matrix_title": "Matrice de cohérence du bloc ({bloc})",
+    "matrix_country": "Pays",
+    "matrix_currency": "Devise",
+    "matrix_cb": "Banque centrale",
+    "matrix_blocs": "Symétrie blocs",
+    "matrix_dpa": "Nom DPA",
+    "matrix_placeholders": "Champs à vérifier",
+    "matrix_flags": "Alertes"
+  },
+  "meanings": {
+    "sec1_same_cb": "Vous restez sous la même banque centrale (l'institution publique qui gère la monnaie et les règles bancaires), mais vous devez vérifier séparément l'autorité nationale chargée de protéger les données personnelles dans le pays cible.",
+    "sec1_diff_cb": "Vous changez de banque centrale (l'institution publique qui gère la monnaie et autorise les services financiers), ce qui implique de repartir d'une nouvelle demande d'autorisation locale dans le pays cible.",
+    "sec2_flagged": "Certaines étapes listées dans le dossier mélangent le mauvais organisme ou un taux de taxe à la place d'un frais de dossier ; utilisez cette liste comme aide-mémoire de départ et confirmez chaque démarche auprès de la banque centrale ou du ministère compétent.",
+    "sec2_clean": "Suivez ces premières étapes dans l'ordre comme liste de préparation avant de déposer un dossier officiel, en confirmant les frais actuels auprès de chaque autorité locale.",
+    "sec3_delta": "L'écart d'impôt ci-dessus vous aide à ajuster vos prix et vos prévisions de trésorerie (l'impôt sur les sociétés porte sur vos bénéfices annuels, et la TVA est la taxe ajoutée aux ventes facturées aux clients), avant vérification auprès de l'administration fiscale.",
+    "sec3_uncomparable": "Au moins un taux comporte plusieurs tranches ou n'est pas chiffré dans le dossier ; ne calculez pas de budget définitif sans confirmer le taux exact applicable à votre activité auprès de l'administration fiscale locale.",
+    "sec4_diff": "Les langues officielles changent entre les deux pays : prévoyez de traduire vos contrats, vos écrans clients et vos dossiers administratifs dans la langue utilisée par les autorités du pays cible.",
+    "sec4_same": "Les deux pays partagent les mêmes langues officielles, ce qui vous permet de réutiliser l'essentiel de vos contrats et supports clients sans traduction complète.",
+    "sec5_shared": "Appartenir à un même groupe régional (un accord entre États voisins sur la monnaie ou le commerce) simplifie certains échanges et paiements, mais ne supprime pas l'obligation de vous enregistrer dans le pays cible.",
+    "sec5_none": "En l'absence de bloc économique commun au-delà du cadre continental, chaque autorisation, virement de fonds et règle commerciale devra être traité pays par pays.",
+    "sec6_has_flags": "Traitez en priorité les alertes les plus critiques avant toute dépense juridique ou dépôt officiel : elles signalent des informations contradictoires ou manquantes dans les dossiers sources.",
+    "sec6_clean": "Aucune contradiction propre à cet itinéraire n'a été relevée dans les dossiers, mais une vérification finale auprès des autorités locales reste indispensable avant le lancement."
+  },
+  "flags_fr": {
+    "V01": {
+      "message": "La ligne Fintech de la section 4 cite l'autorité de protection des données comme organisme d'agrément pour les paiements et le crédit au lieu de la banque centrale ({affected_count} dossiers sur {corpus_total}).",
+      "why_it_matters": "Solliciter un régulateur de la vie privée pour une licence de paiement fait perdre du temps, car l'agrément financier relève de la banque centrale.",
+      "suggested_check": "Confirmez la procédure d'agrément directement auprès de la banque centrale (ou du superviseur bancaire régional), et non auprès de l'autorité de protection des données."
+    },
+    "V02": {
+      "message": "La ligne Énergie & industrie de la section 4 place un pourcentage dans l'emplacement prévu pour le régulateur de l'énergie ({affected_count} dossiers sur {corpus_total}).",
+      "why_it_matters": "Un pourcentage fiscal ne désigne pas un organisme public : s'appuyer uniquement sur la section 4 masque le véritable régulateur.",
+      "suggested_check": "Utilisez l'autorité citée en section 3 et vérifiez son mandat auprès du ministère de l'Énergie."
+    },
+    "V03": {
+      "message": "Un pourcentage de la section 4 correspond au taux de TVA ou d'IS de la section 5 (valeur fiscale recopiée par erreur dans {affected_count} dossiers sur {corpus_total}).",
+      "why_it_matters": "Un taux d'impôt n'est pas un frais d'enregistrement : budgéter vos démarches à partir de ce chiffre serait trompeur.",
+      "suggested_check": "Demandez directement le barème officiel des frais d'enregistrement auprès de l'autorité nationale compétente."
+    },
+    "V04": {
+      "message": "Le dossier {country} contient un texte provisoire (« {detail} ») en section {section}.",
+      "why_it_matters": "Le dossier ne fournit pas un nom d'organisme ou un taux vérifié pour cette démarche.",
+      "suggested_check": "Vérifiez l'organisme ou le paramètre actuel sur le portail gouvernemental national ou auprès du ministère concerné."
+    },
+    "V05": {
+      "message": "La devise du dossier {country} ({actual}) ne correspond pas à la devise attendue pour le bloc {bloc} ({expected}).",
+      "why_it_matters": "Une erreur de devise fausse vos prévisions de change, vos paiements et votre conformité monétaire.",
+      "suggested_check": "Vérifiez la devise officielle et l'appartenance monétaire auprès de la banque centrale."
+    },
+    "V06": {
+      "message": "Asymétrie d'appartenance régionale : {country} mentionne « {detail} » sans confirmation dans les dossiers partenaires du bloc.",
+      "why_it_matters": "Un statut d'observateur ou une appartenance non confirmée n'accorde pas les avantages commerciaux ou d'agrément d'un membre à part entière.",
+      "suggested_check": "Ne vous appuyez pas sur ce bloc pour vos agréments ; confirmez l'adhésion officielle sur le registre du bloc."
+    },
+    "V07": {
+      "message": "Après normalisation des alias, la banque centrale de {country} ({actual}) diffère de celle des autres membres de {bloc} ({expected}).",
+      "why_it_matters": "Des banques centrales différentes impliquent des règles d'agrément et de change séparées.",
+      "suggested_check": "Confirmez la banque centrale compétente pour le pays cible auprès des autorités monétaires."
+    },
+    "V08": {
+      "message": "Même acronyme de protection des données ({acronym}) avec des intitulés complets différents entre dossiers ({detail}).",
+      "why_it_matters": "Des intitulés contradictoires suggèrent un texte issu d'un modèle plutôt qu'une vérification directe dans le droit national.",
+      "suggested_check": "Confirmez le nom légal exact et le guichet actif de l'autorité de protection des données dans chaque pays."
+    },
+    "V10": {
+      "message": "Anomalie fiscale ({tax}) dans le dossier {country} : « {detail} » ({reason}).",
+      "why_it_matters": "Un taux multiple, hors plage ou non chiffré empêche une soustraction simple et peut fausser votre modèle financier.",
+      "suggested_check": "Confirmez le taux exact applicable à votre activité auprès de l'administration fiscale nationale."
+    },
+    "V12": {
+      "message": "Structure incomplète dans le dossier {country} : {detail}.",
+      "why_it_matters": "Une section ou un champ manquant signifie que des obligations essentielles peuvent être absentes de cette note.",
+      "suggested_check": "Inspectez le fichier source et complétez l'information directement auprès des autorités nationales."
+    },
+    "V20": {
+      "message": "Aucune autorité de protection des données n'est nommée dans le dossier {country} (texte provisoire uniquement ; {affected_count} dossiers sur {corpus_total} dans le corpus).",
+      "why_it_matters": "Sans autorité nommée, vous ne savez pas où déclarer le traitement des données personnelles de vos clients.",
+      "suggested_check": "Vérifiez auprès du ministère du Numérique ou des Télécommunications quel organisme supervise la protection des données."
+    },
+    "RULE_ERROR": {
+      "message": "Une règle de validation ({detail}) a rencontré une erreur interne et a été ignorée sans interrompre l'analyse.",
+      "why_it_matters": "Un contrôle automatisé n'a pas pu s'exécuter sur ce dossier.",
+      "suggested_check": "Signalez l'anomalie à l'équipe technique et vérifiez manuellement la section concernée."
+    }
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "EXT-01",
+    "blocs": ["CEMAC"],
+    "countries": ["cameroon", "central-african-republic", "chad", "equatorial-guinea", "gabon", "republic-of-congo"],
+    "claim": "In CEMAC, banking and payment-institution licensing and supervision involve a regional banking supervisor alongside BEAC and national finance ministries; no regional banking supervisor is mentioned in any CEMAC dossier.",
+    "claim_fr": "Dans la zone CEMAC, l'agrément et la supervision des banques et établissements de paiement impliquent un superviseur bancaire régional aux côtés de la BEAC et des ministères des Finances ; aucun superviseur bancaire régional n'est cité dans les dossiers CEMAC.",
+    "source_url": "",
+    "status": "unverified"
+  },
+  {
+    "id": "EXT-02",
+    "blocs": ["CEMAC"],
+    "countries": ["cameroon"],
+    "claim": "Confirm whether Cameroon holds ECOWAS observer status; Cameroon is a CEMAC member and ECOWAS observer status is not confirmed by partner dossiers.",
+    "claim_fr": "Vérifier si le Cameroun dispose réellement d'un statut d'observateur auprès de la CEDEAO ; le Cameroun est membre de la CEMAC et ce statut n'est pas confirmé par les dossiers partenaires.",
+    "source_url": "",
+    "status": "unverified"
+  },
+  {
+    "id": "EXT-03",
+    "blocs": ["CEMAC"],
+    "countries": ["cameroon", "gabon"],
+    "claim": "Confirm the current operational national data-protection authority in both countries rather than relying on the conflicting CNPD expansions printed in the dossiers.",
+    "claim_fr": "Vérifier l'autorité nationale de protection des données actuellement opérationnelle dans les deux pays plutôt que de s'appuyer sur les intitulés CNPD divergents figurant dans les dossiers.",
+    "source_url": "",
+    "status": "unverified"
+  },
+  {
+    "id": "EXT-04",
+    "blocs": ["ECOWAS", "WAEMU"],
+    "countries": ["burkina-faso", "mali", "niger"],
+    "claim": "Confirm current ECOWAS membership status for Burkina Faso, Mali, and Niger following their announced withdrawal, as their dossiers still list ECOWAS as active.",
+    "claim_fr": "Vérifier le statut actuel d'adhésion à la CEDEAO du Burkina Faso, du Mali et du Niger à la suite de leur retrait annoncé, leurs dossiers mentionnant encore la CEDEAO comme active.",
+    "source_url": "",
+    "status": "unverified"
+  },
+  {
+    "id": "EXT-05",
+    "blocs": ["WAEMU"],
+    "countries": ["benin", "burkina-faso", "cote-divoire", "guinea-bissau", "mali", "niger", "senegal", "togo"],
+    "claim": "In WAEMU, regional banking supervision involves a dedicated regional banking commission alongside BCEAO; confirm whether that supervisor applies to your payment or lending licence.",
+    "claim_fr": "Dans l'UEMOA, la supervision bancaire régionale implique une commission bancaire régionale aux côtés de la BCEAO ; vérifier si ce superviseur s'applique à votre agrément de paiement ou de crédit.",
+    "source_url": "",
+    "status": "unverified"
+  },
+  {
+    "id": "EXT-06",
+    "blocs": ["COMESA"],
+    "countries": ["algeria"],
+    "claim": "Confirm whether Algeria is a COMESA member and verify Algeria's actual national data-protection authority against official national law rather than the acronym printed in the dossier.",
+    "claim_fr": "Vérifier si l'Algérie est membre du COMESA et confirmer l'autorité algérienne de protection des données à partir des textes nationaux plutôt que de l'acronyme figurant dans le dossier.",
+    "source_url": "",
+    "status": "unverified"
+  },
+  {
+    "id": "EXT-07",
+    "blocs": [],
+    "countries": ["zimbabwe"],
+    "claim": "Confirm the official ISO 4217 three-letter currency code for Zimbabwe Gold rather than the mixed-case ticker written in the dossier.",
+    "claim_fr": "Vérifier le code ISO 4217 officiel à trois lettres du Zimbabwe Gold plutôt que le sigle en casse mixte figurant dans le dossier.",
+    "source_url": "",
+    "status": "unverified"
+  },
+  {
+    "id": "EXT-08",
+    "blocs": ["BRICS"],
+    "countries": ["egypt", "ethiopia", "south-africa"],
+    "claim": "Confirm current BRICS membership across partner dossiers (only South Africa lists BRICS in section 1, while Egypt and Ethiopia omit it).",
+    "claim_fr": "Vérifier la liste actuelle des membres des BRICS dans les dossiers partenaires (seule l'Afrique du Sud mentionne les BRICS en section 1, tandis que l'Égypte et l'Éthiopie l'omettent).",
+    "source_url": "",
+    "status": "unverified"
+  }
+]

@@ -1,0 +1,2195 @@
+{
+  "meta": {
+    "tool": "Passerelle",
+    "tagline_en": "Cross the border, verify first.",
+    "tagline_fr": "Franchir la frontière, vérifier d'abord.",
+    "team": "Christopher Damian Munene, Mark Lekayia (Group 1, IBM x MC Studio Dev Day)",
+    "disclaimer_en": "Planning reference only — not legal, tax, or financial advice. Verify every figure and authority directly before acting.",
+    "disclaimer_fr": "Référence de planification uniquement — ce document ne constitue pas un conseil juridique, fiscal ou financier. Vérifiez chaque élément avant d'agir.",
+    "generated_at": "2026-11-27T12:21:35Z",
+    "sector_key": "fintech",
+    "sector_display_en": "Fintech",
+    "sector_display_fr": "Fintech",
+    "home_slug": "cameroon",
+    "target_slug": "gabon",
+    "home_country": "Cameroon",
+    "target_country": "Gabon",
+    "home_file": "cameroon.md",
+    "target_file": "gabon.md",
+    "home_title_line": 1,
+    "target_title_line": 1,
+    "home_updated": "2026-07-31",
+    "target_updated": "2026-07-31"
+  },
+  "fields": {
+    "home": {
+      "slug": "cameroon",
+      "file": "cameroon.md",
+      "sections_present": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "country": {
+        "value": "Cameroon",
+        "file": "cameroon.md",
+        "section": "0",
+        "line": 1,
+        "raw": "# Cameroon — Regulatory, Compliance and Tax Dossier",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §0, line 1)"
+      },
+      "author": {
+        "value": "Modus Chora Studio",
+        "file": "cameroon.md",
+        "section": "0",
+        "line": 3,
+        "raw": "**Author:** Modus Chora Studio · **Status:** planning reference, verify before acting · **Updated:** 2026-07-31",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §0, line 3)"
+      },
+      "status": {
+        "value": "planning reference, verify before acting",
+        "file": "cameroon.md",
+        "section": "0",
+        "line": 3,
+        "raw": "**Author:** Modus Chora Studio · **Status:** planning reference, verify before acting · **Updated:** 2026-07-31",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §0, line 3)"
+      },
+      "updated": {
+        "value": "2026-07-31",
+        "file": "cameroon.md",
+        "section": "0",
+        "line": 3,
+        "raw": "**Author:** Modus Chora Studio · **Status:** planning reference, verify before acting · **Updated:** 2026-07-31",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §0, line 3)"
+      },
+      "citation_key": {
+        "value": "Citation key: `[Country dossier: Cameroon](cameroon.md)` — cite this file in the [Sita Sector Energy Playbook](../sita-sector-energy-playbook.md) whenever a play refers to a country-specific step for Cameroon.",
+        "file": "cameroon.md",
+        "section": "0",
+        "line": 5,
+        "raw": "> Citation key: `[Country dossier: Cameroon](cameroon.md)` — cite this file in the [Sita Sector Energy Playbook](../sita-sector-energy-playbook.md) whenever a play refers to a country-specific step for Cameroon.",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §0, line 5)"
+      },
+      "capital": {
+        "value": "Yaoundé",
+        "file": "cameroon.md",
+        "section": "1",
+        "line": 11,
+        "raw": "| Capital | Yaoundé |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §1, line 11)"
+      },
+      "currency": {
+        "value": "Central African CFA franc (XAF) (CEMAC / BEAC)",
+        "file": "cameroon.md",
+        "section": "1",
+        "line": 12,
+        "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §1, line 12)"
+      },
+      "currency_name": {
+        "value": "Central African CFA franc",
+        "file": "cameroon.md",
+        "section": "1",
+        "line": 12,
+        "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §1, line 12)"
+      },
+      "currency_code": {
+        "value": "XAF",
+        "file": "cameroon.md",
+        "section": "1",
+        "line": 12,
+        "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §1, line 12)"
+      },
+      "currency_bloc": {
+        "value": "CEMAC",
+        "file": "cameroon.md",
+        "section": "1",
+        "line": 12,
+        "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §1, line 12)"
+      },
+      "currency_bank": {
+        "value": "BEAC",
+        "file": "cameroon.md",
+        "section": "1",
+        "line": 12,
+        "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §1, line 12)"
+      },
+      "currency_zone_raw": {
+        "value": "CEMAC / BEAC",
+        "file": "cameroon.md",
+        "section": "1",
+        "line": 12,
+        "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §1, line 12)"
+      },
+      "central_bank": {
+        "value": "Banque des États de l'Afrique Centrale (BEAC)",
+        "file": "cameroon.md",
+        "section": "2",
+        "line": 19,
+        "raw": "**Central bank:** Banque des États de l'Afrique Centrale (BEAC). Fintech ventures should plan on central-bank licensing for payment and lending products, AML/CFT registration, and consumer-credit rules. Cross-border digital services are increasingly taxed or regulated by regional frameworks (WAEMU/ECOWAS/EAC harmonisation).",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §2, line 19)"
+      },
+      "data_protection": {
+        "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel)",
+        "file": "cameroon.md",
+        "section": "2",
+        "line": 21,
+        "raw": "**Data protection:** CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §2, line 21)"
+      },
+      "energy_regulator": {
+        "value": "ARSEL (Agence de Régulation du Secteur de l'Électricité)",
+        "file": "cameroon.md",
+        "section": "3",
+        "line": 25,
+        "raw": "**Regulator / authority:** ARSEL (Agence de Régulation du Secteur de l'Électricité). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §3, line 25)"
+      },
+      "cit": {
+        "value": "30% (33% for some sectors)",
+        "file": "cameroon.md",
+        "section": "5",
+        "line": 44,
+        "raw": "| Standard corporate income tax | 30% (33% for some sectors) |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {
+          "numbers": [
+            30.0,
+            33.0
+          ],
+          "has_numeric": true,
+          "is_compound": true
+        },
+        "citation": "(source: cameroon.md §5, line 44)"
+      },
+      "vat": {
+        "value": "19.25%",
+        "file": "cameroon.md",
+        "section": "5",
+        "line": 45,
+        "raw": "| Standard VAT / sales tax | 19.25% |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {
+          "numbers": [
+            19.25
+          ],
+          "has_numeric": true,
+          "is_compound": false
+        },
+        "citation": "(source: cameroon.md §5, line 45)"
+      },
+      "investment_agency": {
+        "value": "Cameroon Investment Promotion Agency (API)",
+        "file": "cameroon.md",
+        "section": "5",
+        "line": 47,
+        "raw": "**Investment promotion agency:** Cameroon Investment Promotion Agency (API). **Incentives:** Finance Act incentives; special regimes.",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §5, line 47)"
+      },
+      "incentives": {
+        "value": "Finance Act incentives; special regimes",
+        "file": "cameroon.md",
+        "section": "5",
+        "line": 47,
+        "raw": "**Investment promotion agency:** Cameroon Investment Promotion Agency (API). **Incentives:** Finance Act incentives; special regimes.",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §5, line 47)"
+      },
+      "regional_blocs": [
+        {
+          "value": "African Union",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+          "canonical": "African Union",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 13)"
+        },
+        {
+          "value": "CEMAC",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+          "canonical": "CEMAC",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 13)"
+        },
+        {
+          "value": "ECOWAS (observer)",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+          "canonical": "ECOWAS",
+          "qualifier": "observer",
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 13)"
+        }
+      ],
+      "official_languages": [
+        {
+          "value": "English",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 14,
+          "raw": "| Official languages | English, French |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 14)"
+        },
+        {
+          "value": "French",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 14,
+          "raw": "| Official languages | English, French |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 14)"
+        }
+      ],
+      "dominant_languages": [
+        {
+          "value": "French",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, English, Cameroonian Pidgin, Fulfulde, Ewondo, Duala |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 15)"
+        },
+        {
+          "value": "English",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, English, Cameroonian Pidgin, Fulfulde, Ewondo, Duala |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 15)"
+        },
+        {
+          "value": "Cameroonian Pidgin",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, English, Cameroonian Pidgin, Fulfulde, Ewondo, Duala |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 15)"
+        },
+        {
+          "value": "Fulfulde",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, English, Cameroonian Pidgin, Fulfulde, Ewondo, Duala |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 15)"
+        },
+        {
+          "value": "Ewondo",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, English, Cameroonian Pidgin, Fulfulde, Ewondo, Duala |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 15)"
+        },
+        {
+          "value": "Duala",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, English, Cameroonian Pidgin, Fulfulde, Ewondo, Duala |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 15)"
+        }
+      ],
+      "expansion_notes": [
+        {
+          "value": "Legal tradition and business language should follow the official languages above; for Cameroon, contractual and regulatory materials are predominantly available in the official languages listed.",
+          "file": "cameroon.md",
+          "section": "6",
+          "line": 53,
+          "raw": "- Legal tradition and business language should follow the official languages above; for Cameroon, contractual and regulatory materials are predominantly available in the official languages listed.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §6, line 53)"
+        },
+        {
+          "value": "Regional integration (African Union; CEMAC; ECOWAS (observer)) affects customs duties, data flows and professional recognition; factor this into cross-border plays.",
+          "file": "cameroon.md",
+          "section": "6",
+          "line": 54,
+          "raw": "- Regional integration (African Union; CEMAC; ECOWAS (observer)) affects customs duties, data flows and professional recognition; factor this into cross-border plays.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §6, line 54)"
+        },
+        {
+          "value": "Figures in this dossier are a planning baseline, not legal, tax or financial advice. Verify each item with the named authority before commitment.",
+          "file": "cameroon.md",
+          "section": "6",
+          "line": 55,
+          "raw": "- Figures in this dossier are a planning baseline, not legal, tax or financial advice. Verify each item with the named authority before commitment.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §6, line 55)"
+        }
+      ],
+      "sectors": {
+        "fintech": {
+          "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending; AML/CFT compliance; data protection registration (19.25%); consumer protection.",
+          "file": "cameroon.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending; AML/CFT compliance; data protection registration (19.25%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §4, line 33)"
+        },
+        "healthtech": {
+          "value": "Ministry of Health approval for products and services; medicines/pharmacy board where applicable; data protection for sensitive health data; medical device registration where relevant.",
+          "file": "cameroon.md",
+          "section": "4",
+          "line": 34,
+          "raw": "| **Healthtech** | Ministry of Health approval for products and services; medicines/pharmacy board where applicable; data protection for sensitive health data; medical device registration where relevant. |",
+          "canonical": "Healthtech",
+          "qualifier": null,
+          "is_boilerplate": true,
+          "meta": {},
+          "citation": "(source: cameroon.md §4, line 34)"
+        },
+        "edtech": {
+          "value": "Ministry of Education content and curriculum accreditation; data protection with specific attention to minors' data; intellectual property and content licensing.",
+          "file": "cameroon.md",
+          "section": "4",
+          "line": 35,
+          "raw": "| **Edtech** | Ministry of Education content and curriculum accreditation; data protection with specific attention to minors' data; intellectual property and content licensing. |",
+          "canonical": "Edtech",
+          "qualifier": null,
+          "is_boilerplate": true,
+          "meta": {},
+          "citation": "(source: cameroon.md §4, line 35)"
+        },
+        "agritech": {
+          "value": "Ministry of Agriculture and plant-health authority (phytosanitary); land use and lease diligence; export/customs compliance where cross-border.",
+          "file": "cameroon.md",
+          "section": "4",
+          "line": 36,
+          "raw": "| **Agritech** | Ministry of Agriculture and plant-health authority (phytosanitary); land use and lease diligence; export/customs compliance where cross-border. |",
+          "canonical": "Agritech",
+          "qualifier": null,
+          "is_boilerplate": true,
+          "meta": {},
+          "citation": "(source: cameroon.md §4, line 36)"
+        },
+        "retail & ecommerce": {
+          "value": "National revenue authority (VAT and digital-service taxes); consumer-protection authority; data protection at consumer scale; standards bureau for product compliance.",
+          "file": "cameroon.md",
+          "section": "4",
+          "line": 37,
+          "raw": "| **Retail & ecommerce** | National revenue authority (VAT and digital-service taxes); consumer-protection authority; data protection at consumer scale; standards bureau for product compliance. |",
+          "canonical": "Retail & ecommerce",
+          "qualifier": null,
+          "is_boilerplate": true,
+          "meta": {},
+          "citation": "(source: cameroon.md §4, line 37)"
+        },
+        "energy & manufacturing": {
+          "value": "Energy regulator: 30% (33% for some sectors); environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available.",
+          "file": "cameroon.md",
+          "section": "4",
+          "line": 38,
+          "raw": "| **Energy & manufacturing** | Energy regulator: 30% (33% for some sectors); environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available. |",
+          "canonical": "Energy & manufacturing",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §4, line 38)"
+        }
+      }
+    },
+    "target": {
+      "slug": "gabon",
+      "file": "gabon.md",
+      "sections_present": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "country": {
+        "value": "Gabon",
+        "file": "gabon.md",
+        "section": "0",
+        "line": 1,
+        "raw": "# Gabon — Regulatory, Compliance and Tax Dossier",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §0, line 1)"
+      },
+      "author": {
+        "value": "Modus Chora Studio",
+        "file": "gabon.md",
+        "section": "0",
+        "line": 3,
+        "raw": "**Author:** Modus Chora Studio · **Status:** planning reference, verify before acting · **Updated:** 2026-07-31",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §0, line 3)"
+      },
+      "status": {
+        "value": "planning reference, verify before acting",
+        "file": "gabon.md",
+        "section": "0",
+        "line": 3,
+        "raw": "**Author:** Modus Chora Studio · **Status:** planning reference, verify before acting · **Updated:** 2026-07-31",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §0, line 3)"
+      },
+      "updated": {
+        "value": "2026-07-31",
+        "file": "gabon.md",
+        "section": "0",
+        "line": 3,
+        "raw": "**Author:** Modus Chora Studio · **Status:** planning reference, verify before acting · **Updated:** 2026-07-31",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §0, line 3)"
+      },
+      "citation_key": {
+        "value": "Citation key: `[Country dossier: Gabon](gabon.md)` — cite this file in the [Sita Sector Energy Playbook](../sita-sector-energy-playbook.md) whenever a play refers to a country-specific step for Gabon.",
+        "file": "gabon.md",
+        "section": "0",
+        "line": 5,
+        "raw": "> Citation key: `[Country dossier: Gabon](gabon.md)` — cite this file in the [Sita Sector Energy Playbook](../sita-sector-energy-playbook.md) whenever a play refers to a country-specific step for Gabon.",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §0, line 5)"
+      },
+      "capital": {
+        "value": "Libreville",
+        "file": "gabon.md",
+        "section": "1",
+        "line": 11,
+        "raw": "| Capital | Libreville |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §1, line 11)"
+      },
+      "currency": {
+        "value": "Central African CFA franc (XAF) (CEMAC / BEAC)",
+        "file": "gabon.md",
+        "section": "1",
+        "line": 12,
+        "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §1, line 12)"
+      },
+      "currency_name": {
+        "value": "Central African CFA franc",
+        "file": "gabon.md",
+        "section": "1",
+        "line": 12,
+        "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §1, line 12)"
+      },
+      "currency_code": {
+        "value": "XAF",
+        "file": "gabon.md",
+        "section": "1",
+        "line": 12,
+        "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §1, line 12)"
+      },
+      "currency_bloc": {
+        "value": "CEMAC",
+        "file": "gabon.md",
+        "section": "1",
+        "line": 12,
+        "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §1, line 12)"
+      },
+      "currency_bank": {
+        "value": "BEAC",
+        "file": "gabon.md",
+        "section": "1",
+        "line": 12,
+        "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §1, line 12)"
+      },
+      "currency_zone_raw": {
+        "value": "CEMAC / BEAC",
+        "file": "gabon.md",
+        "section": "1",
+        "line": 12,
+        "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §1, line 12)"
+      },
+      "central_bank": {
+        "value": "BEAC",
+        "file": "gabon.md",
+        "section": "2",
+        "line": 19,
+        "raw": "**Central bank:** BEAC. Fintech ventures should plan on central-bank licensing for payment and lending products, AML/CFT registration, and consumer-credit rules. Cross-border digital services are increasingly taxed or regulated by regional frameworks (WAEMU/ECOWAS/EAC harmonisation).",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §2, line 19)"
+      },
+      "data_protection": {
+        "value": "CNPD (Commission Nationale pour la Protection des Données)",
+        "file": "gabon.md",
+        "section": "2",
+        "line": 21,
+        "raw": "**Data protection:** CNPD (Commission Nationale pour la Protection des Données) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §2, line 21)"
+      },
+      "energy_regulator": {
+        "value": "Ministry of Energy (verify current regulator)",
+        "file": "gabon.md",
+        "section": "3",
+        "line": 25,
+        "raw": "**Regulator / authority:** Ministry of Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §3, line 25)"
+      },
+      "cit": {
+        "value": "30%",
+        "file": "gabon.md",
+        "section": "5",
+        "line": 44,
+        "raw": "| Standard corporate income tax | 30% |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {
+          "numbers": [
+            30.0
+          ],
+          "has_numeric": true,
+          "is_compound": false
+        },
+        "citation": "(source: gabon.md §5, line 44)"
+      },
+      "vat": {
+        "value": "18%",
+        "file": "gabon.md",
+        "section": "5",
+        "line": 45,
+        "raw": "| Standard VAT / sales tax | 18% |",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {
+          "numbers": [
+            18.0
+          ],
+          "has_numeric": true,
+          "is_compound": false
+        },
+        "citation": "(source: gabon.md §5, line 45)"
+      },
+      "investment_agency": {
+        "value": "Verify current agency",
+        "file": "gabon.md",
+        "section": "5",
+        "line": 47,
+        "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Timber/oil-linked frameworks; investment charter.",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §5, line 47)"
+      },
+      "incentives": {
+        "value": "Timber/oil-linked frameworks; investment charter",
+        "file": "gabon.md",
+        "section": "5",
+        "line": 47,
+        "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Timber/oil-linked frameworks; investment charter.",
+        "canonical": null,
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §5, line 47)"
+      },
+      "regional_blocs": [
+        {
+          "value": "African Union",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC |",
+          "canonical": "African Union",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 13)"
+        },
+        {
+          "value": "CEMAC",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC |",
+          "canonical": "CEMAC",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 13)"
+        }
+      ],
+      "official_languages": [
+        {
+          "value": "French",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 14,
+          "raw": "| Official languages | French |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 14)"
+        }
+      ],
+      "dominant_languages": [
+        {
+          "value": "French",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, Fang, Myene, Punu, Nzebi |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 15)"
+        },
+        {
+          "value": "Fang",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, Fang, Myene, Punu, Nzebi |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 15)"
+        },
+        {
+          "value": "Myene",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, Fang, Myene, Punu, Nzebi |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 15)"
+        },
+        {
+          "value": "Punu",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, Fang, Myene, Punu, Nzebi |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 15)"
+        },
+        {
+          "value": "Nzebi",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, Fang, Myene, Punu, Nzebi |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 15)"
+        }
+      ],
+      "expansion_notes": [
+        {
+          "value": "Legal tradition and business language should follow the official languages above; for Gabon, contractual and regulatory materials are predominantly available in the official languages listed.",
+          "file": "gabon.md",
+          "section": "6",
+          "line": 53,
+          "raw": "- Legal tradition and business language should follow the official languages above; for Gabon, contractual and regulatory materials are predominantly available in the official languages listed.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §6, line 53)"
+        },
+        {
+          "value": "Regional integration (African Union; CEMAC) affects customs duties, data flows and professional recognition; factor this into cross-border plays.",
+          "file": "gabon.md",
+          "section": "6",
+          "line": 54,
+          "raw": "- Regional integration (African Union; CEMAC) affects customs duties, data flows and professional recognition; factor this into cross-border plays.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §6, line 54)"
+        },
+        {
+          "value": "Figures in this dossier are a planning baseline, not legal, tax or financial advice. Verify each item with the named authority before commitment.",
+          "file": "gabon.md",
+          "section": "6",
+          "line": 55,
+          "raw": "- Figures in this dossier are a planning baseline, not legal, tax or financial advice. Verify each item with the named authority before commitment.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §6, line 55)"
+        }
+      ],
+      "sectors": {
+        "fintech": {
+          "value": "CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection.",
+          "file": "gabon.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §4, line 33)"
+        },
+        "healthtech": {
+          "value": "Ministry of Health approval for products and services; medicines/pharmacy board where applicable; data protection for sensitive health data; medical device registration where relevant.",
+          "file": "gabon.md",
+          "section": "4",
+          "line": 34,
+          "raw": "| **Healthtech** | Ministry of Health approval for products and services; medicines/pharmacy board where applicable; data protection for sensitive health data; medical device registration where relevant. |",
+          "canonical": "Healthtech",
+          "qualifier": null,
+          "is_boilerplate": true,
+          "meta": {},
+          "citation": "(source: gabon.md §4, line 34)"
+        },
+        "edtech": {
+          "value": "Ministry of Education content and curriculum accreditation; data protection with specific attention to minors' data; intellectual property and content licensing.",
+          "file": "gabon.md",
+          "section": "4",
+          "line": 35,
+          "raw": "| **Edtech** | Ministry of Education content and curriculum accreditation; data protection with specific attention to minors' data; intellectual property and content licensing. |",
+          "canonical": "Edtech",
+          "qualifier": null,
+          "is_boilerplate": true,
+          "meta": {},
+          "citation": "(source: gabon.md §4, line 35)"
+        },
+        "agritech": {
+          "value": "Ministry of Agriculture and plant-health authority (phytosanitary); land use and lease diligence; export/customs compliance where cross-border.",
+          "file": "gabon.md",
+          "section": "4",
+          "line": 36,
+          "raw": "| **Agritech** | Ministry of Agriculture and plant-health authority (phytosanitary); land use and lease diligence; export/customs compliance where cross-border. |",
+          "canonical": "Agritech",
+          "qualifier": null,
+          "is_boilerplate": true,
+          "meta": {},
+          "citation": "(source: gabon.md §4, line 36)"
+        },
+        "retail & ecommerce": {
+          "value": "National revenue authority (VAT and digital-service taxes); consumer-protection authority; data protection at consumer scale; standards bureau for product compliance.",
+          "file": "gabon.md",
+          "section": "4",
+          "line": 37,
+          "raw": "| **Retail & ecommerce** | National revenue authority (VAT and digital-service taxes); consumer-protection authority; data protection at consumer scale; standards bureau for product compliance. |",
+          "canonical": "Retail & ecommerce",
+          "qualifier": null,
+          "is_boilerplate": true,
+          "meta": {},
+          "citation": "(source: gabon.md §4, line 37)"
+        },
+        "energy & manufacturing": {
+          "value": "Energy regulator: 30%; environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available.",
+          "file": "gabon.md",
+          "section": "4",
+          "line": 38,
+          "raw": "| **Energy & manufacturing** | Energy regulator: 30%; environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available. |",
+          "canonical": "Energy & manufacturing",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §4, line 38)"
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "regulators": {
+      "currency": {
+        "home_code": "XAF",
+        "target_code": "XAF",
+        "home_field": {
+          "value": "Central African CFA franc (XAF) (CEMAC / BEAC)",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 12,
+          "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 12)"
+        },
+        "target_field": {
+          "value": "Central African CFA franc (XAF) (CEMAC / BEAC)",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 12,
+          "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 12)"
+        },
+        "same": true
+      },
+      "central_bank": {
+        "home_field": {
+          "value": "Banque des États de l'Afrique Centrale (BEAC)",
+          "file": "cameroon.md",
+          "section": "2",
+          "line": 19,
+          "raw": "**Central bank:** Banque des États de l'Afrique Centrale (BEAC). Fintech ventures should plan on central-bank licensing for payment and lending products, AML/CFT registration, and consumer-credit rules. Cross-border digital services are increasingly taxed or regulated by regional frameworks (WAEMU/ECOWAS/EAC harmonisation).",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §2, line 19)"
+        },
+        "target_field": {
+          "value": "BEAC",
+          "file": "gabon.md",
+          "section": "2",
+          "line": 19,
+          "raw": "**Central bank:** BEAC. Fintech ventures should plan on central-bank licensing for payment and lending products, AML/CFT registration, and consumer-credit rules. Cross-border digital services are increasingly taxed or regulated by regional frameworks (WAEMU/ECOWAS/EAC harmonisation).",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §2, line 19)"
+        },
+        "home_canonical": "BEAC",
+        "target_canonical": "BEAC",
+        "home_display": "BEAC (Banque des États de l'Afrique Centrale)",
+        "target_display": "BEAC (Banque des États de l'Afrique Centrale)",
+        "same": true,
+        "raw_differs": true
+      },
+      "data_protection": {
+        "home_field": {
+          "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel)",
+          "file": "cameroon.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §2, line 21)"
+        },
+        "target_field": {
+          "value": "CNPD (Commission Nationale pour la Protection des Données)",
+          "file": "gabon.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** CNPD (Commission Nationale pour la Protection des Données) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §2, line 21)"
+        },
+        "home_acronym": "CNPD",
+        "target_acronym": "CNPD",
+        "home_expansion": "Commission Nationale pour la Protection des Données à Caractère Personnel",
+        "target_expansion": "Commission Nationale pour la Protection des Données",
+        "same": false,
+        "same_acronym_different_expansion": true
+      },
+      "sector_regulator": {
+        "sector_key": "fintech",
+        "licensing_section": "2",
+        "licensing_slot": "central_bank",
+        "role_en": "Central bank (primary licensing contact for payments and lending)",
+        "role_fr": "Banque centrale (contact principal pour l'agrément des paiements et du crédit)",
+        "home": {
+          "expected_field": {
+            "value": "Banque des États de l'Afrique Centrale (BEAC)",
+            "file": "cameroon.md",
+            "section": "2",
+            "line": 19,
+            "raw": "**Central bank:** Banque des États de l'Afrique Centrale (BEAC). Fintech ventures should plan on central-bank licensing for payment and lending products, AML/CFT registration, and consumer-credit rules. Cross-border digital services are increasingly taxed or regulated by regional frameworks (WAEMU/ECOWAS/EAC harmonisation).",
+            "canonical": null,
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {},
+            "citation": "(source: cameroon.md §2, line 19)"
+          },
+          "expected_canonical": "BEAC",
+          "section4_named_field": {
+            "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending",
+            "file": "cameroon.md",
+            "section": "4",
+            "line": 33,
+            "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending; AML/CFT compliance; data protection registration (19.25%); consumer protection. |",
+            "canonical": "Fintech",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {},
+            "citation": "(source: cameroon.md §4, line 33)"
+          },
+          "section4_conflict": true,
+          "conflict_reason": "Section 4 names the data protection authority in the payments/lending licensing slot instead of the central bank."
+        },
+        "target": {
+          "expected_field": {
+            "value": "BEAC",
+            "file": "gabon.md",
+            "section": "2",
+            "line": 19,
+            "raw": "**Central bank:** BEAC. Fintech ventures should plan on central-bank licensing for payment and lending products, AML/CFT registration, and consumer-credit rules. Cross-border digital services are increasingly taxed or regulated by regional frameworks (WAEMU/ECOWAS/EAC harmonisation).",
+            "canonical": null,
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {},
+            "citation": "(source: gabon.md §2, line 19)"
+          },
+          "expected_canonical": "BEAC",
+          "section4_named_field": {
+            "value": "CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending",
+            "file": "gabon.md",
+            "section": "4",
+            "line": 33,
+            "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection. |",
+            "canonical": "Fintech",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {},
+            "citation": "(source: gabon.md §4, line 33)"
+          },
+          "section4_conflict": true,
+          "conflict_reason": "Section 4 names the data protection authority in the payments/lending licensing slot instead of the central bank."
+        },
+        "same": true,
+        "any_section4_conflict": true
+      }
+    },
+    "sector_steps": {
+      "sector_key": "fintech",
+      "home_row": {
+        "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending; AML/CFT compliance; data protection registration (19.25%); consumer protection.",
+        "file": "cameroon.md",
+        "section": "4",
+        "line": 33,
+        "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending; AML/CFT compliance; data protection registration (19.25%); consumer protection. |",
+        "canonical": "Fintech",
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: cameroon.md §4, line 33)"
+      },
+      "target_row": {
+        "value": "CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection.",
+        "file": "gabon.md",
+        "section": "4",
+        "line": 33,
+        "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection. |",
+        "canonical": "Fintech",
+        "qualifier": null,
+        "is_boilerplate": false,
+        "meta": {},
+        "citation": "(source: gabon.md §4, line 33)"
+      },
+      "home_steps": [
+        {
+          "order": 1,
+          "text": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending",
+          "field": {
+            "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending",
+            "file": "cameroon.md",
+            "section": "4",
+            "line": 33,
+            "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending; AML/CFT compliance; data protection registration (19.25%); consumer protection. |",
+            "canonical": "Fintech",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {},
+            "citation": "(source: cameroon.md §4, line 33)"
+          },
+          "is_boilerplate": false,
+          "template_flagged": true,
+          "flag_reason": "Template defect: names the data protection authority as payments/lending licensor instead of the central bank."
+        },
+        {
+          "order": 2,
+          "text": "AML/CFT compliance",
+          "field": {
+            "value": "AML/CFT compliance",
+            "file": "cameroon.md",
+            "section": "4",
+            "line": 33,
+            "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending; AML/CFT compliance; data protection registration (19.25%); consumer protection. |",
+            "canonical": "Fintech",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {},
+            "citation": "(source: cameroon.md §4, line 33)"
+          },
+          "is_boilerplate": false,
+          "template_flagged": false,
+          "flag_reason": null
+        },
+        {
+          "order": 3,
+          "text": "data protection registration (19.25%)",
+          "field": {
+            "value": "data protection registration (19.25%)",
+            "file": "cameroon.md",
+            "section": "4",
+            "line": 33,
+            "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending; AML/CFT compliance; data protection registration (19.25%); consumer protection. |",
+            "canonical": "Fintech",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {},
+            "citation": "(source: cameroon.md §4, line 33)"
+          },
+          "is_boilerplate": false,
+          "template_flagged": true,
+          "flag_reason": "Template defect: leaks the Section 5 VAT rate into a data-protection registration fee slot."
+        },
+        {
+          "order": 4,
+          "text": "consumer protection",
+          "field": {
+            "value": "consumer protection",
+            "file": "cameroon.md",
+            "section": "4",
+            "line": 33,
+            "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending; AML/CFT compliance; data protection registration (19.25%); consumer protection. |",
+            "canonical": "Fintech",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {},
+            "citation": "(source: cameroon.md §4, line 33)"
+          },
+          "is_boilerplate": false,
+          "template_flagged": false,
+          "flag_reason": null
+        }
+      ],
+      "target_steps": [
+        {
+          "order": 1,
+          "text": "CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending",
+          "field": {
+            "value": "CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending",
+            "file": "gabon.md",
+            "section": "4",
+            "line": 33,
+            "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection. |",
+            "canonical": "Fintech",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {},
+            "citation": "(source: gabon.md §4, line 33)"
+          },
+          "is_boilerplate": false,
+          "template_flagged": true,
+          "flag_reason": "Template defect: names the data protection authority as payments/lending licensor instead of the central bank."
+        },
+        {
+          "order": 2,
+          "text": "AML/CFT compliance",
+          "field": {
+            "value": "AML/CFT compliance",
+            "file": "gabon.md",
+            "section": "4",
+            "line": 33,
+            "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection. |",
+            "canonical": "Fintech",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {},
+            "citation": "(source: gabon.md §4, line 33)"
+          },
+          "is_boilerplate": false,
+          "template_flagged": false,
+          "flag_reason": null
+        },
+        {
+          "order": 3,
+          "text": "data protection registration (18%)",
+          "field": {
+            "value": "data protection registration (18%)",
+            "file": "gabon.md",
+            "section": "4",
+            "line": 33,
+            "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection. |",
+            "canonical": "Fintech",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {},
+            "citation": "(source: gabon.md §4, line 33)"
+          },
+          "is_boilerplate": false,
+          "template_flagged": true,
+          "flag_reason": "Template defect: leaks the Section 5 VAT rate into a data-protection registration fee slot."
+        },
+        {
+          "order": 4,
+          "text": "consumer protection",
+          "field": {
+            "value": "consumer protection",
+            "file": "gabon.md",
+            "section": "4",
+            "line": 33,
+            "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection. |",
+            "canonical": "Fintech",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {},
+            "citation": "(source: gabon.md §4, line 33)"
+          },
+          "is_boilerplate": false,
+          "template_flagged": false,
+          "flag_reason": null
+        }
+      ],
+      "has_template_flagged_steps": true
+    },
+    "taxes": {
+      "cit": {
+        "home_field": {
+          "value": "30% (33% for some sectors)",
+          "file": "cameroon.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 30% (33% for some sectors) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              30.0,
+              33.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: cameroon.md §5, line 44)"
+        },
+        "target_field": {
+          "value": "30%",
+          "file": "gabon.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 30% |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              30.0
+            ],
+            "has_numeric": true,
+            "is_compound": false
+          },
+          "citation": "(source: gabon.md §5, line 44)"
+        },
+        "home_headline": 30.0,
+        "target_headline": 30.0,
+        "same_headline": true,
+        "home_all_numbers": [
+          30.0,
+          33.0
+        ],
+        "target_all_numbers": [
+          30.0
+        ],
+        "home_compound": true,
+        "target_compound": false,
+        "home_non_numeric": false,
+        "target_non_numeric": false,
+        "comparable": false,
+        "status": "uncomparable-as-is",
+        "delta_pp": null
+      },
+      "vat": {
+        "home_field": {
+          "value": "19.25%",
+          "file": "cameroon.md",
+          "section": "5",
+          "line": 45,
+          "raw": "| Standard VAT / sales tax | 19.25% |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              19.25
+            ],
+            "has_numeric": true,
+            "is_compound": false
+          },
+          "citation": "(source: cameroon.md §5, line 45)"
+        },
+        "target_field": {
+          "value": "18%",
+          "file": "gabon.md",
+          "section": "5",
+          "line": 45,
+          "raw": "| Standard VAT / sales tax | 18% |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              18.0
+            ],
+            "has_numeric": true,
+            "is_compound": false
+          },
+          "citation": "(source: gabon.md §5, line 45)"
+        },
+        "home_headline": 19.25,
+        "target_headline": 18.0,
+        "same_headline": false,
+        "home_all_numbers": [
+          19.25
+        ],
+        "target_all_numbers": [
+          18.0
+        ],
+        "home_compound": false,
+        "target_compound": false,
+        "home_non_numeric": false,
+        "target_non_numeric": false,
+        "comparable": true,
+        "status": "comparable",
+        "delta_pp": -1.25
+      }
+    },
+    "languages": {
+      "home_official": [
+        {
+          "value": "English",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 14,
+          "raw": "| Official languages | English, French |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 14)"
+        },
+        {
+          "value": "French",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 14,
+          "raw": "| Official languages | English, French |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 14)"
+        }
+      ],
+      "target_official": [
+        {
+          "value": "French",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 14,
+          "raw": "| Official languages | French |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 14)"
+        }
+      ],
+      "home_dominant": [
+        {
+          "value": "French",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, English, Cameroonian Pidgin, Fulfulde, Ewondo, Duala |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 15)"
+        },
+        {
+          "value": "English",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, English, Cameroonian Pidgin, Fulfulde, Ewondo, Duala |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 15)"
+        },
+        {
+          "value": "Cameroonian Pidgin",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, English, Cameroonian Pidgin, Fulfulde, Ewondo, Duala |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 15)"
+        },
+        {
+          "value": "Fulfulde",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, English, Cameroonian Pidgin, Fulfulde, Ewondo, Duala |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 15)"
+        },
+        {
+          "value": "Ewondo",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, English, Cameroonian Pidgin, Fulfulde, Ewondo, Duala |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 15)"
+        },
+        {
+          "value": "Duala",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, English, Cameroonian Pidgin, Fulfulde, Ewondo, Duala |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §1, line 15)"
+        }
+      ],
+      "target_dominant": [
+        {
+          "value": "French",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, Fang, Myene, Punu, Nzebi |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 15)"
+        },
+        {
+          "value": "Fang",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, Fang, Myene, Punu, Nzebi |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 15)"
+        },
+        {
+          "value": "Myene",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, Fang, Myene, Punu, Nzebi |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 15)"
+        },
+        {
+          "value": "Punu",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, Fang, Myene, Punu, Nzebi |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 15)"
+        },
+        {
+          "value": "Nzebi",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 15,
+          "raw": "| Dominant spoken languages | French, Fang, Myene, Punu, Nzebi |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §1, line 15)"
+        }
+      ],
+      "shared_official": [
+        "French"
+      ],
+      "dropped_official": [
+        "English"
+      ],
+      "added_official": [],
+      "official_differs": true,
+      "dominant_differs": true,
+      "has_prose_cell": false
+    }
+  },
+  "blocs": {
+    "shared": [
+      {
+        "canonical": "African Union",
+        "name_en": "African Union",
+        "name_fr": "Union africaine",
+        "meaning_en": "Continent-wide political body backing the African Continental Free Trade Area (AfCFTA), though day-to-day company licensing still happens at the country or sub-regional level.",
+        "meaning_fr": "Organisation continentale soutenant la Zone de libre-échange continentale africaine (ZLECAf), mais les agréments quotidiens restent délivrés au niveau national ou sous-régional.",
+        "monetary_union": false,
+        "regional_supervisor": null,
+        "regional_supervisor_status": "unverified",
+        "home_entry": {
+          "canonical": "African Union",
+          "qualifier": null,
+          "alternate_acronym": null,
+          "raw_value": "African Union",
+          "field": {
+            "value": "African Union",
+            "file": "cameroon.md",
+            "section": "1",
+            "line": 13,
+            "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+            "canonical": "African Union",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {}
+          },
+          "citation": "(source: cameroon.md §1, line 13)"
+        },
+        "target_entry": {
+          "canonical": "African Union",
+          "qualifier": null,
+          "alternate_acronym": null,
+          "raw_value": "African Union",
+          "field": {
+            "value": "African Union",
+            "file": "gabon.md",
+            "section": "1",
+            "line": 13,
+            "raw": "| Regional blocs | African Union; CEMAC |",
+            "canonical": "African Union",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {}
+          },
+          "citation": "(source: gabon.md §1, line 13)"
+        },
+        "home_qualifier": null,
+        "target_qualifier": null
+      },
+      {
+        "canonical": "CEMAC",
+        "name_en": "CEMAC (Central African Economic and Monetary Community)",
+        "name_fr": "CEMAC (Communauté Économique et Monétaire de l'Afrique Centrale)",
+        "meaning_en": "Shared currency zone (XAF) and single central bank (BEAC), meaning no foreign-exchange conversion risk between members and shared regional banking rules.",
+        "meaning_fr": "Zone monétaire commune (XAF) avec une banque centrale unique (BEAC), ce qui supprime le risque de change entre pays membres et harmonise les règles bancaires régionales.",
+        "monetary_union": true,
+        "regional_supervisor": "COBAC (Commission Bancaire de l'Afrique Centrale)",
+        "regional_supervisor_status": "unverified",
+        "home_entry": {
+          "canonical": "CEMAC",
+          "qualifier": null,
+          "alternate_acronym": null,
+          "raw_value": "CEMAC",
+          "field": {
+            "value": "CEMAC",
+            "file": "cameroon.md",
+            "section": "1",
+            "line": 13,
+            "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+            "canonical": "CEMAC",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {}
+          },
+          "citation": "(source: cameroon.md §1, line 13)"
+        },
+        "target_entry": {
+          "canonical": "CEMAC",
+          "qualifier": null,
+          "alternate_acronym": null,
+          "raw_value": "CEMAC",
+          "field": {
+            "value": "CEMAC",
+            "file": "gabon.md",
+            "section": "1",
+            "line": 13,
+            "raw": "| Regional blocs | African Union; CEMAC |",
+            "canonical": "CEMAC",
+            "qualifier": null,
+            "is_boilerplate": false,
+            "meta": {}
+          },
+          "citation": "(source: gabon.md §1, line 13)"
+        },
+        "home_qualifier": null,
+        "target_qualifier": null
+      }
+    ],
+    "shared_keys": [
+      "African Union",
+      "CEMAC"
+    ],
+    "only_in_home": [
+      {
+        "canonical": "ECOWAS",
+        "qualifier": "observer",
+        "alternate_acronym": null,
+        "raw_value": "ECOWAS (observer)",
+        "field": {
+          "value": "ECOWAS (observer)",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+          "canonical": "ECOWAS",
+          "qualifier": "observer",
+          "is_boilerplate": false,
+          "meta": {}
+        },
+        "citation": "(source: cameroon.md §1, line 13)"
+      }
+    ],
+    "only_in_target": [],
+    "home_all": [
+      {
+        "canonical": "African Union",
+        "qualifier": null,
+        "alternate_acronym": null,
+        "raw_value": "African Union",
+        "field": {
+          "value": "African Union",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+          "canonical": "African Union",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {}
+        },
+        "citation": "(source: cameroon.md §1, line 13)"
+      },
+      {
+        "canonical": "CEMAC",
+        "qualifier": null,
+        "alternate_acronym": null,
+        "raw_value": "CEMAC",
+        "field": {
+          "value": "CEMAC",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+          "canonical": "CEMAC",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {}
+        },
+        "citation": "(source: cameroon.md §1, line 13)"
+      },
+      {
+        "canonical": "ECOWAS",
+        "qualifier": "observer",
+        "alternate_acronym": null,
+        "raw_value": "ECOWAS (observer)",
+        "field": {
+          "value": "ECOWAS (observer)",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+          "canonical": "ECOWAS",
+          "qualifier": "observer",
+          "is_boilerplate": false,
+          "meta": {}
+        },
+        "citation": "(source: cameroon.md §1, line 13)"
+      }
+    ],
+    "target_all": [
+      {
+        "canonical": "African Union",
+        "qualifier": null,
+        "alternate_acronym": null,
+        "raw_value": "African Union",
+        "field": {
+          "value": "African Union",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC |",
+          "canonical": "African Union",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {}
+        },
+        "citation": "(source: gabon.md §1, line 13)"
+      },
+      {
+        "canonical": "CEMAC",
+        "qualifier": null,
+        "alternate_acronym": null,
+        "raw_value": "CEMAC",
+        "field": {
+          "value": "CEMAC",
+          "file": "gabon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC |",
+          "canonical": "CEMAC",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {}
+        },
+        "citation": "(source: gabon.md §1, line 13)"
+      }
+    ],
+    "qualifiers_by_side": {
+      "home": [
+        {
+          "canonical": "ECOWAS",
+          "qualifier": "observer",
+          "alternate_acronym": null,
+          "raw_value": "ECOWAS (observer)",
+          "field": {
+            "value": "ECOWAS (observer)",
+            "file": "cameroon.md",
+            "section": "1",
+            "line": 13,
+            "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+            "canonical": "ECOWAS",
+            "qualifier": "observer",
+            "is_boilerplate": false,
+            "meta": {}
+          },
+          "citation": "(source: cameroon.md §1, line 13)"
+        }
+      ],
+      "target": []
+    }
+  },
+  "flags": [
+    {
+      "rule_id": "TPL-S4-LICENSOR",
+      "severity": "high",
+      "scope": "template",
+      "confidence": "in-dossier",
+      "message": "Section 4 Fintech row names the data protection authority as the payments and lending licensor instead of the central bank.",
+      "evidence": [
+        {
+          "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending",
+          "file": "cameroon.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending; AML/CFT compliance; data protection registration (19.25%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §4, line 33)"
+        },
+        {
+          "value": "CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending",
+          "file": "gabon.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §4, line 33)"
+        }
+      ],
+      "why_it_matters": "Asking a privacy office for a payment licence wastes time because central banks handle financial licensing.",
+      "suggested_check": "Confirm payment and lending licensing directly with the central bank named in Section 2.",
+      "affected_count": 54,
+      "corpus_total": 54
+    },
+    {
+      "rule_id": "TPL-S4-VAT-LEAK",
+      "severity": "high",
+      "scope": "template",
+      "confidence": "in-dossier",
+      "message": "Section 4 Fintech row inserts the Section 5 VAT percentage inside the data-protection registration fee slot.",
+      "evidence": [
+        {
+          "value": "data protection registration (19.25%)",
+          "file": "cameroon.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending; AML/CFT compliance; data protection registration (19.25%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §4, line 33)"
+        },
+        {
+          "value": "data protection registration (18%)",
+          "file": "gabon.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §4, line 33)"
+        }
+      ],
+      "why_it_matters": "A sales-tax percentage is not a registration fee, so budgeting from this cell would be misleading.",
+      "suggested_check": "Ask the national data protection authority for its actual current registration fee schedule.",
+      "affected_count": 54,
+      "corpus_total": 54
+    },
+    {
+      "rule_id": "DPA-EXPANSION-MISMATCH",
+      "severity": "med",
+      "scope": "bloc",
+      "confidence": "in-dossier",
+      "message": "Both dossiers use the data-protection acronym 'CNPD' with different full names ('Commission Nationale pour la Protection des Données à Caractère Personnel' vs 'Commission Nationale pour la Protection des Données').",
+      "evidence": [
+        {
+          "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel)",
+          "file": "cameroon.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §2, line 21)"
+        },
+        {
+          "value": "CNPD (Commission Nationale pour la Protection des Données)",
+          "file": "gabon.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** CNPD (Commission Nationale pour la Protection des Données) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Conflicting agency names suggest the dossier entry may be templated rather than verified against national law.",
+      "suggested_check": "Confirm the official legal name and active registration office of each country's privacy regulator directly."
+    },
+    {
+      "rule_id": "PLACEHOLDER-VALUE",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Target dossier has placeholder text in energy regulator: 'Ministry of Energy (verify current regulator)'.",
+      "evidence": [
+        {
+          "value": "Ministry of Energy (verify current regulator)",
+          "file": "gabon.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not name a verified office to contact for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current energy regulator."
+    },
+    {
+      "rule_id": "PLACEHOLDER-VALUE",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Target dossier has placeholder text in investment promotion agency: 'Verify current agency'.",
+      "evidence": [
+        {
+          "value": "Verify current agency",
+          "file": "gabon.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Timber/oil-linked frameworks; investment charter.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not name a verified office to contact for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current investment promotion agency."
+    },
+    {
+      "rule_id": "TAX-UNCOMPARABLE",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Corporate income tax (CIT) cannot be subtracted directly (compound/multi-rate cell); all rates are shown without computing a single delta.",
+      "evidence": [
+        {
+          "value": "30% (33% for some sectors)",
+          "file": "cameroon.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 30% (33% for some sectors) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              30.0,
+              33.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: cameroon.md §5, line 44)"
+        },
+        {
+          "value": "30%",
+          "file": "gabon.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 30% |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              30.0
+            ],
+            "has_numeric": true,
+            "is_compound": false
+          },
+          "citation": "(source: gabon.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Different business sectors or company sizes can face different tax rates, so a single subtraction could mislead your budget.",
+      "suggested_check": "Confirm which tax bracket applies to your company with each country's national revenue authority."
+    },
+    {
+      "rule_id": "BLOC-QUALIFIER-UNCONFIRMED",
+      "severity": "low",
+      "scope": "bloc",
+      "confidence": "in-dossier",
+      "message": "Home dossier lists 'ECOWAS (observer)', which carries a 'observer' qualifier and is absent from the partner dossier.",
+      "evidence": [
+        {
+          "value": "ECOWAS (observer)",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+          "canonical": "ECOWAS",
+          "qualifier": "observer",
+          "is_boilerplate": false,
+          "meta": {}
+        }
+      ],
+      "why_it_matters": "Observer or unverified bloc status does not grant the trade or licensing benefits of full membership.",
+      "suggested_check": "Do not rely on this bloc for cross-border licensing; confirm membership status on the bloc's official registry."
+    }
+  ],
+  "template_banner": [
+    {
+      "rule_id": "TPL-S4-LICENSOR",
+      "affected_count": 54,
+      "corpus_total": 54,
+      "message": "Section 4 Fintech row names the data protection authority as the payments and lending licensor instead of the central bank."
+    },
+    {
+      "rule_id": "TPL-S4-VAT-LEAK",
+      "affected_count": 54,
+      "corpus_total": 54,
+      "message": "Section 4 Fintech row inserts the Section 5 VAT percentage inside the data-protection registration fee slot."
+    }
+  ],
+  "our_checks": [
+    {
+      "id": "EXT-01",
+      "blocs": [
+        "CEMAC"
+      ],
+      "countries": [
+        "cameroon",
+        "central-african-republic",
+        "chad",
+        "equatorial-guinea",
+        "gabon",
+        "republic-of-congo"
+      ],
+      "claim": "In CEMAC, banking and payment-institution licensing and supervision involve a regional banking supervisor alongside BEAC and national finance ministries; no regional banking supervisor is mentioned in any CEMAC dossier.",
+      "claim_fr": "Dans la zone CEMAC, l'agrément et la supervision des banques et établissements de paiement impliquent un superviseur bancaire régional aux côtés de la BEAC et des ministères des Finances ; aucun superviseur bancaire régional n'est cité dans les dossiers CEMAC.",
+      "source_url": "",
+      "status": "unverified",
+      "confidence": "our-check"
+    },
+    {
+      "id": "EXT-02",
+      "blocs": [
+        "CEMAC"
+      ],
+      "countries": [
+        "cameroon"
+      ],
+      "claim": "Confirm whether Cameroon holds ECOWAS observer status; Cameroon is a CEMAC member and ECOWAS observer status is not confirmed by partner dossiers.",
+      "claim_fr": "Vérifier si le Cameroun dispose réellement d'un statut d'observateur auprès de la CEDEAO ; le Cameroun est membre de la CEMAC et ce statut n'est pas confirmé par les dossiers partenaires.",
+      "source_url": "",
+      "status": "unverified",
+      "confidence": "our-check"
+    },
+    {
+      "id": "EXT-03",
+      "blocs": [
+        "CEMAC"
+      ],
+      "countries": [
+        "cameroon",
+        "gabon"
+      ],
+      "claim": "Confirm the current operational national data-protection authority in both countries rather than relying on the conflicting CNPD expansions printed in the dossiers.",
+      "claim_fr": "Vérifier l'autorité nationale de protection des données actuellement opérationnelle dans les deux pays plutôt que de s'appuyer sur les intitulés CNPD divergents figurant dans les dossiers.",
+      "source_url": "",
+      "status": "unverified",
+      "confidence": "our-check"
+    }
+  ],
+  "scores": {
+    "label": "High",
+    "counts": {
+      "high": 0,
+      "med": 4,
+      "low": 1,
+      "total": 5
+    },
+    "template_flag_count": 2,
+    "note_en": "Measures source-dossier data quality for this route (country & bloc flags only), never legal risk.",
+    "note_fr": "Mesure uniquement la qualité des dossiers sources pour cet itinéraire (alertes pays et bloc), jamais le risque juridique."
+  },
+  "corpus_stats": {
+    "dossier_count": 54,
+    "dpa_as_payments_licensor": 54,
+    "vat_in_fee_slot": 54,
+    "cit_in_energy_regulator_slot": 54,
+    "waemu_prose_outside_blocs": 30
+  }
+}
