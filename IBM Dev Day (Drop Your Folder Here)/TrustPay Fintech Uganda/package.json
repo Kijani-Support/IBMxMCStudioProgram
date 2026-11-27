@@ -1,0 +1,19 @@
+{
+  "name": "trustpay",
+  "version": "0.1.0",
+  "description": "TrustPay MVP — payment confirmation to rider notification bridge",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --dir server dev",
+    "web": "pnpm --dir client dev",
+    "web:build": "pnpm --dir client build",
+    "build": "pnpm --dir server build",
+    "start": "pnpm --dir server start",
+    "test": "pnpm --dir server test",
+    "test:watch": "pnpm --dir server test:watch"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@11.24.0"
+}
