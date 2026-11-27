@@ -10,7 +10,7 @@
 | [Power 2026 Primer](power-2026-primer.md) | Capture of **power2026.ai** ("Electricity Pricing in the Age of AI," Neel Somani, © 2026): power-plant fundamentals, development & financing, US power markets, trading, plus bridge notes to Kenya |
 | [Sita Sector Energy Playbook](sita-sector-energy-playbook.md) | Per-sector research: how **community virtual power plants (VPPs)** and **physical power plants** scale operations, efficiencies, and profit margins across all six Sita sectors — with Kenya market data, a sequencing roadmap, and cross-border replication pathways |
 | [Africa Regulatory Dossiers](africa-regulatory/README.md) | **54-country subfolder:** one regulatory, compliance and tax dossier per African Union member state (central bank, energy regulator, six-sector compliance steps, CIT/VAT, official + dominant spoken languages) — cited by the playbook for every country-specific step |
-| [IBM Dev Day Schedule](IBM%20Dev%20Day%20(Drop%20Your%20Folder%20Here)/DEV-DAY-SCHEDULE.md) | Run of show for the Dev Day: **90-minute build activity**, then a **15-minute demo per group** (7 groups) |
+| [IBM Dev Day Challenge](Dev%20Day%20Challenge/README.md) | **New Dev Day challenge, separate from earlier builds:** build a Cross-Border Launch Navigator from the country dossiers. **90-minute build**, then a **15-minute demo per group** (7 groups), with group routes, rules and scoring |
 
 ## How this wiki relates to the Sita Sector Program
 
