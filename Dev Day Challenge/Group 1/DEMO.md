@@ -34,11 +34,12 @@ python audit.py
 ```
 - Show `data/flags_all.json` covering all **54 dossiers**, and `audit.py` printing **PASS** on A1–A10 (zero country literals in code, 100% docstrings, 5 extra pairs + all 6 sectors, broken-file safety, zero secrets, offline dashboard).
 
-### Minute 7–8 · Swap Test & Close
+### Minute 7–8 · Swap Test, Non-Math Q&A & Close
 ```bash
 python cli.py --sector fintech --home gabon --target cameroon --lang en
 ```
 - Point out the flipped VAT percentage-point delta and language diff, confirming nothing is hard-coded.
+- **Judge Q&A (How non-math sections like KYC & AML/CFT work):** Explain that while taxes are diffed numerically (never subtracting compound cells), non-math obligations—KYC (verifying customer identity before moving money), AML/CFT (ongoing monitoring, record-keeping, and reporting suspicious activity to the national Financial Intelligence Unit), licensing, privacy, and consumer protection—are checked structurally: Passerelle separates verbatim boilerplate from country-specific evidence, catches wrong-authority routing (`V01`), catches conflicting agency names (`V08`) and unnamed offices (`V20`), and turns every dossier gap into a concrete 'who to ask first' step instead of hallucinating legal thresholds.
 
 ---
 

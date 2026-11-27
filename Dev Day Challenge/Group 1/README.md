@@ -63,6 +63,20 @@ Systemic template defects (`V01`, `V02`, `V03` affecting all `54/54` dossiers) a
 
 ---
 
+## How Passerelle Handles Non-Math Compliance (KYC, AML/CFT, Licensing, Privacy & Language)
+
+Numeric rules like VAT (`19.25%` → `18%`, `-1.25` percentage points) are easy to diff with arithmetic, while **non-math compliance** governs day-to-day startup operations and cannot be reduced to a subtraction. Passerelle evaluates non-math sections **structurally in code**—never hallucinating statutory rules that are absent from the dossiers:
+
+| Non-Math Area | Plain-Language Operational Meaning | What Passerelle Checks Deterministically |
+|---|---|---|
+| **KYC (Know Your Customer)** | Checking who a user is before moving money (e.g., tiered onboarding from phone/ID checks for small wallets up to full national ID, selfie, and business-registry checks for higher limits). | Flags when the dossier only provides generic boilerplate instead of local ID/tier rules, and checks **language shifts** (e.g., Cameroon bilingual → Gabon French-only) that require localising KYC screens and consent flows. |
+| **AML/CFT (Anti-Money Laundering / Combating Financing of Terrorism)** | Ongoing monitoring after onboarding: sanctions/PEP screening, flagging suspicious transaction patterns, keeping records, and reporting suspicious transactions via a local compliance officer to the country's Financial Intelligence Unit (FIU). | Recognises that `"AML/CFT compliance"` in §4 is verbatim boilerplate across all 54 dossiers, so it presents it as a **starting checklist prompt** rather than researched country law and points founders to the real licensing authority to confirm local FIU reporting duties. |
+| **Financial Licensing** | Approval to hold customer funds, process payments, or issue credit (directly or via a licensed bank partner). | Cross-checks `data/sector_map.json` against §4 (`V01`) to stop founders from applying to a privacy regulator for a payments licence, normalises shared central banks (`BEAC`, `BCEAO`) via `data/aliases.json` (`V07`), and flags missing regional banking supervision strictly under **Our checks (unverified)**. |
+| **Data Protection (Privacy)** | Registering customer personal-data handling, collecting user consent, securing ID/transaction records, and checking cross-border data storage rules. | Flags conflicting agency expansions under the same acronym (`V08`, e.g. `CNPD` across Cameroon and Gabon), placeholder-only privacy slots (`V20`, 25/54 dossiers), and leaked VAT percentages masquerading as registration fees (`V03`, 54/54 dossiers). |
+| **Consumer Protection & Language** | Transparent fee disclosure before payment, working dispute/refund channels, and legally valid contracts in the target country's official language. | Splits official vs. dominant spoken/business languages at depth 0, highlights which home languages drop out on arrival (e.g., English drops out moving Cameroon → Gabon), and preserves boilerplate honesty on §4 `"consumer protection"`. |
+
+---
+
 ## Project Architecture
 
 | File | Purpose |
