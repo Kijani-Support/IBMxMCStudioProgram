@@ -1,0 +1,6 @@
+{
+  "name": "Cross-Border Launch Navigator",
+  "description": "Compare African regulatory, sector compliance, tax, language, and regional bloc requirements directly from country markdown dossiers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
