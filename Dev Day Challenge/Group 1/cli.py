@@ -29,8 +29,9 @@ import sys
 from pathlib import Path
 from typing import Optional
 
+from dashboard import write_dashboard
 from facts import build_facts, save_facts
-from render import render_brief
+from render import render_brief, render_demo_md
 from validate import print_demo_shortlist
 
 
@@ -63,7 +64,9 @@ def build_arg_parser() -> argparse.ArgumentParser:
     ap.add_argument("--out", default=None, help="Optional file path to write the Markdown brief.")
     ap.add_argument("--facts-out", default=None, help="Optional file path to write facts.json.")
     ap.add_argument("--dossier-dir", default=None, help="Optional override directory for country dossiers.")
-    ap.add_argument("--dashboard", action="store_true", help="Generate interactive dashboard.html (optional).")
+    ap.add_argument("--dashboard", action="store_true", help="Generate offline standalone dashboard.html.")
+    ap.add_argument("--dashboard-out", default=None, help="Optional output path for dashboard.html.")
+    ap.add_argument("--demo-out", default=None, help="Optional output path for generated DEMO.md.")
     ap.add_argument("--summary", default=None, help="Optional grounded summary mode, e.g. granite.")
     ap.add_argument("--shortlist", action="store_true", help="Print the 6-flag DEMO SHORTLIST for the route.")
     return ap
@@ -128,13 +131,23 @@ def run_cli(argv: Optional[list[str]] = None) -> int:
         print_demo_shortlist(facts.get("demo_shortlist", []))
 
     if args.dashboard:
-        print(
-            "Note: --dashboard will be enabled in Phase 4 (dashboard.py).",
-            file=sys.stderr,
+        dash_target = (
+            Path(args.dashboard_out)
+            if args.dashboard_out
+            else (Path(args.out).with_name("dashboard.html") if args.out else Path(__file__).resolve().parent / "dashboard.html")
         )
+        written = write_dashboard(facts, dash_target)
+        print(f"Offline dashboard written to: {written}", file=sys.stderr)
+
+    if args.demo_out:
+        demo_path = Path(args.demo_out)
+        demo_path.parent.mkdir(parents=True, exist_ok=True)
+        demo_path.write_text(render_demo_md(facts), encoding="utf-8")
+        print(f"Demo script written to: {demo_path}", file=sys.stderr)
+
     if args.summary:
         print(
-            f"Note: --summary {args.summary} will be enabled in Phase 5 (summary.py).",
+            f"Note: --summary {args.summary} runs offline fallback unless watsonx env vars are configured.",
             file=sys.stderr,
         )
 

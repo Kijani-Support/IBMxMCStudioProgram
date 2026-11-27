@@ -773,3 +773,93 @@ def render_brief(facts: dict[str, Any], lang: str = "en") -> str:
     out.append("")
 
     return "\n".join(out)
+
+
+def render_demo_md(facts: dict[str, Any]) -> str:
+    """Generate ``DEMO.md`` directly from ``facts.json`` and its DEMO SHORTLIST.
+
+    Purpose:
+        Produce a repeatable 8-minute live demo script plus a 4-minute 6-flag
+        walkthrough backed strictly by ``facts.json`` provenance and exact CLI
+        commands (Step 4).
+
+    Inputs:
+        facts: Dictionary returned by ``facts.build_facts``.
+
+    Outputs:
+        Markdown string for ``DEMO.md``.
+
+    Failure behaviour:
+        Never raises on empty shortlists or missing optional fields.
+    """
+    m = facts["meta"]
+    scores = facts["scores"]
+    shortlist = facts.get("demo_shortlist", [])
+    home_s = m["home_slug"]
+    target_s = m["target_slug"]
+    sector_s = m["sector_key"]
+    matrices = facts.get("bloc_matrices", {})
+    primary_bloc = next(iter(matrices.keys()), "regional bloc")
+
+    lines = [
+        f"# Passerelle — Live Demo Script ({m['home_country']} -> {m['target_country']} · {m['sector_display_en']})",
+        "",
+        f"> *{m['tagline_fr']} / {m['tagline_en']}* — {m['team']}",
+        "",
+        f"> **Disclaimer:** {m['disclaimer_en']}",
+        "",
+        "## 8-Minute Live Run Script",
+        "",
+        "### Minute 0–1 · Problem & Core Principles",
+        "- Introduce **Passerelle**: early-stage founders expanding across borders need clear answers on regulators, taxes, and language *and* need to know which lines of a planning dossier cannot yet be trusted.",
+        "- State our four principles: (1) code extracts, AI only explains; (2) every figure cites its dossier line; (3) doubt is shown, never hidden; (4) plain language first, legal vocabulary second.",
+        "",
+        "### Minute 1–3 · Generate the Sourced Brief (EN & FR) + Offline Dashboard",
+        "Run from `Dev Day Challenge/Group 1/`:",
+        "```bash",
+        f"python cli.py --sector {sector_s} --home {home_s} --target {target_s} --lang en --out brief_en.md --facts-out facts.json --dashboard --shortlist",
+        f"python cli.py --sector {sector_s} --home {home_s} --target {target_s} --lang fr --out brief_fr.md",
+        "```",
+        f"- Point to the **Template-defect banner** ({scores['template_flag_count']} systemic template flags separated from route Data Confidence) and the **Data Confidence** score: **{scores['label']}** ({scores['counts']['high']} High, {scores['counts']['med']} Medium, {scores['counts']['low']} Low — dossier quality only, never legal risk).",
+        "- Show the **French brief** (`brief_fr.md`): identical section count and figures, natural French, original institution names preserved.",
+        "",
+        "### Minute 3–5 · Open the Offline Dashboard (`dashboard.html`)",
+        "Open `dashboard.html` directly in any browser (zero server, zero internet, zero external requests):",
+        "```bash",
+        "start dashboard.html",
+        "```",
+        "- Toggle **EN / FR**, tick a step in the **First Steps Checklist**, click any **`source:` button** to open the **Evidence Drawer** showing the exact raw dossier line, and click **Export Brief (.md)**.",
+        f"- Highlight the **{primary_bloc} Consistency Matrix** showing every member country side-by-side (`ok` / `note` / `flag`) to prove Passerelle validates across the entire bloc, not just two files.",
+        "",
+        "### Minute 5–7 · Prove Scale & Discipline (`validate.py` + `audit.py`)",
+        "```bash",
+        "python validate.py",
+        "python audit.py",
+        "```",
+        "- Show `data/flags_all.json` covering all **54 dossiers**, and `audit.py` printing **PASS** on A1–A10 (zero country literals in code, 100% docstrings, 5 extra pairs + all 6 sectors, broken-file safety, zero secrets, offline dashboard).",
+        "",
+        "### Minute 7–8 · Swap Test & Close",
+        "```bash",
+        f"python cli.py --sector {sector_s} --home {target_s} --target {home_s} --lang en",
+        "```",
+        "- Point out the flipped VAT percentage-point delta and language diff, confirming nothing is hard-coded.",
+        "",
+        "---",
+        "",
+        "## 4-Minute Flags Walkthrough (DEMO SHORTLIST)",
+        "",
+        "Walk through these 6 curated flags from `facts.json` in order — moving from corpus-wide template errors to route-specific dossier contradictions and finally unverified external checks:",
+        "",
+    ]
+
+    for idx, item in enumerate(shortlist, start=1):
+        lines.append(
+            f"### {idx}. `[{item['rule']}]` — `{item['severity'].upper()}` · `{item['confidence']}`"
+        )
+        lines.append(f"- **Where:** `{item['location']}`")
+        lines.append(f"- **What Passerelle caught:** {item['message']}")
+        lines.append(f"- **Why it matters:** {item['why_it_matters']}")
+        lines.append("")
+
+    return "\n".join(lines)
+
