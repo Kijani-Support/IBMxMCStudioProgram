@@ -6,16 +6,17 @@
 
 > **Défauts systémiques du modèle de dossier (hors score pays)**
 > Ces anomalies touchent la plupart des 54 dossiers d'origine (erreurs de génération du modèle) et sont affichées séparément de la confiance propre à votre itinéraire :
-> - [TPL-S4-LICENSOR] 54 dossiers sur 54 partagent ce défaut : Section 4 Fintech row names the data protection authority as the payments and lending licensor instead of the central bank. (source: cameroon.md §4, line 33; gabon.md §4, line 33)
-> - [TPL-S4-VAT-LEAK] 54 dossiers sur 54 partagent ce défaut : Section 4 Fintech row inserts the Section 5 VAT percentage inside the data-protection registration fee slot. (source: cameroon.md §4, line 33; gabon.md §4, line 33)
+> - [V01] 54 dossiers sur 54 partagent ce défaut : La ligne Fintech de la section 4 cite l'autorité de protection des données comme organisme d'agrément pour les paiements et le crédit au lieu de la banque centrale (54 dossiers sur 54). (source: cameroon.md §4, line 33; gabon.md §4, line 33)
+> - [V02] 54 dossiers sur 54 partagent ce défaut : La ligne Énergie & industrie de la section 4 place un pourcentage dans l'emplacement prévu pour le régulateur de l'énergie (54 dossiers sur 54). (source: cameroon.md §4, line 38; gabon.md §4, line 38)
+> - [V03] 54 dossiers sur 54 partagent ce défaut : Un pourcentage de la section 4 correspond au taux de TVA ou d'IS de la section 5 (valeur fiscale recopiée par erreur dans 54 dossiers sur 54). (source: cameroon.md §4, line 33; gabon.md §4, line 33)
 
 ## 0. Vue d'ensemble
 
 - **Itinéraire:** Cameroon (Pays d'origine) -> Gabon (Pays cible) (source: cameroon.md, line 1); (source: gabon.md, line 1)
 - **Secteur:** Fintech
 - **Blocs partagés:** African Union (source: cameroon.md §1, line 13; gabon.md §1, line 13), CEMAC (source: cameroon.md §1, line 13; gabon.md §1, line 13)
-- **Alertes « Vérifier d'abord » (pays & bloc):** 0 Élevée, 4 Moyenne, 1 Faible (5 total; bannière modèle: 2)
-- **Fiabilité des données du dossier:** **Élevée** (0 Élevée, 4 Moyenne, 1 Faible) — Mesure uniquement la qualité des dossiers sources pour cet itinéraire (pays et bloc), jamais le risque juridique.
+- **Alertes « Vérifier d'abord » (pays & bloc):** 0 Élevée, 5 Moyenne, 0 Faible (5 total; bannière modèle: 3)
+- **Fiabilité des données du dossier:** **Élevée** (0 Élevée, 5 Moyenne, 0 Faible) — Mesure uniquement la qualité des dossiers sources pour cet itinéraire (pays et bloc), jamais le risque juridique.
 
 ## 1. Régulateurs à contacter
 
@@ -85,28 +86,37 @@
 - **CEMAC (Communauté Économique et Monétaire de l'Afrique Centrale)**: Zone monétaire commune (XAF) avec une banque centrale unique (BEAC), ce qui supprime le risque de change entre pays membres et harmonise les règles bancaires régionales. (source: cameroon.md §1, line 13; gabon.md §1, line 13)
 - **Uniquement dans le pays d'origine (Cameroon):** `ECOWAS (observer)` (source: cameroon.md §1, line 13)
 
+### Matrice de cohérence du bloc (CEMAC)
+
+| Pays | Devise | Banque centrale | Symétrie blocs | Nom DPA | Champs à vérifier | Alertes | Source |
+|---|---|---|---|---|---|---|---|
+| Cameroon | `ok` XAF | `note` BEAC (full name) | `flag` V06 (ECOWAS (observer)) | `flag` V08 (CNPD mismatch) | `ok` 0 | `note` 0H/3M/0L (3) | (source: cameroon.md §1, line 12) |
+| Central African Republic | `ok` XAF | `ok` BEAC | `ok` ok | `flag` V20 (unnamed) | `flag` 3 (§2,§3,§5) | `note` 0H/4M/0L (4) | (source: central-african-republic.md §1, line 12) |
+| Chad | `ok` XAF | `ok` BEAC | `ok` ok | `flag` V20 (unnamed) | `flag` 3 (§2,§3,§5) | `note` 0H/4M/0L (4) | (source: chad.md §1, line 12) |
+| Equatorial Guinea | `ok` XAF | `ok` BEAC | `ok` ok | `flag` V20 (unnamed) | `flag` 3 (§2,§3,§5) | `note` 0H/4M/0L (4) | (source: equatorial-guinea.md §1, line 12) |
+| Gabon | `ok` XAF | `ok` BEAC | `ok` ok | `flag` V08 (CNPD mismatch) | `flag` 2 (§3,§5) | `note` 0H/3M/0L (3) | (source: gabon.md §1, line 12) |
+| Congo (Republic) | `ok` XAF | `ok` BEAC | `ok` ok | `flag` V20 (unnamed) | `flag` 3 (§2,§3,§5) | `note` 0H/4M/0L (4) | (source: republic-of-congo.md §1, line 12) |
+
 **Ce que cela signifie pour vous:** Appartenir à un même groupe régional (un accord entre États voisins sur la monnaie ou le commerce) simplifie certains échanges et paiements, mais ne supprime pas l'obligation de vous enregistrer dans le pays cible.
 
 ## 6. Points à vérifier en priorité
 
-### Moyenne (4)
-- **[DPA-EXPANSION-MISMATCH]** (Portée: `bloc` | Origine: `in-dossier`): Both dossiers use the data-protection acronym 'CNPD' with different full names ('Commission Nationale pour la Protection des Données à Caractère Personnel' vs 'Commission Nationale pour la Protection des Données'). (source: cameroon.md §2, line 21; gabon.md §2, line 21)
-  - *Pourquoi c'est important:* Conflicting agency names suggest the dossier entry may be templated rather than verified against national law.
-  - *Qui interroger:* Confirm the official legal name and active registration office of each country's privacy regulator directly.
-- **[PLACEHOLDER-VALUE]** (Portée: `country` | Origine: `in-dossier`): Target dossier has placeholder text in energy regulator: 'Ministry of Energy (verify current regulator)'. (source: gabon.md §3, line 25)
-  - *Pourquoi c'est important:* The dossier does not name a verified office to contact for this step.
-  - *Qui interroger:* Check the national government portal or Ministry of Finance/Commerce for the current energy regulator.
-- **[PLACEHOLDER-VALUE]** (Portée: `country` | Origine: `in-dossier`): Target dossier has placeholder text in investment promotion agency: 'Verify current agency'. (source: gabon.md §5, line 47)
-  - *Pourquoi c'est important:* The dossier does not name a verified office to contact for this step.
-  - *Qui interroger:* Check the national government portal or Ministry of Finance/Commerce for the current investment promotion agency.
-- **[TAX-UNCOMPARABLE]** (Portée: `country` | Origine: `in-dossier`): Corporate income tax (CIT) cannot be subtracted directly (compound/multi-rate cell); all rates are shown without computing a single delta. (source: cameroon.md §5, line 44; gabon.md §5, line 44)
-  - *Pourquoi c'est important:* Different business sectors or company sizes can face different tax rates, so a single subtraction could mislead your budget.
-  - *Qui interroger:* Confirm which tax bracket applies to your company with each country's national revenue authority.
-
-### Faible (1)
-- **[BLOC-QUALIFIER-UNCONFIRMED]** (Portée: `bloc` | Origine: `in-dossier`): Home dossier lists 'ECOWAS (observer)', which carries a 'observer' qualifier and is absent from the partner dossier. (source: cameroon.md §1, line 13)
-  - *Pourquoi c'est important:* Observer or unverified bloc status does not grant the trade or licensing benefits of full membership.
-  - *Qui interroger:* Do not rely on this bloc for cross-border licensing; confirm membership status on the bloc's official registry.
+### Moyenne (5)
+- **[V04 · PLACEHOLDER-S3]** (Portée: `country` | Origine: `in-dossier`): Le dossier Gabon contient un texte provisoire (« energy regulator: 'Ministry of Energy (verify current regulator)' ») en section 3. (source: gabon.md §3, line 25)
+  - *Pourquoi c'est important:* Le dossier ne fournit pas un nom d'organisme ou un taux vérifié pour cette démarche.
+  - *Qui interroger:* Vérifiez l'organisme ou le paramètre actuel sur le portail gouvernemental national ou auprès du ministère concerné.
+- **[V04 · PLACEHOLDER-S5]** (Portée: `country` | Origine: `in-dossier`): Le dossier Gabon contient un texte provisoire (« investment promotion agency: 'Verify current agency' ») en section 5. (source: gabon.md §5, line 47)
+  - *Pourquoi c'est important:* Le dossier ne fournit pas un nom d'organisme ou un taux vérifié pour cette démarche.
+  - *Qui interroger:* Vérifiez l'organisme ou le paramètre actuel sur le portail gouvernemental national ou auprès du ministère concerné.
+- **[V06 · BLOC-ASYMMETRY]** (Portée: `bloc` | Origine: `in-dossier`): Asymétrie d'appartenance régionale : Cameroon mentionne « ECOWAS (observer) » sans confirmation dans les dossiers partenaires du bloc. (source: cameroon.md §1, line 13)
+  - *Pourquoi c'est important:* Un statut d'observateur ou une appartenance non confirmée n'accorde pas les avantages commerciaux ou d'agrément d'un membre à part entière.
+  - *Qui interroger:* Ne vous appuyez pas sur ce bloc pour vos agréments ; confirmez l'adhésion officielle sur le registre du bloc.
+- **[V08 · DPA-EXPANSION-MISMATCH]** (Portée: `bloc` | Origine: `in-dossier`): Même acronyme de protection des données (CNPD) avec des intitulés complets différents entre dossiers ('Commission Nationale pour la Protection des Données' (Gabon) vs 'Commission Nationale pour la Protection des Données à Caractère Personnel' (Cameroon)). (source: cameroon.md §2, line 21; gabon.md §2, line 21)
+  - *Pourquoi c'est important:* Des intitulés contradictoires suggèrent un texte issu d'un modèle plutôt qu'une vérification directe dans le droit national.
+  - *Qui interroger:* Confirmez le nom légal exact et le guichet actif de l'autorité de protection des données dans chaque pays.
+- **[V10 · TAX-CIT-ANOMALY]** (Portée: `country` | Origine: `in-dossier`): Anomalie fiscale (CIT) dans le dossier Cameroon : « 30% (33% for some sectors) » (compound/multi-rate cell). (source: cameroon.md §5, line 44)
+  - *Pourquoi c'est important:* Un taux multiple, hors plage ou non chiffré empêche une soustraction simple et peut fausser votre modèle financier.
+  - *Qui interroger:* Confirmez le taux exact applicable à votre activité auprès de l'administration fiscale nationale.
 
 **Ce que cela signifie pour vous:** Traitez en priorité les alertes les plus critiques avant toute dépense juridique ou dépôt officiel : elles signalent des informations contradictoires ou manquantes dans les dossiers sources.
 

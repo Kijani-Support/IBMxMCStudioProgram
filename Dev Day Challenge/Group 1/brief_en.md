@@ -6,16 +6,17 @@
 
 > **Systemic Dossier Template Defects (Excluded from Route Score)**
 > These defects affect most of the 54 source dossiers (template generation errors) and are separated from your route's country/bloc confidence score:
-> - [TPL-S4-LICENSOR] 54 of 54 dossiers share this defect: Section 4 Fintech row names the data protection authority as the payments and lending licensor instead of the central bank. (source: cameroon.md §4, line 33; gabon.md §4, line 33)
-> - [TPL-S4-VAT-LEAK] 54 of 54 dossiers share this defect: Section 4 Fintech row inserts the Section 5 VAT percentage inside the data-protection registration fee slot. (source: cameroon.md §4, line 33; gabon.md §4, line 33)
+> - [V01] 54 of 54 dossiers share this defect: Section 4 Fintech row names the data protection authority as the payments and lending licensor instead of the central bank (54 of 54 dossiers). (source: cameroon.md §4, line 33; gabon.md §4, line 33)
+> - [V02] 54 of 54 dossiers share this defect: Section 4 Energy & manufacturing row puts a percentage inside the Energy regulator slot instead of an authority name (54 of 54 dossiers). (source: cameroon.md §4, line 38; gabon.md §4, line 38)
+> - [V03] 54 of 54 dossiers share this defect: Section 4 reuses Section 5 VAT or CIT values inside fee or regulator slots (54 of 54 dossiers). (source: cameroon.md §4, line 33; gabon.md §4, line 33)
 
 ## 0. At-a-glance
 
 - **Route:** Cameroon (Home) -> Gabon (Target) (source: cameroon.md, line 1); (source: gabon.md, line 1)
 - **Sector:** Fintech
 - **Shared blocs:** African Union (source: cameroon.md §1, line 13; gabon.md §1, line 13), CEMAC (source: cameroon.md §1, line 13; gabon.md §1, line 13)
-- **Verify-first flags (country & bloc):** 0 High, 4 Medium, 1 Low (5 total; template banner: 2)
-- **Data Confidence:** **High** (0 High, 4 Medium, 1 Low) — Measures source-dossier data quality for this route (country & bloc flags only), never legal risk.
+- **Verify-first flags (country & bloc):** 0 High, 5 Medium, 0 Low (5 total; template banner: 3)
+- **Data Confidence:** **High** (0 High, 5 Medium, 0 Low) — Measures source-dossier data quality for this route (country & bloc flags only), never legal risk.
 
 ## 1. Regulators to engage
 
@@ -85,28 +86,37 @@
 - **CEMAC (Central African Economic and Monetary Community)**: Shared currency zone (XAF) and single central bank (BEAC), meaning no foreign-exchange conversion risk between members and shared regional banking rules. (source: cameroon.md §1, line 13; gabon.md §1, line 13)
 - **Only in home (Cameroon):** `ECOWAS (observer)` (source: cameroon.md §1, line 13)
 
+### Bloc consistency matrix (CEMAC)
+
+| Country | Currency | Central bank | Bloc symmetry | DPA naming | Placeholders | Flag counts | Source |
+|---|---|---|---|---|---|---|---|
+| Cameroon | `ok` XAF | `note` BEAC (full name) | `flag` V06 (ECOWAS (observer)) | `flag` V08 (CNPD mismatch) | `ok` 0 | `note` 0H/3M/0L (3) | (source: cameroon.md §1, line 12) |
+| Central African Republic | `ok` XAF | `ok` BEAC | `ok` ok | `flag` V20 (unnamed) | `flag` 3 (§2,§3,§5) | `note` 0H/4M/0L (4) | (source: central-african-republic.md §1, line 12) |
+| Chad | `ok` XAF | `ok` BEAC | `ok` ok | `flag` V20 (unnamed) | `flag` 3 (§2,§3,§5) | `note` 0H/4M/0L (4) | (source: chad.md §1, line 12) |
+| Equatorial Guinea | `ok` XAF | `ok` BEAC | `ok` ok | `flag` V20 (unnamed) | `flag` 3 (§2,§3,§5) | `note` 0H/4M/0L (4) | (source: equatorial-guinea.md §1, line 12) |
+| Gabon | `ok` XAF | `ok` BEAC | `ok` ok | `flag` V08 (CNPD mismatch) | `flag` 2 (§3,§5) | `note` 0H/3M/0L (3) | (source: gabon.md §1, line 12) |
+| Congo (Republic) | `ok` XAF | `ok` BEAC | `ok` ok | `flag` V20 (unnamed) | `flag` 3 (§2,§3,§5) | `note` 0H/4M/0L (4) | (source: republic-of-congo.md §1, line 12) |
+
 **What this means for you:** Sharing a regional bloc (an agreement among neighbouring countries on shared currency or trade rules) can simplify money transfers and customs, but you still need local registration in the target country.
 
 ## 6. Verify first
 
-### Medium (4)
-- **[DPA-EXPANSION-MISMATCH]** (Scope: `bloc` | Source type: `in-dossier`): Both dossiers use the data-protection acronym 'CNPD' with different full names ('Commission Nationale pour la Protection des Données à Caractère Personnel' vs 'Commission Nationale pour la Protection des Données'). (source: cameroon.md §2, line 21; gabon.md §2, line 21)
+### Medium (5)
+- **[V04 · PLACEHOLDER-S3]** (Scope: `country` | Source type: `in-dossier`): Gabon dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy (verify current regulator)'). (source: gabon.md §3, line 25)
+  - *Why it matters:* The dossier does not yet name a verified office or confirmed figure for this step.
+  - *Who to ask:* Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.
+- **[V04 · PLACEHOLDER-S5]** (Scope: `country` | Source type: `in-dossier`): Gabon dossier contains placeholder text in section 5 (investment promotion agency: 'Verify current agency'). (source: gabon.md §5, line 47)
+  - *Why it matters:* The dossier does not yet name a verified office or confirmed figure for this step.
+  - *Who to ask:* Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.
+- **[V06 · BLOC-ASYMMETRY]** (Scope: `bloc` | Source type: `in-dossier`): Cameroon lists 'ECOWAS (observer)' (carries 'observer' qualifier; unconfirmed by partner dossiers). (source: cameroon.md §1, line 13)
+  - *Why it matters:* Observer or single-country bloc claims do not guarantee shared trade, customs, or licensing rules.
+  - *Who to ask:* Do not plan licensing around this bloc; verify full membership on the bloc's official member list.
+- **[V08 · DPA-EXPANSION-MISMATCH]** (Scope: `bloc` | Source type: `in-dossier`): Data-protection acronym 'CNPD' has 2 different expansions across dossiers: 'Commission Nationale pour la Protection des Données' (Gabon) vs 'Commission Nationale pour la Protection des Données à Caractère Personnel' (Cameroon). (source: cameroon.md §2, line 21; gabon.md §2, line 21)
   - *Why it matters:* Conflicting agency names suggest the dossier entry may be templated rather than verified against national law.
   - *Who to ask:* Confirm the official legal name and active registration office of each country's privacy regulator directly.
-- **[PLACEHOLDER-VALUE]** (Scope: `country` | Source type: `in-dossier`): Target dossier has placeholder text in energy regulator: 'Ministry of Energy (verify current regulator)'. (source: gabon.md §3, line 25)
-  - *Why it matters:* The dossier does not name a verified office to contact for this step.
-  - *Who to ask:* Check the national government portal or Ministry of Finance/Commerce for the current energy regulator.
-- **[PLACEHOLDER-VALUE]** (Scope: `country` | Source type: `in-dossier`): Target dossier has placeholder text in investment promotion agency: 'Verify current agency'. (source: gabon.md §5, line 47)
-  - *Why it matters:* The dossier does not name a verified office to contact for this step.
-  - *Who to ask:* Check the national government portal or Ministry of Finance/Commerce for the current investment promotion agency.
-- **[TAX-UNCOMPARABLE]** (Scope: `country` | Source type: `in-dossier`): Corporate income tax (CIT) cannot be subtracted directly (compound/multi-rate cell); all rates are shown without computing a single delta. (source: cameroon.md §5, line 44; gabon.md §5, line 44)
-  - *Why it matters:* Different business sectors or company sizes can face different tax rates, so a single subtraction could mislead your budget.
-  - *Who to ask:* Confirm which tax bracket applies to your company with each country's national revenue authority.
-
-### Low (1)
-- **[BLOC-QUALIFIER-UNCONFIRMED]** (Scope: `bloc` | Source type: `in-dossier`): Home dossier lists 'ECOWAS (observer)', which carries a 'observer' qualifier and is absent from the partner dossier. (source: cameroon.md §1, line 13)
-  - *Why it matters:* Observer or unverified bloc status does not grant the trade or licensing benefits of full membership.
-  - *Who to ask:* Do not rely on this bloc for cross-border licensing; confirm membership status on the bloc's official registry.
+- **[V10 · TAX-CIT-ANOMALY]** (Scope: `country` | Source type: `in-dossier`): Cameroon CIT cell '30% (33% for some sectors)' flagged (compound/multi-rate cell). (source: cameroon.md §5, line 44)
+  - *Why it matters:* Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.
+  - *Who to ask:* Confirm the exact tax bracket for your sector with the national revenue authority.
 
 **What this means for you:** Resolve every High flag before paying legal fees or filing applications, because each flag marks a contradiction or missing name inside the source dossiers.
 

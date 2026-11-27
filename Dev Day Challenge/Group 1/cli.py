@@ -31,6 +31,7 @@ from typing import Optional
 
 from facts import build_facts, save_facts
 from render import render_brief
+from validate import print_demo_shortlist
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
@@ -62,8 +63,9 @@ def build_arg_parser() -> argparse.ArgumentParser:
     ap.add_argument("--out", default=None, help="Optional file path to write the Markdown brief.")
     ap.add_argument("--facts-out", default=None, help="Optional file path to write facts.json.")
     ap.add_argument("--dossier-dir", default=None, help="Optional override directory for country dossiers.")
-    ap.add_argument("--dashboard", action="store_true", help="Generate interactive dashboard.html (Phase 4).")
-    ap.add_argument("--summary", default=None, help="Optional grounded summary mode, e.g. granite (Phase 5).")
+    ap.add_argument("--dashboard", action="store_true", help="Generate interactive dashboard.html (optional).")
+    ap.add_argument("--summary", default=None, help="Optional grounded summary mode, e.g. granite.")
+    ap.add_argument("--shortlist", action="store_true", help="Print the 6-flag DEMO SHORTLIST for the route.")
     return ap
 
 
@@ -121,6 +123,9 @@ def run_cli(argv: Optional[list[str]] = None) -> int:
         out_path.write_text(brief, encoding="utf-8")
     else:
         print(brief)
+
+    if args.shortlist:
+        print_demo_shortlist(facts.get("demo_shortlist", []))
 
     if args.dashboard:
         print(

@@ -31,7 +31,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
 
-from blocs import compare_blocs, load_json_data
+from blocs import compare_blocs, extract_canonical_blocs, load_json_data
 from compare import (
     compare_languages,
     compare_regulators,
@@ -40,9 +40,11 @@ from compare import (
     resolve_sector,
 )
 from parser import Field, parse_corpus
-
-# Placeholder regex reused for lightweight route-level checks prior to validate.py.
-_PLACEHOLDER_RE = re.compile(r"\b(verify|tbd|n/a)\b", re.IGNORECASE)
+from validate import (
+    build_bloc_consistency_matrix,
+    build_demo_shortlist,
+    run_validation_registry,
+)
 
 
 def resolve_country_slug(query: str, dossiers: dict[str, dict[str, Any]]) -> str:
@@ -74,60 +76,6 @@ def resolve_country_slug(query: str, dossiers: dict[str, dict[str, Any]]) -> str
             return slug
     sample = ", ".join(sorted(dossiers.keys())[:8])
     raise ValueError(f"Unknown country '{query}'. Sample valid slugs: {sample} ...")
-
-
-def _make_flag(
-    rule_id: str,
-    severity: str,
-    scope: str,
-    confidence: str,
-    message: str,
-    evidence: list[dict[str, Any]],
-    why_it_matters: str,
-    suggested_check: str,
-    affected_count: Optional[int] = None,
-    corpus_total: Optional[int] = None,
-) -> dict[str, Any]:
-    """Construct a standard Passerelle Flag dictionary (C2).
-
-    Purpose:
-        Enforce a uniform Flag schema carrying ``scope`` (``template`` | ``country`` |
-        ``bloc``) and ``confidence`` (``in-dossier`` | ``our-check``) alongside line
-        evidence and plain-language guidance.
-
-    Inputs:
-        rule_id: Rule identifier string.
-        severity: ``"high"``, ``"med"``, or ``"low"``.
-        scope: ``"template"``, ``"country"``, or ``"bloc"``.
-        confidence: ``"in-dossier"`` or ``"our-check"``.
-        message: Concise factual description of the issue.
-        evidence: List of serialized ``Field`` dicts supporting the flag.
-        why_it_matters: One plain-language sentence explaining founder impact.
-        suggested_check: Plain-language pointer to whom to ask.
-        affected_count: Optional corpus-wide count for ``template``-scope flags.
-        corpus_total: Optional corpus size for ``template``-scope flags.
-
-    Outputs:
-        Flag dictionary ready for ``facts.json``.
-
-    Failure behaviour:
-        Never raises.
-    """
-    flag: dict[str, Any] = {
-        "rule_id": rule_id,
-        "severity": severity,
-        "scope": scope,
-        "confidence": confidence,
-        "message": message,
-        "evidence": [e for e in evidence if e is not None],
-        "why_it_matters": why_it_matters,
-        "suggested_check": suggested_check,
-    }
-    if affected_count is not None:
-        flag["affected_count"] = affected_count
-    if corpus_total is not None:
-        flag["corpus_total"] = corpus_total
-    return flag
 
 
 def _compute_corpus_stats(dossiers: dict[str, dict[str, Any]]) -> dict[str, Any]:
@@ -177,235 +125,6 @@ def _compute_corpus_stats(dossiers: dict[str, dict[str, Any]]) -> dict[str, Any]
         "cit_in_energy_regulator_slot": cit_in_energy,
         "waemu_prose_outside_blocs": waemu_prose_mismatch,
     }
-
-
-def _collect_route_flags_phase2(
-    home_doc: dict[str, Any],
-    target_doc: dict[str, Any],
-    comparisons: dict[str, Any],
-    blocs_cmp: dict[str, Any],
-    corpus_stats: dict[str, Any],
-) -> list[dict[str, Any]]:
-    """Build baseline scoped flags from parse notes and comparison findings.
-
-    Purpose:
-        Populate ``flags`` in Phase 2 (before ``validate.py`` adds the full V01–V17
-        registry in Phase 3) so template banners, C2 Data Confidence scoring, and C5
-        conflicts work end-to-end immediately.
-
-    Inputs:
-        home_doc: Parsed home dossier dict.
-        target_doc: Parsed target dossier dict.
-        comparisons: Dict of regulator, sector-step, tax, and language comparisons.
-        blocs_cmp: Output of ``compare_blocs``.
-        corpus_stats: Corpus-wide counts from ``_compute_corpus_stats``.
-
-    Outputs:
-        List of structured Flag dictionaries.
-
-    Failure behaviour:
-        Never raises.
-    """
-    flags: list[dict[str, Any]] = []
-    total = corpus_stats["dossier_count"]
-    regs = comparisons["regulators"]
-    steps = comparisons["sector_steps"]
-    taxes = comparisons["taxes"]
-
-    # --- Template-scope systemic defects (shown in banner, excluded from Data Confidence) ---
-    sec_reg = regs["sector_regulator"]
-    if sec_reg["any_section4_conflict"]:
-        ev = []
-        if sec_reg["home"]["section4_named_field"]:
-            ev.append(sec_reg["home"]["section4_named_field"])
-        if sec_reg["target"]["section4_named_field"]:
-            ev.append(sec_reg["target"]["section4_named_field"])
-        if sec_reg["sector_key"] == "fintech":
-            flags.append(
-                _make_flag(
-                    rule_id="TPL-S4-LICENSOR",
-                    severity="high",
-                    scope="template",
-                    confidence="in-dossier",
-                    message=(
-                        "Section 4 Fintech row names the data protection authority as the "
-                        "payments and lending licensor instead of the central bank."
-                    ),
-                    evidence=ev,
-                    why_it_matters="Asking a privacy office for a payment licence wastes time because central banks handle financial licensing.",
-                    suggested_check="Confirm payment and lending licensing directly with the central bank named in Section 2.",
-                    affected_count=corpus_stats["dpa_as_payments_licensor"],
-                    corpus_total=total,
-                )
-            )
-        elif sec_reg["sector_key"] == "energy & manufacturing":
-            flags.append(
-                _make_flag(
-                    rule_id="TPL-S4-CIT-LEAK",
-                    severity="high",
-                    scope="template",
-                    confidence="in-dossier",
-                    message=(
-                        "Section 4 Energy & manufacturing row places the corporate income "
-                        "tax rate inside the Energy regulator slot."
-                    ),
-                    evidence=ev,
-                    why_it_matters="A tax percentage is not a regulator name, so relying on Section 4 alone hides the real licensing body.",
-                    suggested_check="Use the energy authority named in Section 3 and confirm its mandate directly.",
-                    affected_count=corpus_stats["cit_in_energy_regulator_slot"],
-                    corpus_total=total,
-                )
-            )
-
-    if steps["has_template_flagged_steps"] and steps["sector_key"] == "fintech":
-        vat_fee_ev = [
-            s["field"]
-            for s in (steps["home_steps"] + steps["target_steps"])
-            if s["template_flagged"] and "VAT" in (s["flag_reason"] or "")
-        ]
-        if vat_fee_ev:
-            flags.append(
-                _make_flag(
-                    rule_id="TPL-S4-VAT-LEAK",
-                    severity="high",
-                    scope="template",
-                    confidence="in-dossier",
-                    message=(
-                        "Section 4 Fintech row inserts the Section 5 VAT percentage inside "
-                        "the data-protection registration fee slot."
-                    ),
-                    evidence=vat_fee_ev,
-                    why_it_matters="A sales-tax percentage is not a registration fee, so budgeting from this cell would be misleading.",
-                    suggested_check="Ask the national data protection authority for its actual current registration fee schedule.",
-                    affected_count=corpus_stats["vat_in_fee_slot"],
-                    corpus_total=total,
-                )
-            )
-
-    # --- Country-scope & bloc-scope flags (drive deterministic Data Confidence) ---
-    # 1. Parse notes on home or target (missing sections/fields, non-ISO currency codes).
-    for side_label, doc in (("Home", home_doc), ("Target", target_doc)):
-        for note in doc.get("parse_notes", []):
-            if note["kind"] == "currency_zone_no_bank":
-                continue
-            sev = "high" if note["kind"] in ("missing_section", "missing_field", "read_error") else "med"
-            ev_field = Field(
-                value=note["message"],
-                file=note["file"],
-                section=str(note["section"]),
-                line=int(note["line"]),
-                raw=note.get("raw", ""),
-            )
-            fdict = ev_field.to_dict()
-            fdict["citation"] = ev_field.citation()
-            flags.append(
-                _make_flag(
-                    rule_id="PARSE-NOTE",
-                    severity=sev,
-                    scope="country",
-                    confidence="in-dossier",
-                    message=f"{side_label} dossier parse note ({note['kind']}): {note['message']}",
-                    evidence=[fdict],
-                    why_it_matters="A missing or non-standard dossier entry means key launch data may be incomplete.",
-                    suggested_check="Inspect the source dossier line and confirm the figure with the relevant national ministry or central bank.",
-                )
-            )
-
-    # 2. Same DPA acronym with different expansions across the two dossiers (bloc/route inconsistency).
-    dp = regs["data_protection"]
-    if dp["same_acronym_different_expansion"]:
-        scope = "bloc" if blocs_cmp["shared_keys"] else "country"
-        flags.append(
-            _make_flag(
-                rule_id="DPA-EXPANSION-MISMATCH",
-                severity="med",
-                scope=scope,
-                confidence="in-dossier",
-                message=(
-                    f"Both dossiers use the data-protection acronym '{dp['home_acronym']}' "
-                    f"with different full names ('{dp['home_expansion']}' vs '{dp['target_expansion']}')."
-                ),
-                evidence=[dp["home_field"], dp["target_field"]],
-                why_it_matters="Conflicting agency names suggest the dossier entry may be templated rather than verified against national law.",
-                suggested_check="Confirm the official legal name and active registration office of each country's privacy regulator directly.",
-            )
-        )
-
-    # 3. Placeholder values ("verify", "TBD", "N/A") in key regulator/agency slots.
-    for side_label, doc in (("Home", home_doc), ("Target", target_doc)):
-        for fld_key, label in (
-            ("central_bank", "central bank"),
-            ("data_protection", "data protection authority"),
-            ("energy_regulator", "energy regulator"),
-            ("investment_agency", "investment promotion agency"),
-        ):
-            fld: Optional[Field] = doc.get(fld_key)
-            if fld and _PLACEHOLDER_RE.search(fld.value):
-                # Energy regulator placeholder is low-severity when not in energy sector.
-                is_energy = comparisons["sector_steps"]["sector_key"] == "energy & manufacturing"
-                sev = "high" if fld_key in ("central_bank", "data_protection") or (fld_key == "energy_regulator" and is_energy) else "med"
-                fdict = fld.to_dict()
-                fdict["citation"] = fld.citation()
-                flags.append(
-                    _make_flag(
-                        rule_id="PLACEHOLDER-VALUE",
-                        severity=sev,
-                        scope="country",
-                        confidence="in-dossier",
-                        message=f"{side_label} dossier has placeholder text in {label}: '{fld.value}'.",
-                        evidence=[fdict],
-                        why_it_matters="The dossier does not name a verified office to contact for this step.",
-                        suggested_check=f"Check the national government portal or Ministry of Finance/Commerce for the current {label}.",
-                    )
-                )
-
-    # 4. Compound or non-numeric tax cells (CIT / VAT).
-    for tax_label, tkey in (("Corporate income tax (CIT)", "cit"), ("VAT / sales tax", "vat")):
-        tcmp = taxes[tkey]
-        if not tcmp["comparable"]:
-            ev = [f for f in (tcmp["home_field"], tcmp["target_field"]) if f is not None]
-            reasons = []
-            if tcmp["home_compound"] or tcmp["target_compound"]:
-                reasons.append("compound/multi-rate cell")
-            if tcmp["home_non_numeric"] or tcmp["target_non_numeric"]:
-                reasons.append("non-numeric rate")
-            flags.append(
-                _make_flag(
-                    rule_id="TAX-UNCOMPARABLE",
-                    severity="med",
-                    scope="country",
-                    confidence="in-dossier",
-                    message=(
-                        f"{tax_label} cannot be subtracted directly ({', '.join(reasons)}); "
-                        "all rates are shown without computing a single delta."
-                    ),
-                    evidence=ev,
-                    why_it_matters="Different business sectors or company sizes can face different tax rates, so a single subtraction could mislead your budget.",
-                    suggested_check="Confirm which tax bracket applies to your company with each country's national revenue authority.",
-                )
-            )
-
-    # 5. Unconfirmed single-sided bloc qualifiers (e.g. "observer" or "verify").
-    for side_label, entries in (("Home", blocs_cmp["only_in_home"]), ("Target", blocs_cmp["only_in_target"])):
-        for entry in entries:
-            if entry["qualifier"] and entry["qualifier"].lower() in ("observer", "verify"):
-                flags.append(
-                    _make_flag(
-                        rule_id="BLOC-QUALIFIER-UNCONFIRMED",
-                        severity="low",
-                        scope="bloc",
-                        confidence="in-dossier",
-                        message=(
-                            f"{side_label} dossier lists '{entry['raw_value']}', which carries "
-                            f"a '{entry['qualifier']}' qualifier and is absent from the partner dossier."
-                        ),
-                        evidence=[entry["field"]],
-                        why_it_matters="Observer or unverified bloc status does not grant the trade or licensing benefits of full membership.",
-                        suggested_check="Do not rely on this bloc for cross-border licensing; confirm membership status on the bloc's official registry.",
-                    )
-                )
-
-    return flags
 
 
 def compute_data_confidence(flags: list[dict[str, Any]]) -> dict[str, Any]:
@@ -626,14 +345,44 @@ def build_facts(
     }
 
     corpus_stats = _compute_corpus_stats(dossiers)
-    flags = _collect_route_flags_phase2(home_doc, target_doc, comparisons, blocs_cmp, corpus_stats)
+    expected_currency = load_json_data("expected_currency_by_bloc.json")
+
+    # Build shared sub-regional bloc consistency matrices (e.g. all 6 CEMAC members).
+    subregional_shared = [
+        b["canonical"] for b in blocs_cmp["shared"] if b["canonical"] != "African Union"
+    ]
+    bloc_matrices: dict[str, dict[str, Any]] = {}
+    bloc_member_slugs: set[str] = {home_slug, target_slug}
+    for bkey in subregional_shared:
+        matrix = build_bloc_consistency_matrix(
+            bkey,
+            dossiers,
+            aliases=aliases,
+            expected_currency=expected_currency,
+        )
+        if matrix["member_count"] > 0:
+            bloc_matrices[bkey] = matrix
+            bloc_member_slugs.update(r["slug"] for r in matrix["rows"])
+
+    # Run the lean validation rule registry across the full corpus with route context.
+    val_context = {
+        "home_slug": home_slug,
+        "target_slug": target_slug,
+        "sector_key": sector_info["key"],
+        "shared_blocs": blocs_cmp["shared_keys"],
+        "bloc_member_slugs": bloc_member_slugs,
+        "aliases": aliases,
+        "expected_currency": expected_currency,
+    }
+    flags = run_validation_registry(dossiers, context=val_context)
     scores = compute_data_confidence(flags)
 
     template_banner = [
         {
             "rule_id": f["rule_id"],
+            "v_number": f["v_number"],
             "affected_count": f.get("affected_count", 0),
-            "corpus_total": f.get("corpus_total", corpus_stats["dossier_count"]),
+            "corpus_total": corpus_stats["dossier_count"],
             "message": f["message"],
         }
         for f in flags
@@ -649,6 +398,7 @@ def build_facts(
         shared_bloc_keys=blocs_cmp["shared_keys"],
         all_route_blocs=all_route_blocs,
     )
+    demo_shortlist = build_demo_shortlist(flags, our_checks, limit=6)
 
     home_name = home_doc["country"].value if home_doc.get("country") else home_slug
     target_name = target_doc["country"].value if target_doc.get("country") else target_slug
@@ -688,9 +438,11 @@ def build_facts(
         },
         "comparisons": comparisons,
         "blocs": blocs_cmp,
+        "bloc_matrices": bloc_matrices,
         "flags": flags,
         "template_banner": template_banner,
         "our_checks": our_checks,
+        "demo_shortlist": demo_shortlist,
         "scores": scores,
         "corpus_stats": corpus_stats,
     }

@@ -1232,7 +1232,13 @@ def parse_dossier(
                     raw=raw_line,
                     canonical=sector_raw,
                 )
-                step_parts = [s.strip().rstrip(".") for s in steps_text.split(";") if s.strip()]
+                # Split steps on semicolons at parenthesis depth 0 so parenthetical
+                # qualifiers like "(municipal levies; verify)" stay intact inside one step.
+                step_parts = [
+                    s.strip().rstrip(".")
+                    for s in _split_top_level(steps_text, delimiters=(";",))
+                    if s.strip()
+                ]
                 parsed["sector_steps"][sector_key] = [
                     Field(
                         value=part,

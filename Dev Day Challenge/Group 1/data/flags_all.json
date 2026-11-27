@@ -1,0 +1,4869 @@
+{
+  "dossier_count": 54,
+  "total_flags": 128,
+  "counts_by_rule": {
+    "V01": 1,
+    "V02": 1,
+    "V03": 1,
+    "V04": 72,
+    "V06": 5,
+    "V08": 3,
+    "V10": 20,
+    "V20": 25
+  },
+  "counts_by_severity": {
+    "high": 4,
+    "med": 124
+  },
+  "counts_by_scope": {
+    "bloc": 8,
+    "country": 117,
+    "template": 3
+  },
+  "flags": [
+    {
+      "rule_id": "S4-DPA-AS-LICENSOR",
+      "v_number": "V01",
+      "severity": "high",
+      "scope": "template",
+      "confidence": "in-dossier",
+      "message": "Section 4 Fintech row names the data protection authority as the payments and lending licensor instead of the central bank (54 of 54 dossiers).",
+      "evidence": [
+        {
+          "value": "CNIL (National Data Protection Commission) licensing for payments and lending; AML/CFT compliance; data protection registration (19%); consumer protection.",
+          "file": "algeria.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | CNIL (National Data Protection Commission) licensing for payments and lending; AML/CFT compliance; data protection registration (19%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: algeria.md §4, line 33)"
+        },
+        {
+          "value": "APD (Autoridade de Protecção de Dados) licensing for payments and lending; AML/CFT compliance; data protection registration (14%); consumer protection.",
+          "file": "angola.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | APD (Autoridade de Protecção de Dados) licensing for payments and lending; AML/CFT compliance; data protection registration (14%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: angola.md §4, line 33)"
+        },
+        {
+          "value": "APDP (Autorité de Protection des Données Personnelles) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection.",
+          "file": "benin.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | APDP (Autorité de Protection des Données Personnelles) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: benin.md §4, line 33)"
+        },
+        {
+          "value": "Ministry of Communications (verify current authority) licensing for payments and lending; AML/CFT compliance; data protection registration (14%); consumer protection.",
+          "file": "botswana.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | Ministry of Communications (verify current authority) licensing for payments and lending; AML/CFT compliance; data protection registration (14%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: botswana.md §4, line 33)"
+        },
+        {
+          "value": "CIL (Commission de l'Informatique et des Libertés) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection.",
+          "file": "burkina-faso.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | CIL (Commission de l'Informatique et des Libertés) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: burkina-faso.md §4, line 33)"
+        }
+      ],
+      "why_it_matters": "Asking a privacy office for a payment licence wastes time because central banks handle financial licensing.",
+      "suggested_check": "Ask the central bank (or regional banking supervisor), not the privacy regulator, about payment and lending licensing.",
+      "affected_count": 54,
+      "countries": [
+        "algeria",
+        "angola",
+        "benin",
+        "botswana",
+        "burkina-faso",
+        "burundi",
+        "cabo-verde",
+        "cameroon",
+        "central-african-republic",
+        "chad",
+        "comoros",
+        "cote-divoire",
+        "democratic-republic-of-congo",
+        "djibouti",
+        "egypt",
+        "equatorial-guinea",
+        "eritrea",
+        "eswatini",
+        "ethiopia",
+        "gabon",
+        "gambia",
+        "ghana",
+        "guinea",
+        "guinea-bissau",
+        "kenya",
+        "lesotho",
+        "liberia",
+        "libya",
+        "madagascar",
+        "malawi",
+        "mali",
+        "mauritania",
+        "mauritius",
+        "morocco",
+        "mozambique",
+        "namibia",
+        "niger",
+        "nigeria",
+        "republic-of-congo",
+        "rwanda",
+        "sao-tome-and-principe",
+        "senegal",
+        "seychelles",
+        "sierra-leone",
+        "somalia",
+        "south-africa",
+        "south-sudan",
+        "sudan",
+        "tanzania",
+        "togo",
+        "tunisia",
+        "uganda",
+        "zambia",
+        "zimbabwe"
+      ],
+      "params": {
+        "affected_count": 54,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "S4-PERCENT-IN-ENERGY-SLOT",
+      "v_number": "V02",
+      "severity": "high",
+      "scope": "template",
+      "confidence": "in-dossier",
+      "message": "Section 4 Energy & manufacturing row puts a percentage inside the Energy regulator slot instead of an authority name (54 of 54 dossiers).",
+      "evidence": [
+        {
+          "value": "Energy regulator: 26% (19% for production activities)",
+          "file": "algeria.md",
+          "section": "4",
+          "line": 38,
+          "raw": "| **Energy & manufacturing** | Energy regulator: 26% (19% for production activities); environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available. |",
+          "canonical": "Energy & manufacturing",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: algeria.md §4, line 38)"
+        },
+        {
+          "value": "Energy regulator: 25%",
+          "file": "angola.md",
+          "section": "4",
+          "line": 38,
+          "raw": "| **Energy & manufacturing** | Energy regulator: 25%; environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available. |",
+          "canonical": "Energy & manufacturing",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: angola.md §4, line 38)"
+        },
+        {
+          "value": "Energy regulator: 30%",
+          "file": "benin.md",
+          "section": "4",
+          "line": 38,
+          "raw": "| **Energy & manufacturing** | Energy regulator: 30%; environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available. |",
+          "canonical": "Energy & manufacturing",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: benin.md §4, line 38)"
+        },
+        {
+          "value": "Energy regulator: 22%",
+          "file": "botswana.md",
+          "section": "4",
+          "line": 38,
+          "raw": "| **Energy & manufacturing** | Energy regulator: 22%; environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available. |",
+          "canonical": "Energy & manufacturing",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: botswana.md §4, line 38)"
+        },
+        {
+          "value": "Energy regulator: 27.5%",
+          "file": "burkina-faso.md",
+          "section": "4",
+          "line": 38,
+          "raw": "| **Energy & manufacturing** | Energy regulator: 27.5%; environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available. |",
+          "canonical": "Energy & manufacturing",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: burkina-faso.md §4, line 38)"
+        }
+      ],
+      "why_it_matters": "A tax percentage is not an agency name, so reading Section 4 alone hides the real energy regulator.",
+      "suggested_check": "Use the energy regulator named in Section 3 and confirm its current licensing mandate directly.",
+      "affected_count": 54,
+      "countries": [
+        "algeria",
+        "angola",
+        "benin",
+        "botswana",
+        "burkina-faso",
+        "burundi",
+        "cabo-verde",
+        "cameroon",
+        "central-african-republic",
+        "chad",
+        "comoros",
+        "cote-divoire",
+        "democratic-republic-of-congo",
+        "djibouti",
+        "egypt",
+        "equatorial-guinea",
+        "eritrea",
+        "eswatini",
+        "ethiopia",
+        "gabon",
+        "gambia",
+        "ghana",
+        "guinea",
+        "guinea-bissau",
+        "kenya",
+        "lesotho",
+        "liberia",
+        "libya",
+        "madagascar",
+        "malawi",
+        "mali",
+        "mauritania",
+        "mauritius",
+        "morocco",
+        "mozambique",
+        "namibia",
+        "niger",
+        "nigeria",
+        "republic-of-congo",
+        "rwanda",
+        "sao-tome-and-principe",
+        "senegal",
+        "seychelles",
+        "sierra-leone",
+        "somalia",
+        "south-africa",
+        "south-sudan",
+        "sudan",
+        "tanzania",
+        "togo",
+        "tunisia",
+        "uganda",
+        "zambia",
+        "zimbabwe"
+      ],
+      "params": {
+        "affected_count": 54,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "S4-TAX-LEAKED-FROM-S5",
+      "v_number": "V03",
+      "severity": "high",
+      "scope": "template",
+      "confidence": "in-dossier",
+      "message": "Section 4 reuses Section 5 VAT or CIT values inside fee or regulator slots (54 of 54 dossiers).",
+      "evidence": [
+        {
+          "value": "CNIL (National Data Protection Commission) licensing for payments and lending; AML/CFT compliance; data protection registration (19%); consumer protection.",
+          "file": "algeria.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | CNIL (National Data Protection Commission) licensing for payments and lending; AML/CFT compliance; data protection registration (19%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: algeria.md §4, line 33)"
+        },
+        {
+          "value": "APD (Autoridade de Protecção de Dados) licensing for payments and lending; AML/CFT compliance; data protection registration (14%); consumer protection.",
+          "file": "angola.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | APD (Autoridade de Protecção de Dados) licensing for payments and lending; AML/CFT compliance; data protection registration (14%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: angola.md §4, line 33)"
+        },
+        {
+          "value": "APDP (Autorité de Protection des Données Personnelles) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection.",
+          "file": "benin.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | APDP (Autorité de Protection des Données Personnelles) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: benin.md §4, line 33)"
+        },
+        {
+          "value": "Ministry of Communications (verify current authority) licensing for payments and lending; AML/CFT compliance; data protection registration (14%); consumer protection.",
+          "file": "botswana.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | Ministry of Communications (verify current authority) licensing for payments and lending; AML/CFT compliance; data protection registration (14%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: botswana.md §4, line 33)"
+        },
+        {
+          "value": "CIL (Commission de l'Informatique et des Libertés) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection.",
+          "file": "burkina-faso.md",
+          "section": "4",
+          "line": 33,
+          "raw": "| **Fintech** | CIL (Commission de l'Informatique et des Libertés) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection. |",
+          "canonical": "Fintech",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: burkina-faso.md §4, line 33)"
+        }
+      ],
+      "why_it_matters": "A sales-tax or profit-tax percentage is not a registration fee, so budgeting from Section 4 would be wrong.",
+      "suggested_check": "Ask the national data-protection authority or sector ministry for its current published fee schedule.",
+      "affected_count": 54,
+      "countries": [
+        "algeria",
+        "angola",
+        "benin",
+        "botswana",
+        "burkina-faso",
+        "burundi",
+        "cabo-verde",
+        "cameroon",
+        "central-african-republic",
+        "chad",
+        "comoros",
+        "cote-divoire",
+        "democratic-republic-of-congo",
+        "djibouti",
+        "egypt",
+        "equatorial-guinea",
+        "eritrea",
+        "eswatini",
+        "ethiopia",
+        "gabon",
+        "gambia",
+        "ghana",
+        "guinea",
+        "guinea-bissau",
+        "kenya",
+        "lesotho",
+        "liberia",
+        "libya",
+        "madagascar",
+        "malawi",
+        "mali",
+        "mauritania",
+        "mauritius",
+        "morocco",
+        "mozambique",
+        "namibia",
+        "niger",
+        "nigeria",
+        "republic-of-congo",
+        "rwanda",
+        "sao-tome-and-principe",
+        "senegal",
+        "seychelles",
+        "sierra-leone",
+        "somalia",
+        "south-africa",
+        "south-sudan",
+        "sudan",
+        "tanzania",
+        "togo",
+        "tunisia",
+        "uganda",
+        "zambia",
+        "zimbabwe"
+      ],
+      "params": {
+        "affected_count": 54,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Botswana dossier contains placeholder text in section 2 (data protection authority: 'Ministry of Communications (verify current authority)').",
+      "evidence": [
+        {
+          "value": "Ministry of Communications (verify current authority)",
+          "file": "botswana.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Ministry of Communications (verify current authority) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: botswana.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "botswana"
+      ],
+      "params": {
+        "country": "Botswana",
+        "section": "2",
+        "detail": "data protection authority: 'Ministry of Communications (verify current authority)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Burkina Faso dossier contains placeholder text in section 5 (investment promotion agency: 'APEE (verify current agency)').",
+      "evidence": [
+        {
+          "value": "APEE (verify current agency)",
+          "file": "burkina-faso.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** APEE (verify current agency). **Incentives:** Investment code; mining and agro-pastoral incentives.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: burkina-faso.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "burkina-faso"
+      ],
+      "params": {
+        "country": "Burkina Faso",
+        "section": "5",
+        "detail": "investment promotion agency: 'APEE (verify current agency)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Burundi dossier contains placeholder text in section 2 (data protection authority: 'ARCT (telecom regulator, verify data mandate)').",
+      "evidence": [
+        {
+          "value": "ARCT (telecom regulator, verify data mandate)",
+          "file": "burundi.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** ARCT (telecom regulator, verify data mandate) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: burundi.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "burundi"
+      ],
+      "params": {
+        "country": "Burundi",
+        "section": "2",
+        "detail": "data protection authority: 'ARCT (telecom regulator, verify data mandate)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Burundi dossier contains placeholder text in section 5 (investment promotion agency: 'Investments Promotion Agency (verify current name)').",
+      "evidence": [
+        {
+          "value": "Investments Promotion Agency (verify current name)",
+          "file": "burundi.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Investments Promotion Agency (verify current name). **Incentives:** Investment code incentives.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: burundi.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "burundi"
+      ],
+      "params": {
+        "country": "Burundi",
+        "section": "5",
+        "detail": "investment promotion agency: 'Investments Promotion Agency (verify current name)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Central African Republic dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "central-african-republic.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: central-african-republic.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "central-african-republic"
+      ],
+      "params": {
+        "country": "Central African Republic",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Central African Republic dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy (regulator status to verify)').",
+      "evidence": [
+        {
+          "value": "Ministry of Energy (regulator status to verify)",
+          "file": "central-african-republic.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy (regulator status to verify). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: central-african-republic.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "central-african-republic"
+      ],
+      "params": {
+        "country": "Central African Republic",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Energy (regulator status to verify)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Central African Republic dossier contains placeholder text in section 5 (investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "Verify current agency",
+          "file": "central-african-republic.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Investment charter incentives (mining, timber).",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: central-african-republic.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "central-african-republic"
+      ],
+      "params": {
+        "country": "Central African Republic",
+        "section": "5",
+        "detail": "investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Chad dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "chad.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: chad.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "chad"
+      ],
+      "params": {
+        "country": "Chad",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Chad dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Petroleum and Energy (regulator status to verify)').",
+      "evidence": [
+        {
+          "value": "Ministry of Petroleum and Energy (regulator status to verify)",
+          "file": "chad.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Petroleum and Energy (regulator status to verify). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: chad.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "chad"
+      ],
+      "params": {
+        "country": "Chad",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Petroleum and Energy (regulator status to verify)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Chad dossier contains placeholder text in section 5 (investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "Verify current agency",
+          "file": "chad.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Oil-sector framework; investment code.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: chad.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "chad"
+      ],
+      "params": {
+        "country": "Chad",
+        "section": "5",
+        "detail": "investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Comoros dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "comoros.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: comoros.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "comoros"
+      ],
+      "params": {
+        "country": "Comoros",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Comoros dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy (verify current regulator)').",
+      "evidence": [
+        {
+          "value": "Ministry of Energy (verify current regulator)",
+          "file": "comoros.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: comoros.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "comoros"
+      ],
+      "params": {
+        "country": "Comoros",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Energy (verify current regulator)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Comoros dossier contains placeholder text in section 5 (VAT / sales tax: 'None (verify sales-tax regime)'; investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "None (verify sales-tax regime)",
+          "file": "comoros.md",
+          "section": "5",
+          "line": 45,
+          "raw": "| Standard VAT / sales tax | None (verify sales-tax regime) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [],
+            "has_numeric": false,
+            "is_compound": false
+          },
+          "citation": "(source: comoros.md §5, line 45)"
+        },
+        {
+          "value": "Verify current agency",
+          "file": "comoros.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Investment code; offshore/port-linked incentives.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: comoros.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "comoros"
+      ],
+      "params": {
+        "country": "Comoros",
+        "section": "5",
+        "detail": "VAT / sales tax: 'None (verify sales-tax regime)'; investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "DRC dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "democratic-republic-of-congo.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: democratic-republic-of-congo.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "democratic-republic-of-congo"
+      ],
+      "params": {
+        "country": "DRC",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Djibouti dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "djibouti.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: djibouti.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "djibouti"
+      ],
+      "params": {
+        "country": "Djibouti",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Djibouti dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy (verify current regulator)').",
+      "evidence": [
+        {
+          "value": "Ministry of Energy (verify current regulator)",
+          "file": "djibouti.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: djibouti.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "djibouti"
+      ],
+      "params": {
+        "country": "Djibouti",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Energy (verify current regulator)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Djibouti dossier contains placeholder text in section 5 (investment promotion agency: 'Djibouti Investment Promotion Agency (verify)').",
+      "evidence": [
+        {
+          "value": "Djibouti Investment Promotion Agency (verify)",
+          "file": "djibouti.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Djibouti Investment Promotion Agency (verify). **Incentives:** Free-zone and port-linked incentives.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: djibouti.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "djibouti"
+      ],
+      "params": {
+        "country": "Djibouti",
+        "section": "5",
+        "detail": "investment promotion agency: 'Djibouti Investment Promotion Agency (verify)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Egypt dossier contains placeholder text in section 2 (data protection authority: 'Data Protection Authority (Law 151/2020; verify operational status)').",
+      "evidence": [
+        {
+          "value": "Data Protection Authority (Law 151/2020; verify operational status)",
+          "file": "egypt.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Data Protection Authority (Law 151/2020; verify operational status) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: egypt.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "egypt"
+      ],
+      "params": {
+        "country": "Egypt",
+        "section": "2",
+        "detail": "data protection authority: 'Data Protection Authority (Law 151/2020; verify operational status)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Equatorial Guinea dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "equatorial-guinea.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: equatorial-guinea.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "equatorial-guinea"
+      ],
+      "params": {
+        "country": "Equatorial Guinea",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Equatorial Guinea dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Mines and Energy (verify current regulator)').",
+      "evidence": [
+        {
+          "value": "Ministry of Mines and Energy (verify current regulator)",
+          "file": "equatorial-guinea.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Mines and Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: equatorial-guinea.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "equatorial-guinea"
+      ],
+      "params": {
+        "country": "Equatorial Guinea",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Mines and Energy (verify current regulator)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Equatorial Guinea dossier contains placeholder text in section 5 (investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "Verify current agency",
+          "file": "equatorial-guinea.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Hydrocarbons framework.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: equatorial-guinea.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "equatorial-guinea"
+      ],
+      "params": {
+        "country": "Equatorial Guinea",
+        "section": "5",
+        "detail": "investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Eritrea dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "eritrea.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: eritrea.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "eritrea"
+      ],
+      "params": {
+        "country": "Eritrea",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Eritrea dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy and Mines (verify current regulator)').",
+      "evidence": [
+        {
+          "value": "Ministry of Energy and Mines (verify current regulator)",
+          "file": "eritrea.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy and Mines (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: eritrea.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "eritrea"
+      ],
+      "params": {
+        "country": "Eritrea",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Energy and Mines (verify current regulator)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Eritrea dossier contains placeholder text in section 5 (investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "Verify current agency",
+          "file": "eritrea.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Restricted investment regime; state-led economy.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: eritrea.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "eritrea"
+      ],
+      "params": {
+        "country": "Eritrea",
+        "section": "5",
+        "detail": "investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Eswatini dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "eswatini.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: eswatini.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "eswatini"
+      ],
+      "params": {
+        "country": "Eswatini",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Ethiopia dossier contains placeholder text in section 2 (data protection authority: 'INSA (Information Network Security Administration; verify data mandate)').",
+      "evidence": [
+        {
+          "value": "INSA (Information Network Security Administration; verify data mandate)",
+          "file": "ethiopia.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** INSA (Information Network Security Administration; verify data mandate) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: ethiopia.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "ethiopia"
+      ],
+      "params": {
+        "country": "Ethiopia",
+        "section": "2",
+        "detail": "data protection authority: 'INSA (Information Network Security Administration; verify data mandate)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Gabon dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy (verify current regulator)').",
+      "evidence": [
+        {
+          "value": "Ministry of Energy (verify current regulator)",
+          "file": "gabon.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "gabon"
+      ],
+      "params": {
+        "country": "Gabon",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Energy (verify current regulator)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Gabon dossier contains placeholder text in section 5 (investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "Verify current agency",
+          "file": "gabon.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Timber/oil-linked frameworks; investment charter.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "gabon"
+      ],
+      "params": {
+        "country": "Gabon",
+        "section": "5",
+        "detail": "investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Gambia dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "gambia.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gambia.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "gambia"
+      ],
+      "params": {
+        "country": "Gambia",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Guinea dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "guinea.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: guinea.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "guinea"
+      ],
+      "params": {
+        "country": "Guinea",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Guinea dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy (verify current regulator)').",
+      "evidence": [
+        {
+          "value": "Ministry of Energy (verify current regulator)",
+          "file": "guinea.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: guinea.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "guinea"
+      ],
+      "params": {
+        "country": "Guinea",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Energy (verify current regulator)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Guinea-Bissau dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "guinea-bissau.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: guinea-bissau.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "guinea-bissau"
+      ],
+      "params": {
+        "country": "Guinea-Bissau",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Guinea-Bissau dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy (verify current regulator)').",
+      "evidence": [
+        {
+          "value": "Ministry of Energy (verify current regulator)",
+          "file": "guinea-bissau.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: guinea-bissau.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "guinea-bissau"
+      ],
+      "params": {
+        "country": "Guinea-Bissau",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Energy (verify current regulator)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Guinea-Bissau dossier contains placeholder text in section 5 (investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "Verify current agency",
+          "file": "guinea-bissau.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Cashew/agriculture-linked incentives.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: guinea-bissau.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "guinea-bissau"
+      ],
+      "params": {
+        "country": "Guinea-Bissau",
+        "section": "5",
+        "detail": "investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Lesotho dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "lesotho.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: lesotho.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "lesotho"
+      ],
+      "params": {
+        "country": "Lesotho",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Liberia dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "liberia.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: liberia.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "liberia"
+      ],
+      "params": {
+        "country": "Liberia",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Libya dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "libya.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: libya.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "libya"
+      ],
+      "params": {
+        "country": "Libya",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Libya dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy (verify current regulator)').",
+      "evidence": [
+        {
+          "value": "Ministry of Energy (verify current regulator)",
+          "file": "libya.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: libya.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "libya"
+      ],
+      "params": {
+        "country": "Libya",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Energy (verify current regulator)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Libya dossier contains placeholder text in section 5 (investment promotion agency: 'Libyan Investment Authority / Verify current agency').",
+      "evidence": [
+        {
+          "value": "Libyan Investment Authority / Verify current agency",
+          "file": "libya.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Libyan Investment Authority / Verify current agency. **Incentives:** Hydrocarbon-driven economy; reconstruction opportunities.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: libya.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "libya"
+      ],
+      "params": {
+        "country": "Libya",
+        "section": "5",
+        "detail": "investment promotion agency: 'Libyan Investment Authority / Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Madagascar dossier contains placeholder text in section 2 (data protection authority: 'CNPD (verify current status)').",
+      "evidence": [
+        {
+          "value": "CNPD (verify current status)",
+          "file": "madagascar.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** CNPD (verify current status) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: madagascar.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "madagascar"
+      ],
+      "params": {
+        "country": "Madagascar",
+        "section": "2",
+        "detail": "data protection authority: 'CNPD (verify current status)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Malawi dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "malawi.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: malawi.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "malawi"
+      ],
+      "params": {
+        "country": "Malawi",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Mali dossier contains placeholder text in section 5 (investment promotion agency: 'API-Mali (verify current agency)').",
+      "evidence": [
+        {
+          "value": "API-Mali (verify current agency)",
+          "file": "mali.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** API-Mali (verify current agency). **Incentives:** Mining code; agri-food incentives.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: mali.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "mali"
+      ],
+      "params": {
+        "country": "Mali",
+        "section": "5",
+        "detail": "investment promotion agency: 'API-Mali (verify current agency)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Mauritania dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "mauritania.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: mauritania.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "mauritania"
+      ],
+      "params": {
+        "country": "Mauritania",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Mauritania dossier contains placeholder text in section 5 (investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "Verify current agency",
+          "file": "mauritania.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Mining (iron ore, gold) and fisheries frameworks.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: mauritania.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "mauritania"
+      ],
+      "params": {
+        "country": "Mauritania",
+        "section": "5",
+        "detail": "investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Mozambique dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "mozambique.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: mozambique.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "mozambique"
+      ],
+      "params": {
+        "country": "Mozambique",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Namibia dossier contains placeholder text in section 2 (data protection authority: 'Ministry of Information (verify data mandate)').",
+      "evidence": [
+        {
+          "value": "Ministry of Information (verify data mandate)",
+          "file": "namibia.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Ministry of Information (verify data mandate) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: namibia.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "namibia"
+      ],
+      "params": {
+        "country": "Namibia",
+        "section": "2",
+        "detail": "data protection authority: 'Ministry of Information (verify data mandate)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Niger dossier contains placeholder text in section 3 (energy regulator: 'ARSE (Autorité de Régulation du Secteur de l'Énergie; verify)').",
+      "evidence": [
+        {
+          "value": "ARSE (Autorité de Régulation du Secteur de l'Énergie; verify)",
+          "file": "niger.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** ARSE (Autorité de Régulation du Secteur de l'Énergie; verify). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: niger.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "niger"
+      ],
+      "params": {
+        "country": "Niger",
+        "section": "3",
+        "detail": "energy regulator: 'ARSE (Autorité de Régulation du Secteur de l'Énergie; verify)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Niger dossier contains placeholder text in section 5 (investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "Verify current agency",
+          "file": "niger.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Uranium/mining framework; agro-pastoral incentives.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: niger.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "niger"
+      ],
+      "params": {
+        "country": "Niger",
+        "section": "5",
+        "detail": "investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Congo (Republic) dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "republic-of-congo.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: republic-of-congo.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "republic-of-congo"
+      ],
+      "params": {
+        "country": "Congo (Republic)",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Congo (Republic) dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy (regulator status to verify)').",
+      "evidence": [
+        {
+          "value": "Ministry of Energy (regulator status to verify)",
+          "file": "republic-of-congo.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy (regulator status to verify). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: republic-of-congo.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "republic-of-congo"
+      ],
+      "params": {
+        "country": "Congo (Republic)",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Energy (regulator status to verify)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Congo (Republic) dossier contains placeholder text in section 5 (investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "Verify current agency",
+          "file": "republic-of-congo.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Hydrocarbons framework; investment code.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: republic-of-congo.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "republic-of-congo"
+      ],
+      "params": {
+        "country": "Congo (Republic)",
+        "section": "5",
+        "detail": "investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S1",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "São Tomé and Príncipe dossier contains placeholder text in section 1 (regional blocs: 'CEN-SAD (verify)').",
+      "evidence": [
+        {
+          "value": "CEN-SAD (verify)",
+          "file": "sao-tome-and-principe.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEN-SAD (verify) |",
+          "canonical": "CEN-SAD",
+          "qualifier": "verify",
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: sao-tome-and-principe.md §1, line 13)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "sao-tome-and-principe"
+      ],
+      "params": {
+        "country": "São Tomé and Príncipe",
+        "section": "1",
+        "detail": "regional blocs: 'CEN-SAD (verify)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "São Tomé and Príncipe dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "sao-tome-and-principe.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: sao-tome-and-principe.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "sao-tome-and-principe"
+      ],
+      "params": {
+        "country": "São Tomé and Príncipe",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "São Tomé and Príncipe dossier contains placeholder text in section 5 (investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "Verify current agency",
+          "file": "sao-tome-and-principe.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Offshore/oil-linked prospective incentives.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: sao-tome-and-principe.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "sao-tome-and-principe"
+      ],
+      "params": {
+        "country": "São Tomé and Príncipe",
+        "section": "5",
+        "detail": "investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Seychelles dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "seychelles.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: seychelles.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "seychelles"
+      ],
+      "params": {
+        "country": "Seychelles",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Sierra Leone dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "sierra-leone.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: sierra-leone.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "sierra-leone"
+      ],
+      "params": {
+        "country": "Sierra Leone",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Somalia dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "somalia.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: somalia.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "somalia"
+      ],
+      "params": {
+        "country": "Somalia",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Somalia dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy (verify current regulator)').",
+      "evidence": [
+        {
+          "value": "Ministry of Energy (verify current regulator)",
+          "file": "somalia.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: somalia.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "somalia"
+      ],
+      "params": {
+        "country": "Somalia",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Energy (verify current regulator)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Somalia dossier contains placeholder text in section 5 (corporate income tax: 'None at federal level (municipal levies; verify)'; VAT / sales tax: 'None at federal level (verify)'; investment promotion agency: 'Somali Investment Promotion Office (verify)').",
+      "evidence": [
+        {
+          "value": "None at federal level (municipal levies; verify)",
+          "file": "somalia.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | None at federal level (municipal levies; verify) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [],
+            "has_numeric": false,
+            "is_compound": false
+          },
+          "citation": "(source: somalia.md §5, line 44)"
+        },
+        {
+          "value": "None at federal level (verify)",
+          "file": "somalia.md",
+          "section": "5",
+          "line": 45,
+          "raw": "| Standard VAT / sales tax | None at federal level (verify) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [],
+            "has_numeric": false,
+            "is_compound": false
+          },
+          "citation": "(source: somalia.md §5, line 45)"
+        },
+        {
+          "value": "Somali Investment Promotion Office (verify)",
+          "file": "somalia.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Somali Investment Promotion Office (verify). **Incentives:** Telecoms/remittance-led economy; reconstruction upside.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: somalia.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "somalia"
+      ],
+      "params": {
+        "country": "Somalia",
+        "section": "5",
+        "detail": "corporate income tax: 'None at federal level (municipal levies; verify)'; VAT / sales tax: 'None at federal level (verify)'; investment promotion agency: 'Somali Investment Promotion Office (verify)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "South Sudan dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "south-sudan.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: south-sudan.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "south-sudan"
+      ],
+      "params": {
+        "country": "South Sudan",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "South Sudan dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy and Dams (verify current regulator)').",
+      "evidence": [
+        {
+          "value": "Ministry of Energy and Dams (verify current regulator)",
+          "file": "south-sudan.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy and Dams (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: south-sudan.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "south-sudan"
+      ],
+      "params": {
+        "country": "South Sudan",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Energy and Dams (verify current regulator)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "South Sudan dossier contains placeholder text in section 5 (corporate income tax: '25% (30% petroleum; verify)'; VAT / sales tax: '18% (verify)'; investment promotion agency: 'South Sudan Investment Promotion Agency (verify)').",
+      "evidence": [
+        {
+          "value": "25% (30% petroleum; verify)",
+          "file": "south-sudan.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 25% (30% petroleum; verify) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              25.0,
+              30.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: south-sudan.md §5, line 44)"
+        },
+        {
+          "value": "18% (verify)",
+          "file": "south-sudan.md",
+          "section": "5",
+          "line": 45,
+          "raw": "| Standard VAT / sales tax | 18% (verify) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              18.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: south-sudan.md §5, line 45)"
+        },
+        {
+          "value": "South Sudan Investment Promotion Agency (verify)",
+          "file": "south-sudan.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** South Sudan Investment Promotion Agency (verify). **Incentives:** Oil-linked economy; reconstruction opportunities.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: south-sudan.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "south-sudan"
+      ],
+      "params": {
+        "country": "South Sudan",
+        "section": "5",
+        "detail": "corporate income tax: '25% (30% petroleum; verify)'; VAT / sales tax: '18% (verify)'; investment promotion agency: 'South Sudan Investment Promotion Agency (verify)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Sudan dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "sudan.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: sudan.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "sudan"
+      ],
+      "params": {
+        "country": "Sudan",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Sudan dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy and Petroleum (verify current regulator)').",
+      "evidence": [
+        {
+          "value": "Ministry of Energy and Petroleum (verify current regulator)",
+          "file": "sudan.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy and Petroleum (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: sudan.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "sudan"
+      ],
+      "params": {
+        "country": "Sudan",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Energy and Petroleum (verify current regulator)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Sudan dossier contains placeholder text in section 5 (corporate income tax: '35% (verify recent reforms)'; VAT / sales tax: '17% (verify)'; investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "35% (verify recent reforms)",
+          "file": "sudan.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 35% (verify recent reforms) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              35.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: sudan.md §5, line 44)"
+        },
+        {
+          "value": "17% (verify)",
+          "file": "sudan.md",
+          "section": "5",
+          "line": 45,
+          "raw": "| Standard VAT / sales tax | 17% (verify) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              17.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: sudan.md §5, line 45)"
+        },
+        {
+          "value": "Verify current agency",
+          "file": "sudan.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Post-conflict reconstruction; agriculture and minerals.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: sudan.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "sudan"
+      ],
+      "params": {
+        "country": "Sudan",
+        "section": "5",
+        "detail": "corporate income tax: '35% (verify recent reforms)'; VAT / sales tax: '17% (verify)'; investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Tanzania dossier contains placeholder text in section 2 (data protection authority: 'Personal Data Protection Commission (PDPC; verify operational status)').",
+      "evidence": [
+        {
+          "value": "Personal Data Protection Commission (PDPC; verify operational status)",
+          "file": "tanzania.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Personal Data Protection Commission (PDPC; verify operational status) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: tanzania.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "tanzania"
+      ],
+      "params": {
+        "country": "Tanzania",
+        "section": "2",
+        "detail": "data protection authority: 'Personal Data Protection Commission (PDPC; verify operational status)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Togo dossier contains placeholder text in section 2 (data protection authority: 'Verify national authority').",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "togo.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: togo.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "togo"
+      ],
+      "params": {
+        "country": "Togo",
+        "section": "2",
+        "detail": "data protection authority: 'Verify national authority'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Togo dossier contains placeholder text in section 3 (energy regulator: 'ARSE (Autorité de Réglementation du Secteur de l'Électricité; verify)').",
+      "evidence": [
+        {
+          "value": "ARSE (Autorité de Réglementation du Secteur de l'Électricité; verify)",
+          "file": "togo.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** ARSE (Autorité de Réglementation du Secteur de l'Électricité; verify). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: togo.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "togo"
+      ],
+      "params": {
+        "country": "Togo",
+        "section": "3",
+        "detail": "energy regulator: 'ARSE (Autorité de Réglementation du Secteur de l'Électricité; verify)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Togo dossier contains placeholder text in section 5 (investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "Verify current agency",
+          "file": "togo.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Port of Lomé free zone; logistics hub.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: togo.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "togo"
+      ],
+      "params": {
+        "country": "Togo",
+        "section": "5",
+        "detail": "investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Zambia dossier contains placeholder text in section 2 (data protection authority: 'ZICTA (registrar under data protection law; verify)').",
+      "evidence": [
+        {
+          "value": "ZICTA (registrar under data protection law; verify)",
+          "file": "zambia.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** ZICTA (registrar under data protection law; verify) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: zambia.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "zambia"
+      ],
+      "params": {
+        "country": "Zambia",
+        "section": "2",
+        "detail": "data protection authority: 'ZICTA (registrar under data protection law; verify)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S2",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Zimbabwe dossier contains placeholder text in section 2 (data protection authority: 'Data Protection Authority (verify current status)').",
+      "evidence": [
+        {
+          "value": "Data Protection Authority (verify current status)",
+          "file": "zimbabwe.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Data Protection Authority (verify current status) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: zimbabwe.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "zimbabwe"
+      ],
+      "params": {
+        "country": "Zimbabwe",
+        "section": "2",
+        "detail": "data protection authority: 'Data Protection Authority (verify current status)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Zimbabwe dossier contains placeholder text in section 5 (corporate income tax: '24% (verify)').",
+      "evidence": [
+        {
+          "value": "24% (verify)",
+          "file": "zimbabwe.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 24% (verify) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              24.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: zimbabwe.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "zimbabwe"
+      ],
+      "params": {
+        "country": "Zimbabwe",
+        "section": "5",
+        "detail": "corporate income tax: '24% (verify)'"
+      }
+    },
+    {
+      "rule_id": "BLOC-ASYMMETRY",
+      "v_number": "V06",
+      "severity": "med",
+      "scope": "bloc",
+      "confidence": "in-dossier",
+      "message": "Benin lists 'COMESA (observer)' (carries 'observer' qualifier; unconfirmed by partner dossiers).",
+      "evidence": [
+        {
+          "value": "COMESA (observer)",
+          "file": "benin.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; ECOWAS; WAEMU (UEMOA); COMESA (observer) |",
+          "canonical": "COMESA",
+          "qualifier": "observer",
+          "is_boilerplate": false,
+          "meta": {}
+        }
+      ],
+      "why_it_matters": "Observer or single-country bloc claims do not guarantee shared trade, customs, or licensing rules.",
+      "suggested_check": "Do not plan licensing around this bloc; verify full membership on the bloc's official member list.",
+      "affected_count": 1,
+      "countries": [
+        "benin"
+      ],
+      "params": {
+        "country": "Benin",
+        "detail": "COMESA (observer)"
+      }
+    },
+    {
+      "rule_id": "BLOC-ASYMMETRY",
+      "v_number": "V06",
+      "severity": "med",
+      "scope": "bloc",
+      "confidence": "in-dossier",
+      "message": "Cameroon lists 'ECOWAS (observer)' (carries 'observer' qualifier; unconfirmed by partner dossiers).",
+      "evidence": [
+        {
+          "value": "ECOWAS (observer)",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+          "canonical": "ECOWAS",
+          "qualifier": "observer",
+          "is_boilerplate": false,
+          "meta": {}
+        }
+      ],
+      "why_it_matters": "Observer or single-country bloc claims do not guarantee shared trade, customs, or licensing rules.",
+      "suggested_check": "Do not plan licensing around this bloc; verify full membership on the bloc's official member list.",
+      "affected_count": 1,
+      "countries": [
+        "cameroon"
+      ],
+      "params": {
+        "country": "Cameroon",
+        "detail": "ECOWAS (observer)"
+      }
+    },
+    {
+      "rule_id": "BLOC-ASYMMETRY",
+      "v_number": "V06",
+      "severity": "med",
+      "scope": "bloc",
+      "confidence": "in-dossier",
+      "message": "Morocco lists 'COMESA (observer)' (carries 'observer' qualifier; unconfirmed by partner dossiers).",
+      "evidence": [
+        {
+          "value": "COMESA (observer)",
+          "file": "morocco.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; AMU (dormant); COMESA (observer) |",
+          "canonical": "COMESA",
+          "qualifier": "observer",
+          "is_boilerplate": false,
+          "meta": {}
+        }
+      ],
+      "why_it_matters": "Observer or single-country bloc claims do not guarantee shared trade, customs, or licensing rules.",
+      "suggested_check": "Do not plan licensing around this bloc; verify full membership on the bloc's official member list.",
+      "affected_count": 1,
+      "countries": [
+        "morocco"
+      ],
+      "params": {
+        "country": "Morocco",
+        "detail": "COMESA (observer)"
+      }
+    },
+    {
+      "rule_id": "BLOC-ASYMMETRY",
+      "v_number": "V06",
+      "severity": "med",
+      "scope": "bloc",
+      "confidence": "in-dossier",
+      "message": "São Tomé and Príncipe lists 'CEN-SAD (verify)' (carries 'verify' qualifier; unconfirmed by partner dossiers).",
+      "evidence": [
+        {
+          "value": "CEN-SAD (verify)",
+          "file": "sao-tome-and-principe.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEN-SAD (verify) |",
+          "canonical": "CEN-SAD",
+          "qualifier": "verify",
+          "is_boilerplate": false,
+          "meta": {}
+        }
+      ],
+      "why_it_matters": "Observer or single-country bloc claims do not guarantee shared trade, customs, or licensing rules.",
+      "suggested_check": "Do not plan licensing around this bloc; verify full membership on the bloc's official member list.",
+      "affected_count": 1,
+      "countries": [
+        "sao-tome-and-principe"
+      ],
+      "params": {
+        "country": "São Tomé and Príncipe",
+        "detail": "CEN-SAD (verify)"
+      }
+    },
+    {
+      "rule_id": "BLOC-ASYMMETRY",
+      "v_number": "V06",
+      "severity": "med",
+      "scope": "bloc",
+      "confidence": "in-dossier",
+      "message": "South Africa lists 'BRICS' (listed by only 1 dossier across all 54 countries; unconfirmed by partner dossiers).",
+      "evidence": [
+        {
+          "value": "BRICS",
+          "file": "south-africa.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; SADC; SACU; BRICS |",
+          "canonical": "BRICS",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {}
+        }
+      ],
+      "why_it_matters": "Observer or single-country bloc claims do not guarantee shared trade, customs, or licensing rules.",
+      "suggested_check": "Do not plan licensing around this bloc; verify full membership on the bloc's official member list.",
+      "affected_count": 1,
+      "countries": [
+        "south-africa"
+      ],
+      "params": {
+        "country": "South Africa",
+        "detail": "BRICS"
+      }
+    },
+    {
+      "rule_id": "DPA-EXPANSION-MISMATCH",
+      "v_number": "V08",
+      "severity": "med",
+      "scope": "bloc",
+      "confidence": "in-dossier",
+      "message": "Data-protection acronym 'APDP' has 2 different expansions across dossiers: 'Autorité de Protection des Données Personnelles' (Benin) vs 'Autorité de Protection des Données à caractère Personnel' (Mali).",
+      "evidence": [
+        {
+          "value": "APDP (Autorité de Protection des Données Personnelles)",
+          "file": "benin.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** APDP (Autorité de Protection des Données Personnelles) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: benin.md §2, line 21)"
+        },
+        {
+          "value": "APDP (Autorité de Protection des Données à caractère Personnel)",
+          "file": "mali.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** APDP (Autorité de Protection des Données à caractère Personnel) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: mali.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Conflicting agency names suggest the dossier entry may be templated rather than verified against national law.",
+      "suggested_check": "Confirm the official legal name and active registration office of each country's privacy regulator directly.",
+      "affected_count": 2,
+      "countries": [
+        "benin",
+        "mali"
+      ],
+      "params": {
+        "acronym": "APDP",
+        "detail": "'Autorité de Protection des Données Personnelles' (Benin) vs 'Autorité de Protection des Données à caractère Personnel' (Mali)"
+      }
+    },
+    {
+      "rule_id": "DPA-EXPANSION-MISMATCH",
+      "v_number": "V08",
+      "severity": "med",
+      "scope": "bloc",
+      "confidence": "in-dossier",
+      "message": "Data-protection acronym 'CIL' has 2 different expansions across dossiers: 'Commission Nationale de l'Informatique et des Libertés' (Niger) vs 'Commission de l'Informatique et des Libertés' (Burkina Faso).",
+      "evidence": [
+        {
+          "value": "CIL (Commission de l'Informatique et des Libertés)",
+          "file": "burkina-faso.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** CIL (Commission de l'Informatique et des Libertés) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: burkina-faso.md §2, line 21)"
+        },
+        {
+          "value": "CIL (Commission Nationale de l'Informatique et des Libertés)",
+          "file": "niger.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** CIL (Commission Nationale de l'Informatique et des Libertés) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: niger.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Conflicting agency names suggest the dossier entry may be templated rather than verified against national law.",
+      "suggested_check": "Confirm the official legal name and active registration office of each country's privacy regulator directly.",
+      "affected_count": 2,
+      "countries": [
+        "burkina-faso",
+        "niger"
+      ],
+      "params": {
+        "acronym": "CIL",
+        "detail": "'Commission Nationale de l'Informatique et des Libertés' (Niger) vs 'Commission de l'Informatique et des Libertés' (Burkina Faso)"
+      }
+    },
+    {
+      "rule_id": "DPA-EXPANSION-MISMATCH",
+      "v_number": "V08",
+      "severity": "med",
+      "scope": "bloc",
+      "confidence": "in-dossier",
+      "message": "Data-protection acronym 'CNPD' has 4 different expansions across dossiers: 'Comissão Nacional de Proteção de Dados' (Cabo Verde) vs 'Commission Nationale pour la Protection des Données' (Gabon) vs 'Commission Nationale pour la Protection des Données à Caractère Personnel' (Cameroon) vs 'verify current status' (Madagascar).",
+      "evidence": [
+        {
+          "value": "Comissão Nacional de Proteção de Dados (CNPD)",
+          "file": "cabo-verde.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Comissão Nacional de Proteção de Dados (CNPD) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cabo-verde.md §2, line 21)"
+        },
+        {
+          "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel)",
+          "file": "cameroon.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §2, line 21)"
+        },
+        {
+          "value": "CNPD (Commission Nationale pour la Protection des Données)",
+          "file": "gabon.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** CNPD (Commission Nationale pour la Protection des Données) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §2, line 21)"
+        },
+        {
+          "value": "CNPD (verify current status)",
+          "file": "madagascar.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** CNPD (verify current status) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: madagascar.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Conflicting agency names suggest the dossier entry may be templated rather than verified against national law.",
+      "suggested_check": "Confirm the official legal name and active registration office of each country's privacy regulator directly.",
+      "affected_count": 4,
+      "countries": [
+        "cabo-verde",
+        "cameroon",
+        "gabon",
+        "madagascar"
+      ],
+      "params": {
+        "acronym": "CNPD",
+        "detail": "'Comissão Nacional de Proteção de Dados' (Cabo Verde) vs 'Commission Nationale pour la Protection des Données' (Gabon) vs 'Commission Nationale pour la Protection des Données à Caractère Personnel' (Cameroon) vs 'verify current status' (Madagascar)"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Algeria CIT cell '26% (19% for production activities)' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "26% (19% for production activities)",
+          "file": "algeria.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 26% (19% for production activities) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              26.0,
+              19.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: algeria.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "algeria"
+      ],
+      "params": {
+        "country": "Algeria",
+        "tax": "CIT",
+        "detail": "26% (19% for production activities)",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Cameroon CIT cell '30% (33% for some sectors)' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "30% (33% for some sectors)",
+          "file": "cameroon.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 30% (33% for some sectors) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              30.0,
+              33.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: cameroon.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "cameroon"
+      ],
+      "params": {
+        "country": "Cameroon",
+        "tax": "CIT",
+        "detail": "30% (33% for some sectors)",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "high",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Comoros CIT cell '50%' flagged (rate is 0% or above 40%).",
+      "evidence": [
+        {
+          "value": "50%",
+          "file": "comoros.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 50% |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              50.0
+            ],
+            "has_numeric": true,
+            "is_compound": false
+          },
+          "citation": "(source: comoros.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "comoros"
+      ],
+      "params": {
+        "country": "Comoros",
+        "tax": "CIT",
+        "detail": "50%",
+        "reason": "rate is 0% or above 40%"
+      }
+    },
+    {
+      "rule_id": "TAX-VAT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Comoros VAT cell 'None (verify sales-tax regime)' flagged (non-numeric rate).",
+      "evidence": [
+        {
+          "value": "None (verify sales-tax regime)",
+          "file": "comoros.md",
+          "section": "5",
+          "line": 45,
+          "raw": "| Standard VAT / sales tax | None (verify sales-tax regime) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [],
+            "has_numeric": false,
+            "is_compound": false
+          },
+          "citation": "(source: comoros.md §5, line 45)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "comoros"
+      ],
+      "params": {
+        "country": "Comoros",
+        "tax": "VAT",
+        "detail": "None (verify sales-tax regime)",
+        "reason": "non-numeric rate"
+      }
+    },
+    {
+      "rule_id": "TAX-VAT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Eritrea VAT cell 'None (sales tax regime)' flagged (non-numeric rate).",
+      "evidence": [
+        {
+          "value": "None (sales tax regime)",
+          "file": "eritrea.md",
+          "section": "5",
+          "line": 45,
+          "raw": "| Standard VAT / sales tax | None (sales tax regime) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [],
+            "has_numeric": false,
+            "is_compound": false
+          },
+          "citation": "(source: eritrea.md §5, line 45)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "eritrea"
+      ],
+      "params": {
+        "country": "Eritrea",
+        "tax": "VAT",
+        "detail": "None (sales tax regime)",
+        "reason": "non-numeric rate"
+      }
+    },
+    {
+      "rule_id": "TAX-VAT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Libya VAT cell 'None (no VAT framework)' flagged (non-numeric rate).",
+      "evidence": [
+        {
+          "value": "None (no VAT framework)",
+          "file": "libya.md",
+          "section": "5",
+          "line": 45,
+          "raw": "| Standard VAT / sales tax | None (no VAT framework) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [],
+            "has_numeric": false,
+            "is_compound": false
+          },
+          "citation": "(source: libya.md §5, line 45)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "libya"
+      ],
+      "params": {
+        "country": "Libya",
+        "tax": "VAT",
+        "detail": "None (no VAT framework)",
+        "reason": "non-numeric rate"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Mali CIT cell '30% (35% for certain sectors)' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "30% (35% for certain sectors)",
+          "file": "mali.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 30% (35% for certain sectors) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              30.0,
+              35.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: mali.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "mali"
+      ],
+      "params": {
+        "country": "Mali",
+        "tax": "CIT",
+        "detail": "30% (35% for certain sectors)",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Morocco CIT cell '20–31% by bracket' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "20–31% by bracket",
+          "file": "morocco.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 20–31% by bracket |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              20.0,
+              31.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: morocco.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "morocco"
+      ],
+      "params": {
+        "country": "Morocco",
+        "tax": "CIT",
+        "detail": "20–31% by bracket",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Namibia CIT cell '31–32%' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "31–32%",
+          "file": "namibia.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 31–32% |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              31.0,
+              32.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: namibia.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "namibia"
+      ],
+      "params": {
+        "country": "Namibia",
+        "tax": "CIT",
+        "detail": "31–32%",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Nigeria CIT cell '30% (25% for qualifying SMEs)' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "30% (25% for qualifying SMEs)",
+          "file": "nigeria.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 30% (25% for qualifying SMEs) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              30.0,
+              25.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: nigeria.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "nigeria"
+      ],
+      "params": {
+        "country": "Nigeria",
+        "tax": "CIT",
+        "detail": "30% (25% for qualifying SMEs)",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Sierra Leone CIT cell '30% (25% for certain sectors)' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "30% (25% for certain sectors)",
+          "file": "sierra-leone.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 30% (25% for certain sectors) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              30.0,
+              25.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: sierra-leone.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "sierra-leone"
+      ],
+      "params": {
+        "country": "Sierra Leone",
+        "tax": "CIT",
+        "detail": "30% (25% for certain sectors)",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Somalia CIT cell 'None at federal level (municipal levies; verify)' flagged (non-numeric rate).",
+      "evidence": [
+        {
+          "value": "None at federal level (municipal levies; verify)",
+          "file": "somalia.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | None at federal level (municipal levies; verify) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [],
+            "has_numeric": false,
+            "is_compound": false
+          },
+          "citation": "(source: somalia.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "somalia"
+      ],
+      "params": {
+        "country": "Somalia",
+        "tax": "CIT",
+        "detail": "None at federal level (municipal levies; verify)",
+        "reason": "non-numeric rate"
+      }
+    },
+    {
+      "rule_id": "TAX-VAT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Somalia VAT cell 'None at federal level (verify)' flagged (non-numeric rate).",
+      "evidence": [
+        {
+          "value": "None at federal level (verify)",
+          "file": "somalia.md",
+          "section": "5",
+          "line": 45,
+          "raw": "| Standard VAT / sales tax | None at federal level (verify) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [],
+            "has_numeric": false,
+            "is_compound": false
+          },
+          "citation": "(source: somalia.md §5, line 45)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "somalia"
+      ],
+      "params": {
+        "country": "Somalia",
+        "tax": "VAT",
+        "detail": "None at federal level (verify)",
+        "reason": "non-numeric rate"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "South Sudan CIT cell '25% (30% petroleum; verify)' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "25% (30% petroleum; verify)",
+          "file": "south-sudan.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 25% (30% petroleum; verify) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              25.0,
+              30.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: south-sudan.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "south-sudan"
+      ],
+      "params": {
+        "country": "South Sudan",
+        "tax": "CIT",
+        "detail": "25% (30% petroleum; verify)",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "TAX-VAT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "South Sudan VAT cell '18% (verify)' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "18% (verify)",
+          "file": "south-sudan.md",
+          "section": "5",
+          "line": 45,
+          "raw": "| Standard VAT / sales tax | 18% (verify) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              18.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: south-sudan.md §5, line 45)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "south-sudan"
+      ],
+      "params": {
+        "country": "South Sudan",
+        "tax": "VAT",
+        "detail": "18% (verify)",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Sudan CIT cell '35% (verify recent reforms)' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "35% (verify recent reforms)",
+          "file": "sudan.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 35% (verify recent reforms) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              35.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: sudan.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "sudan"
+      ],
+      "params": {
+        "country": "Sudan",
+        "tax": "CIT",
+        "detail": "35% (verify recent reforms)",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "TAX-VAT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Sudan VAT cell '17% (verify)' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "17% (verify)",
+          "file": "sudan.md",
+          "section": "5",
+          "line": 45,
+          "raw": "| Standard VAT / sales tax | 17% (verify) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              17.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: sudan.md §5, line 45)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "sudan"
+      ],
+      "params": {
+        "country": "Sudan",
+        "tax": "VAT",
+        "detail": "17% (verify)",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Tunisia CIT cell '15–35% by activity (25% standard)' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "15–35% by activity (25% standard)",
+          "file": "tunisia.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 15–35% by activity (25% standard) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              15.0,
+              35.0,
+              25.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: tunisia.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "tunisia"
+      ],
+      "params": {
+        "country": "Tunisia",
+        "tax": "CIT",
+        "detail": "15–35% by activity (25% standard)",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Zambia CIT cell '30% (35% mining)' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "30% (35% mining)",
+          "file": "zambia.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 30% (35% mining) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              30.0,
+              35.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: zambia.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "zambia"
+      ],
+      "params": {
+        "country": "Zambia",
+        "tax": "CIT",
+        "detail": "30% (35% mining)",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Zimbabwe CIT cell '24% (verify)' flagged (compound/multi-rate cell).",
+      "evidence": [
+        {
+          "value": "24% (verify)",
+          "file": "zimbabwe.md",
+          "section": "5",
+          "line": 44,
+          "raw": "| Standard corporate income tax | 24% (verify) |",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {
+            "numbers": [
+              24.0
+            ],
+            "has_numeric": true,
+            "is_compound": true
+          },
+          "citation": "(source: zimbabwe.md §5, line 44)"
+        }
+      ],
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "zimbabwe"
+      ],
+      "params": {
+        "country": "Zimbabwe",
+        "tax": "CIT",
+        "detail": "24% (verify)",
+        "reason": "compound/multi-rate cell"
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Central African Republic names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "central-african-republic.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: central-african-republic.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "central-african-republic"
+      ],
+      "params": {
+        "country": "Central African Republic",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Chad names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "chad.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: chad.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "chad"
+      ],
+      "params": {
+        "country": "Chad",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Comoros names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "comoros.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: comoros.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "comoros"
+      ],
+      "params": {
+        "country": "Comoros",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "DRC names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "democratic-republic-of-congo.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: democratic-republic-of-congo.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "democratic-republic-of-congo"
+      ],
+      "params": {
+        "country": "DRC",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Djibouti names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "djibouti.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: djibouti.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "djibouti"
+      ],
+      "params": {
+        "country": "Djibouti",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Equatorial Guinea names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "equatorial-guinea.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: equatorial-guinea.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "equatorial-guinea"
+      ],
+      "params": {
+        "country": "Equatorial Guinea",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Eritrea names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "eritrea.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: eritrea.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "eritrea"
+      ],
+      "params": {
+        "country": "Eritrea",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Eswatini names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "eswatini.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: eswatini.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "eswatini"
+      ],
+      "params": {
+        "country": "Eswatini",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Gambia names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "gambia.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gambia.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "gambia"
+      ],
+      "params": {
+        "country": "Gambia",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Guinea names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "guinea.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: guinea.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "guinea"
+      ],
+      "params": {
+        "country": "Guinea",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Guinea-Bissau names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "guinea-bissau.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: guinea-bissau.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "guinea-bissau"
+      ],
+      "params": {
+        "country": "Guinea-Bissau",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Lesotho names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "lesotho.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: lesotho.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "lesotho"
+      ],
+      "params": {
+        "country": "Lesotho",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Liberia names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "liberia.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: liberia.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "liberia"
+      ],
+      "params": {
+        "country": "Liberia",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Libya names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "libya.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: libya.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "libya"
+      ],
+      "params": {
+        "country": "Libya",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Malawi names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "malawi.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: malawi.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "malawi"
+      ],
+      "params": {
+        "country": "Malawi",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Mauritania names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "mauritania.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: mauritania.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "mauritania"
+      ],
+      "params": {
+        "country": "Mauritania",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Mozambique names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "mozambique.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: mozambique.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "mozambique"
+      ],
+      "params": {
+        "country": "Mozambique",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Congo (Republic) names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "republic-of-congo.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: republic-of-congo.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "republic-of-congo"
+      ],
+      "params": {
+        "country": "Congo (Republic)",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "São Tomé and Príncipe names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "sao-tome-and-principe.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: sao-tome-and-principe.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "sao-tome-and-principe"
+      ],
+      "params": {
+        "country": "São Tomé and Príncipe",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Seychelles names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "seychelles.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: seychelles.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "seychelles"
+      ],
+      "params": {
+        "country": "Seychelles",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Sierra Leone names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "sierra-leone.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: sierra-leone.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "sierra-leone"
+      ],
+      "params": {
+        "country": "Sierra Leone",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Somalia names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "somalia.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: somalia.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "somalia"
+      ],
+      "params": {
+        "country": "Somalia",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "South Sudan names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "south-sudan.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: south-sudan.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "south-sudan"
+      ],
+      "params": {
+        "country": "South Sudan",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Sudan names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "sudan.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: sudan.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "sudan"
+      ],
+      "params": {
+        "country": "Sudan",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "DPA-UNNAMED",
+      "v_number": "V20",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Togo names no data-protection authority (placeholder only; 25 of 54 dossiers share this gap).",
+      "evidence": [
+        {
+          "value": "Verify national authority",
+          "file": "togo.md",
+          "section": "2",
+          "line": 21,
+          "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: togo.md §2, line 21)"
+        }
+      ],
+      "why_it_matters": "Without a named privacy regulator, you cannot confirm where to register customer personal-data handling.",
+      "suggested_check": "Ask the Ministry of Digital Economy or Telecommunications which agency enforces personal-data rules.",
+      "affected_count": 25,
+      "countries": [
+        "togo"
+      ],
+      "params": {
+        "country": "Togo",
+        "affected_count": 25,
+        "corpus_total": 54
+      }
+    }
+  ]
+}

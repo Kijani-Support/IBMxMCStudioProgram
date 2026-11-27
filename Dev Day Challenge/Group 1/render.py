@@ -227,6 +227,14 @@ def _en_strings() -> dict[str, Any]:
             "step_untrusted_tag": "[FLAGGED — template defect, do not treat as fact]",
             "not_reported": "Not reported in dossier",
             "dpa_same_acronym_diff_exp": "Same acronym ({acronym}) with different full names across the two dossiers",
+            "bloc_matrix_title": "Bloc consistency matrix ({bloc})",
+            "matrix_country": "Country",
+            "matrix_currency": "Currency",
+            "matrix_cb": "Central bank",
+            "matrix_blocs": "Bloc symmetry",
+            "matrix_dpa": "DPA naming",
+            "matrix_placeholders": "Placeholders",
+            "matrix_flags": "Flag counts",
         },
         "meanings": {
             "sec1_same_cb": (
@@ -666,6 +674,32 @@ def render_brief(facts: dict[str, Any], lang: str = "en") -> str:
             f"`{e['raw_value']}` {_cite(e['field'])}" for e in blocs_cmp["only_in_target"]
         )
         out.append(f"- **{labels['only_in_target']} ({target_name}):** {items}")
+
+    # Render shared sub-regional bloc consistency matrix table(s) when present.
+    bloc_matrices = facts.get("bloc_matrices", {})
+    for bkey, matrix in bloc_matrices.items():
+        if not matrix.get("rows"):
+            continue
+        out.append("")
+        out.append(f"### {labels['bloc_matrix_title'].format(bloc=bkey)}")
+        out.append("")
+        out.append(
+            f"| {labels['matrix_country']} | {labels['matrix_currency']} | {labels['matrix_cb']} | "
+            f"{labels['matrix_blocs']} | {labels['matrix_dpa']} | {labels['matrix_placeholders']} | "
+            f"{labels['matrix_flags']} | Source |"
+        )
+        out.append("|---|---|---|---|---|---|---|---|")
+        for row in matrix["rows"]:
+            cur_c = f"`{row['currency']['status']}` {row['currency']['label']}"
+            cb_c = f"`{row['central_bank']['status']}` {row['central_bank']['label']}"
+            sym_c = f"`{row['bloc_symmetry']['status']}` {row['bloc_symmetry']['label']}"
+            dpa_c = f"`{row['dpa_naming']['status']}` {row['dpa_naming']['label']}"
+            ph_c = f"`{row['placeholders']['status']}` {row['placeholders']['label']}"
+            flg_c = f"`{row['flag_counts']['status']}` {row['flag_counts']['label']}"
+            src_c = f"(source: {row['file']} §1, line 12)"
+            out.append(
+                f"| {row['country']} | {cur_c} | {cb_c} | {sym_c} | {dpa_c} | {ph_c} | {flg_c} | {src_c} |"
+            )
 
     out.append("")
     has_subregional = any(b["canonical"] != "African Union" for b in blocs_cmp["shared"])

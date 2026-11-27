@@ -6,7 +6,7 @@
     "team": "Christopher Damian Munene, Mark Lekayia (Group 1, IBM x MC Studio Dev Day)",
     "disclaimer_en": "Planning reference only — not legal, tax, or financial advice. Verify every figure and authority directly before acting.",
     "disclaimer_fr": "Référence de planification uniquement — ce document ne constitue pas un conseil juridique, fiscal ou financier. Vérifiez chaque élément avant d'agir.",
-    "generated_at": "2026-11-27T12:21:35Z",
+    "generated_at": "2026-11-27T12:28:51Z",
     "sector_key": "fintech",
     "sector_display_en": "Fintech",
     "sector_display_fr": "Fintech",
@@ -1882,16 +1882,749 @@
       "target": []
     }
   },
+  "bloc_matrices": {
+    "CEMAC": {
+      "bloc": "CEMAC",
+      "member_count": 6,
+      "rows": [
+        {
+          "slug": "cameroon",
+          "country": "Cameroon",
+          "file": "cameroon.md",
+          "currency": {
+            "status": "ok",
+            "label": "XAF",
+            "evidence": [
+              {
+                "value": "Central African CFA franc (XAF) (CEMAC / BEAC)",
+                "file": "cameroon.md",
+                "section": "1",
+                "line": 12,
+                "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: cameroon.md §1, line 12)"
+              }
+            ]
+          },
+          "central_bank": {
+            "status": "note",
+            "label": "BEAC (full name)",
+            "evidence": [
+              {
+                "value": "Banque des États de l'Afrique Centrale (BEAC)",
+                "file": "cameroon.md",
+                "section": "2",
+                "line": 19,
+                "raw": "**Central bank:** Banque des États de l'Afrique Centrale (BEAC). Fintech ventures should plan on central-bank licensing for payment and lending products, AML/CFT registration, and consumer-credit rules. Cross-border digital services are increasingly taxed or regulated by regional frameworks (WAEMU/ECOWAS/EAC harmonisation).",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: cameroon.md §2, line 19)"
+              }
+            ]
+          },
+          "bloc_symmetry": {
+            "status": "flag",
+            "label": "V06 (ECOWAS (observer))",
+            "evidence": [
+              {
+                "value": "ECOWAS (observer)",
+                "file": "cameroon.md",
+                "section": "1",
+                "line": 13,
+                "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+                "canonical": "ECOWAS",
+                "qualifier": "observer",
+                "is_boilerplate": false,
+                "meta": {}
+              }
+            ]
+          },
+          "dpa_naming": {
+            "status": "flag",
+            "label": "V08 (CNPD mismatch)",
+            "evidence": [
+              {
+                "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel)",
+                "file": "cameroon.md",
+                "section": "2",
+                "line": 21,
+                "raw": "**Data protection:** CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: cameroon.md §2, line 21)"
+              }
+            ]
+          },
+          "placeholders": {
+            "status": "ok",
+            "label": "0",
+            "evidence": []
+          },
+          "flag_counts": {
+            "status": "note",
+            "label": "0H/3M/0L (3)",
+            "counts": {
+              "high": 0,
+              "med": 3,
+              "low": 0,
+              "total": 3
+            }
+          }
+        },
+        {
+          "slug": "central-african-republic",
+          "country": "Central African Republic",
+          "file": "central-african-republic.md",
+          "currency": {
+            "status": "ok",
+            "label": "XAF",
+            "evidence": [
+              {
+                "value": "Central African CFA franc (XAF) (CEMAC / BEAC)",
+                "file": "central-african-republic.md",
+                "section": "1",
+                "line": 12,
+                "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: central-african-republic.md §1, line 12)"
+              }
+            ]
+          },
+          "central_bank": {
+            "status": "ok",
+            "label": "BEAC",
+            "evidence": [
+              {
+                "value": "BEAC",
+                "file": "central-african-republic.md",
+                "section": "2",
+                "line": 19,
+                "raw": "**Central bank:** BEAC. Fintech ventures should plan on central-bank licensing for payment and lending products, AML/CFT registration, and consumer-credit rules. Cross-border digital services are increasingly taxed or regulated by regional frameworks (WAEMU/ECOWAS/EAC harmonisation).",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: central-african-republic.md §2, line 19)"
+              }
+            ]
+          },
+          "bloc_symmetry": {
+            "status": "ok",
+            "label": "ok",
+            "evidence": [
+              {
+                "value": "African Union",
+                "file": "central-african-republic.md",
+                "section": "1",
+                "line": 13,
+                "raw": "| Regional blocs | African Union; CEMAC |",
+                "canonical": "African Union",
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: central-african-republic.md §1, line 13)"
+              }
+            ]
+          },
+          "dpa_naming": {
+            "status": "flag",
+            "label": "V20 (unnamed)",
+            "evidence": [
+              {
+                "value": "Verify national authority",
+                "file": "central-african-republic.md",
+                "section": "2",
+                "line": 21,
+                "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: central-african-republic.md §2, line 21)"
+              }
+            ]
+          },
+          "placeholders": {
+            "status": "flag",
+            "label": "3 (§2,§3,§5)",
+            "evidence": [
+              {
+                "value": "Verify national authority",
+                "file": "central-african-republic.md",
+                "section": "2",
+                "line": 21,
+                "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: central-african-republic.md §2, line 21)"
+              },
+              {
+                "value": "Ministry of Energy (regulator status to verify)",
+                "file": "central-african-republic.md",
+                "section": "3",
+                "line": 25,
+                "raw": "**Regulator / authority:** Ministry of Energy (regulator status to verify). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: central-african-republic.md §3, line 25)"
+              },
+              {
+                "value": "Verify current agency",
+                "file": "central-african-republic.md",
+                "section": "5",
+                "line": 47,
+                "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Investment charter incentives (mining, timber).",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: central-african-republic.md §5, line 47)"
+              }
+            ]
+          },
+          "flag_counts": {
+            "status": "note",
+            "label": "0H/4M/0L (4)",
+            "counts": {
+              "high": 0,
+              "med": 4,
+              "low": 0,
+              "total": 4
+            }
+          }
+        },
+        {
+          "slug": "chad",
+          "country": "Chad",
+          "file": "chad.md",
+          "currency": {
+            "status": "ok",
+            "label": "XAF",
+            "evidence": [
+              {
+                "value": "Central African CFA franc (XAF) (CEMAC / BEAC)",
+                "file": "chad.md",
+                "section": "1",
+                "line": 12,
+                "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: chad.md §1, line 12)"
+              }
+            ]
+          },
+          "central_bank": {
+            "status": "ok",
+            "label": "BEAC",
+            "evidence": [
+              {
+                "value": "BEAC",
+                "file": "chad.md",
+                "section": "2",
+                "line": 19,
+                "raw": "**Central bank:** BEAC. Fintech ventures should plan on central-bank licensing for payment and lending products, AML/CFT registration, and consumer-credit rules. Cross-border digital services are increasingly taxed or regulated by regional frameworks (WAEMU/ECOWAS/EAC harmonisation).",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: chad.md §2, line 19)"
+              }
+            ]
+          },
+          "bloc_symmetry": {
+            "status": "ok",
+            "label": "ok",
+            "evidence": [
+              {
+                "value": "African Union",
+                "file": "chad.md",
+                "section": "1",
+                "line": 13,
+                "raw": "| Regional blocs | African Union; CEMAC |",
+                "canonical": "African Union",
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: chad.md §1, line 13)"
+              }
+            ]
+          },
+          "dpa_naming": {
+            "status": "flag",
+            "label": "V20 (unnamed)",
+            "evidence": [
+              {
+                "value": "Verify national authority",
+                "file": "chad.md",
+                "section": "2",
+                "line": 21,
+                "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: chad.md §2, line 21)"
+              }
+            ]
+          },
+          "placeholders": {
+            "status": "flag",
+            "label": "3 (§2,§3,§5)",
+            "evidence": [
+              {
+                "value": "Verify national authority",
+                "file": "chad.md",
+                "section": "2",
+                "line": 21,
+                "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: chad.md §2, line 21)"
+              },
+              {
+                "value": "Ministry of Petroleum and Energy (regulator status to verify)",
+                "file": "chad.md",
+                "section": "3",
+                "line": 25,
+                "raw": "**Regulator / authority:** Ministry of Petroleum and Energy (regulator status to verify). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: chad.md §3, line 25)"
+              },
+              {
+                "value": "Verify current agency",
+                "file": "chad.md",
+                "section": "5",
+                "line": 47,
+                "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Oil-sector framework; investment code.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: chad.md §5, line 47)"
+              }
+            ]
+          },
+          "flag_counts": {
+            "status": "note",
+            "label": "0H/4M/0L (4)",
+            "counts": {
+              "high": 0,
+              "med": 4,
+              "low": 0,
+              "total": 4
+            }
+          }
+        },
+        {
+          "slug": "equatorial-guinea",
+          "country": "Equatorial Guinea",
+          "file": "equatorial-guinea.md",
+          "currency": {
+            "status": "ok",
+            "label": "XAF",
+            "evidence": [
+              {
+                "value": "Central African CFA franc (XAF) (CEMAC / BEAC)",
+                "file": "equatorial-guinea.md",
+                "section": "1",
+                "line": 12,
+                "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: equatorial-guinea.md §1, line 12)"
+              }
+            ]
+          },
+          "central_bank": {
+            "status": "ok",
+            "label": "BEAC",
+            "evidence": [
+              {
+                "value": "BEAC",
+                "file": "equatorial-guinea.md",
+                "section": "2",
+                "line": 19,
+                "raw": "**Central bank:** BEAC. Fintech ventures should plan on central-bank licensing for payment and lending products, AML/CFT registration, and consumer-credit rules. Cross-border digital services are increasingly taxed or regulated by regional frameworks (WAEMU/ECOWAS/EAC harmonisation).",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: equatorial-guinea.md §2, line 19)"
+              }
+            ]
+          },
+          "bloc_symmetry": {
+            "status": "ok",
+            "label": "ok",
+            "evidence": [
+              {
+                "value": "African Union",
+                "file": "equatorial-guinea.md",
+                "section": "1",
+                "line": 13,
+                "raw": "| Regional blocs | African Union; CEMAC |",
+                "canonical": "African Union",
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: equatorial-guinea.md §1, line 13)"
+              }
+            ]
+          },
+          "dpa_naming": {
+            "status": "flag",
+            "label": "V20 (unnamed)",
+            "evidence": [
+              {
+                "value": "Verify national authority",
+                "file": "equatorial-guinea.md",
+                "section": "2",
+                "line": 21,
+                "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: equatorial-guinea.md §2, line 21)"
+              }
+            ]
+          },
+          "placeholders": {
+            "status": "flag",
+            "label": "3 (§2,§3,§5)",
+            "evidence": [
+              {
+                "value": "Verify national authority",
+                "file": "equatorial-guinea.md",
+                "section": "2",
+                "line": 21,
+                "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: equatorial-guinea.md §2, line 21)"
+              },
+              {
+                "value": "Ministry of Mines and Energy (verify current regulator)",
+                "file": "equatorial-guinea.md",
+                "section": "3",
+                "line": 25,
+                "raw": "**Regulator / authority:** Ministry of Mines and Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: equatorial-guinea.md §3, line 25)"
+              },
+              {
+                "value": "Verify current agency",
+                "file": "equatorial-guinea.md",
+                "section": "5",
+                "line": 47,
+                "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Hydrocarbons framework.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: equatorial-guinea.md §5, line 47)"
+              }
+            ]
+          },
+          "flag_counts": {
+            "status": "note",
+            "label": "0H/4M/0L (4)",
+            "counts": {
+              "high": 0,
+              "med": 4,
+              "low": 0,
+              "total": 4
+            }
+          }
+        },
+        {
+          "slug": "gabon",
+          "country": "Gabon",
+          "file": "gabon.md",
+          "currency": {
+            "status": "ok",
+            "label": "XAF",
+            "evidence": [
+              {
+                "value": "Central African CFA franc (XAF) (CEMAC / BEAC)",
+                "file": "gabon.md",
+                "section": "1",
+                "line": 12,
+                "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: gabon.md §1, line 12)"
+              }
+            ]
+          },
+          "central_bank": {
+            "status": "ok",
+            "label": "BEAC",
+            "evidence": [
+              {
+                "value": "BEAC",
+                "file": "gabon.md",
+                "section": "2",
+                "line": 19,
+                "raw": "**Central bank:** BEAC. Fintech ventures should plan on central-bank licensing for payment and lending products, AML/CFT registration, and consumer-credit rules. Cross-border digital services are increasingly taxed or regulated by regional frameworks (WAEMU/ECOWAS/EAC harmonisation).",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: gabon.md §2, line 19)"
+              }
+            ]
+          },
+          "bloc_symmetry": {
+            "status": "ok",
+            "label": "ok",
+            "evidence": [
+              {
+                "value": "African Union",
+                "file": "gabon.md",
+                "section": "1",
+                "line": 13,
+                "raw": "| Regional blocs | African Union; CEMAC |",
+                "canonical": "African Union",
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: gabon.md §1, line 13)"
+              }
+            ]
+          },
+          "dpa_naming": {
+            "status": "flag",
+            "label": "V08 (CNPD mismatch)",
+            "evidence": [
+              {
+                "value": "CNPD (Commission Nationale pour la Protection des Données)",
+                "file": "gabon.md",
+                "section": "2",
+                "line": 21,
+                "raw": "**Data protection:** CNPD (Commission Nationale pour la Protection des Données) — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: gabon.md §2, line 21)"
+              }
+            ]
+          },
+          "placeholders": {
+            "status": "flag",
+            "label": "2 (§3,§5)",
+            "evidence": [
+              {
+                "value": "Ministry of Energy (verify current regulator)",
+                "file": "gabon.md",
+                "section": "3",
+                "line": 25,
+                "raw": "**Regulator / authority:** Ministry of Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: gabon.md §3, line 25)"
+              },
+              {
+                "value": "Verify current agency",
+                "file": "gabon.md",
+                "section": "5",
+                "line": 47,
+                "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Timber/oil-linked frameworks; investment charter.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: gabon.md §5, line 47)"
+              }
+            ]
+          },
+          "flag_counts": {
+            "status": "note",
+            "label": "0H/3M/0L (3)",
+            "counts": {
+              "high": 0,
+              "med": 3,
+              "low": 0,
+              "total": 3
+            }
+          }
+        },
+        {
+          "slug": "republic-of-congo",
+          "country": "Congo (Republic)",
+          "file": "republic-of-congo.md",
+          "currency": {
+            "status": "ok",
+            "label": "XAF",
+            "evidence": [
+              {
+                "value": "Central African CFA franc (XAF) (CEMAC / BEAC)",
+                "file": "republic-of-congo.md",
+                "section": "1",
+                "line": 12,
+                "raw": "| Currency | Central African CFA franc (XAF) (CEMAC / BEAC) |",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: republic-of-congo.md §1, line 12)"
+              }
+            ]
+          },
+          "central_bank": {
+            "status": "ok",
+            "label": "BEAC",
+            "evidence": [
+              {
+                "value": "BEAC",
+                "file": "republic-of-congo.md",
+                "section": "2",
+                "line": 19,
+                "raw": "**Central bank:** BEAC. Fintech ventures should plan on central-bank licensing for payment and lending products, AML/CFT registration, and consumer-credit rules. Cross-border digital services are increasingly taxed or regulated by regional frameworks (WAEMU/ECOWAS/EAC harmonisation).",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: republic-of-congo.md §2, line 19)"
+              }
+            ]
+          },
+          "bloc_symmetry": {
+            "status": "ok",
+            "label": "ok",
+            "evidence": [
+              {
+                "value": "African Union",
+                "file": "republic-of-congo.md",
+                "section": "1",
+                "line": 13,
+                "raw": "| Regional blocs | African Union; CEMAC |",
+                "canonical": "African Union",
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: republic-of-congo.md §1, line 13)"
+              }
+            ]
+          },
+          "dpa_naming": {
+            "status": "flag",
+            "label": "V20 (unnamed)",
+            "evidence": [
+              {
+                "value": "Verify national authority",
+                "file": "republic-of-congo.md",
+                "section": "2",
+                "line": 21,
+                "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: republic-of-congo.md §2, line 21)"
+              }
+            ]
+          },
+          "placeholders": {
+            "status": "flag",
+            "label": "3 (§2,§3,§5)",
+            "evidence": [
+              {
+                "value": "Verify national authority",
+                "file": "republic-of-congo.md",
+                "section": "2",
+                "line": 21,
+                "raw": "**Data protection:** Verify national authority — confirm the current regulator and registration thresholds before launching consumer-facing services.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: republic-of-congo.md §2, line 21)"
+              },
+              {
+                "value": "Ministry of Energy (regulator status to verify)",
+                "file": "republic-of-congo.md",
+                "section": "3",
+                "line": 25,
+                "raw": "**Regulator / authority:** Ministry of Energy (regulator status to verify). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: republic-of-congo.md §3, line 25)"
+              },
+              {
+                "value": "Verify current agency",
+                "file": "republic-of-congo.md",
+                "section": "5",
+                "line": 47,
+                "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Hydrocarbons framework; investment code.",
+                "canonical": null,
+                "qualifier": null,
+                "is_boilerplate": false,
+                "meta": {},
+                "citation": "(source: republic-of-congo.md §5, line 47)"
+              }
+            ]
+          },
+          "flag_counts": {
+            "status": "note",
+            "label": "0H/4M/0L (4)",
+            "counts": {
+              "high": 0,
+              "med": 4,
+              "low": 0,
+              "total": 4
+            }
+          }
+        }
+      ]
+    }
+  },
   "flags": [
     {
-      "rule_id": "TPL-S4-LICENSOR",
+      "rule_id": "S4-DPA-AS-LICENSOR",
+      "v_number": "V01",
       "severity": "high",
       "scope": "template",
       "confidence": "in-dossier",
-      "message": "Section 4 Fintech row names the data protection authority as the payments and lending licensor instead of the central bank.",
+      "message": "Section 4 Fintech row names the data protection authority as the payments and lending licensor instead of the central bank (54 of 54 dossiers).",
       "evidence": [
         {
-          "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending",
+          "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending; AML/CFT compliance; data protection registration (19.25%); consumer protection.",
           "file": "cameroon.md",
           "section": "4",
           "line": 33,
@@ -1903,7 +2636,7 @@
           "citation": "(source: cameroon.md §4, line 33)"
         },
         {
-          "value": "CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending",
+          "value": "CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection.",
           "file": "gabon.md",
           "section": "4",
           "line": 33,
@@ -1916,19 +2649,176 @@
         }
       ],
       "why_it_matters": "Asking a privacy office for a payment licence wastes time because central banks handle financial licensing.",
-      "suggested_check": "Confirm payment and lending licensing directly with the central bank named in Section 2.",
+      "suggested_check": "Ask the central bank (or regional banking supervisor), not the privacy regulator, about payment and lending licensing.",
       "affected_count": 54,
-      "corpus_total": 54
+      "countries": [
+        "algeria",
+        "angola",
+        "benin",
+        "botswana",
+        "burkina-faso",
+        "burundi",
+        "cabo-verde",
+        "cameroon",
+        "central-african-republic",
+        "chad",
+        "comoros",
+        "cote-divoire",
+        "democratic-republic-of-congo",
+        "djibouti",
+        "egypt",
+        "equatorial-guinea",
+        "eritrea",
+        "eswatini",
+        "ethiopia",
+        "gabon",
+        "gambia",
+        "ghana",
+        "guinea",
+        "guinea-bissau",
+        "kenya",
+        "lesotho",
+        "liberia",
+        "libya",
+        "madagascar",
+        "malawi",
+        "mali",
+        "mauritania",
+        "mauritius",
+        "morocco",
+        "mozambique",
+        "namibia",
+        "niger",
+        "nigeria",
+        "republic-of-congo",
+        "rwanda",
+        "sao-tome-and-principe",
+        "senegal",
+        "seychelles",
+        "sierra-leone",
+        "somalia",
+        "south-africa",
+        "south-sudan",
+        "sudan",
+        "tanzania",
+        "togo",
+        "tunisia",
+        "uganda",
+        "zambia",
+        "zimbabwe"
+      ],
+      "params": {
+        "affected_count": 54,
+        "corpus_total": 54
+      }
     },
     {
-      "rule_id": "TPL-S4-VAT-LEAK",
+      "rule_id": "S4-PERCENT-IN-ENERGY-SLOT",
+      "v_number": "V02",
       "severity": "high",
       "scope": "template",
       "confidence": "in-dossier",
-      "message": "Section 4 Fintech row inserts the Section 5 VAT percentage inside the data-protection registration fee slot.",
+      "message": "Section 4 Energy & manufacturing row puts a percentage inside the Energy regulator slot instead of an authority name (54 of 54 dossiers).",
       "evidence": [
         {
-          "value": "data protection registration (19.25%)",
+          "value": "Energy regulator: 30% (33% for some sectors)",
+          "file": "cameroon.md",
+          "section": "4",
+          "line": 38,
+          "raw": "| **Energy & manufacturing** | Energy regulator: 30% (33% for some sectors); environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available. |",
+          "canonical": "Energy & manufacturing",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: cameroon.md §4, line 38)"
+        },
+        {
+          "value": "Energy regulator: 30%",
+          "file": "gabon.md",
+          "section": "4",
+          "line": 38,
+          "raw": "| **Energy & manufacturing** | Energy regulator: 30%; environmental impact assessment (EIA); standards bureau certification; land/lease and utility agreements; special economic zone / export-processing incentives where available. |",
+          "canonical": "Energy & manufacturing",
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §4, line 38)"
+        }
+      ],
+      "why_it_matters": "A tax percentage is not an agency name, so reading Section 4 alone hides the real energy regulator.",
+      "suggested_check": "Use the energy regulator named in Section 3 and confirm its current licensing mandate directly.",
+      "affected_count": 54,
+      "countries": [
+        "algeria",
+        "angola",
+        "benin",
+        "botswana",
+        "burkina-faso",
+        "burundi",
+        "cabo-verde",
+        "cameroon",
+        "central-african-republic",
+        "chad",
+        "comoros",
+        "cote-divoire",
+        "democratic-republic-of-congo",
+        "djibouti",
+        "egypt",
+        "equatorial-guinea",
+        "eritrea",
+        "eswatini",
+        "ethiopia",
+        "gabon",
+        "gambia",
+        "ghana",
+        "guinea",
+        "guinea-bissau",
+        "kenya",
+        "lesotho",
+        "liberia",
+        "libya",
+        "madagascar",
+        "malawi",
+        "mali",
+        "mauritania",
+        "mauritius",
+        "morocco",
+        "mozambique",
+        "namibia",
+        "niger",
+        "nigeria",
+        "republic-of-congo",
+        "rwanda",
+        "sao-tome-and-principe",
+        "senegal",
+        "seychelles",
+        "sierra-leone",
+        "somalia",
+        "south-africa",
+        "south-sudan",
+        "sudan",
+        "tanzania",
+        "togo",
+        "tunisia",
+        "uganda",
+        "zambia",
+        "zimbabwe"
+      ],
+      "params": {
+        "affected_count": 54,
+        "corpus_total": 54
+      }
+    },
+    {
+      "rule_id": "S4-TAX-LEAKED-FROM-S5",
+      "v_number": "V03",
+      "severity": "high",
+      "scope": "template",
+      "confidence": "in-dossier",
+      "message": "Section 4 reuses Section 5 VAT or CIT values inside fee or regulator slots (54 of 54 dossiers).",
+      "evidence": [
+        {
+          "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel) licensing for payments and lending; AML/CFT compliance; data protection registration (19.25%); consumer protection.",
           "file": "cameroon.md",
           "section": "4",
           "line": 33,
@@ -1940,7 +2830,7 @@
           "citation": "(source: cameroon.md §4, line 33)"
         },
         {
-          "value": "data protection registration (18%)",
+          "value": "CNPD (Commission Nationale pour la Protection des Données) licensing for payments and lending; AML/CFT compliance; data protection registration (18%); consumer protection.",
           "file": "gabon.md",
           "section": "4",
           "line": 33,
@@ -1952,17 +2842,174 @@
           "citation": "(source: gabon.md §4, line 33)"
         }
       ],
-      "why_it_matters": "A sales-tax percentage is not a registration fee, so budgeting from this cell would be misleading.",
-      "suggested_check": "Ask the national data protection authority for its actual current registration fee schedule.",
+      "why_it_matters": "A sales-tax or profit-tax percentage is not a registration fee, so budgeting from Section 4 would be wrong.",
+      "suggested_check": "Ask the national data-protection authority or sector ministry for its current published fee schedule.",
       "affected_count": 54,
-      "corpus_total": 54
+      "countries": [
+        "algeria",
+        "angola",
+        "benin",
+        "botswana",
+        "burkina-faso",
+        "burundi",
+        "cabo-verde",
+        "cameroon",
+        "central-african-republic",
+        "chad",
+        "comoros",
+        "cote-divoire",
+        "democratic-republic-of-congo",
+        "djibouti",
+        "egypt",
+        "equatorial-guinea",
+        "eritrea",
+        "eswatini",
+        "ethiopia",
+        "gabon",
+        "gambia",
+        "ghana",
+        "guinea",
+        "guinea-bissau",
+        "kenya",
+        "lesotho",
+        "liberia",
+        "libya",
+        "madagascar",
+        "malawi",
+        "mali",
+        "mauritania",
+        "mauritius",
+        "morocco",
+        "mozambique",
+        "namibia",
+        "niger",
+        "nigeria",
+        "republic-of-congo",
+        "rwanda",
+        "sao-tome-and-principe",
+        "senegal",
+        "seychelles",
+        "sierra-leone",
+        "somalia",
+        "south-africa",
+        "south-sudan",
+        "sudan",
+        "tanzania",
+        "togo",
+        "tunisia",
+        "uganda",
+        "zambia",
+        "zimbabwe"
+      ],
+      "params": {
+        "affected_count": 54,
+        "corpus_total": 54
+      }
     },
     {
-      "rule_id": "DPA-EXPANSION-MISMATCH",
+      "rule_id": "PLACEHOLDER-S3",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Gabon dossier contains placeholder text in section 3 (energy regulator: 'Ministry of Energy (verify current regulator)').",
+      "evidence": [
+        {
+          "value": "Ministry of Energy (verify current regulator)",
+          "file": "gabon.md",
+          "section": "3",
+          "line": 25,
+          "raw": "**Regulator / authority:** Ministry of Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §3, line 25)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "gabon"
+      ],
+      "params": {
+        "country": "Gabon",
+        "section": "3",
+        "detail": "energy regulator: 'Ministry of Energy (verify current regulator)'"
+      }
+    },
+    {
+      "rule_id": "PLACEHOLDER-S5",
+      "v_number": "V04",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "message": "Gabon dossier contains placeholder text in section 5 (investment promotion agency: 'Verify current agency').",
+      "evidence": [
+        {
+          "value": "Verify current agency",
+          "file": "gabon.md",
+          "section": "5",
+          "line": 47,
+          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Timber/oil-linked frameworks; investment charter.",
+          "canonical": null,
+          "qualifier": null,
+          "is_boilerplate": false,
+          "meta": {},
+          "citation": "(source: gabon.md §5, line 47)"
+        }
+      ],
+      "why_it_matters": "The dossier does not yet name a verified office or confirmed figure for this step.",
+      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current official agency or rate.",
+      "affected_count": 1,
+      "countries": [
+        "gabon"
+      ],
+      "params": {
+        "country": "Gabon",
+        "section": "5",
+        "detail": "investment promotion agency: 'Verify current agency'"
+      }
+    },
+    {
+      "rule_id": "BLOC-ASYMMETRY",
+      "v_number": "V06",
       "severity": "med",
       "scope": "bloc",
       "confidence": "in-dossier",
-      "message": "Both dossiers use the data-protection acronym 'CNPD' with different full names ('Commission Nationale pour la Protection des Données à Caractère Personnel' vs 'Commission Nationale pour la Protection des Données').",
+      "message": "Cameroon lists 'ECOWAS (observer)' (carries 'observer' qualifier; unconfirmed by partner dossiers).",
+      "evidence": [
+        {
+          "value": "ECOWAS (observer)",
+          "file": "cameroon.md",
+          "section": "1",
+          "line": 13,
+          "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
+          "canonical": "ECOWAS",
+          "qualifier": "observer",
+          "is_boilerplate": false,
+          "meta": {}
+        }
+      ],
+      "why_it_matters": "Observer or single-country bloc claims do not guarantee shared trade, customs, or licensing rules.",
+      "suggested_check": "Do not plan licensing around this bloc; verify full membership on the bloc's official member list.",
+      "affected_count": 1,
+      "countries": [
+        "cameroon"
+      ],
+      "params": {
+        "country": "Cameroon",
+        "detail": "ECOWAS (observer)"
+      }
+    },
+    {
+      "rule_id": "DPA-EXPANSION-MISMATCH",
+      "v_number": "V08",
+      "severity": "med",
+      "scope": "bloc",
+      "confidence": "in-dossier",
+      "message": "Data-protection acronym 'CNPD' has 2 different expansions across dossiers: 'Commission Nationale pour la Protection des Données' (Gabon) vs 'Commission Nationale pour la Protection des Données à Caractère Personnel' (Cameroon).",
       "evidence": [
         {
           "value": "CNPD (Commission Nationale pour la Protection des Données à Caractère Personnel)",
@@ -1990,60 +3037,24 @@
         }
       ],
       "why_it_matters": "Conflicting agency names suggest the dossier entry may be templated rather than verified against national law.",
-      "suggested_check": "Confirm the official legal name and active registration office of each country's privacy regulator directly."
-    },
-    {
-      "rule_id": "PLACEHOLDER-VALUE",
-      "severity": "med",
-      "scope": "country",
-      "confidence": "in-dossier",
-      "message": "Target dossier has placeholder text in energy regulator: 'Ministry of Energy (verify current regulator)'.",
-      "evidence": [
-        {
-          "value": "Ministry of Energy (verify current regulator)",
-          "file": "gabon.md",
-          "section": "3",
-          "line": 25,
-          "raw": "**Regulator / authority:** Ministry of Energy (verify current regulator). Verify licensing thresholds for generation, the existence of net-metering or open-access rules, tariff structure (energy charge, demand charge, time-of-use), and any interconnection regime before building energy assets.",
-          "canonical": null,
-          "qualifier": null,
-          "is_boilerplate": false,
-          "meta": {},
-          "citation": "(source: gabon.md §3, line 25)"
-        }
+      "suggested_check": "Confirm the official legal name and active registration office of each country's privacy regulator directly.",
+      "affected_count": 2,
+      "countries": [
+        "cameroon",
+        "gabon"
       ],
-      "why_it_matters": "The dossier does not name a verified office to contact for this step.",
-      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current energy regulator."
+      "params": {
+        "acronym": "CNPD",
+        "detail": "'Commission Nationale pour la Protection des Données' (Gabon) vs 'Commission Nationale pour la Protection des Données à Caractère Personnel' (Cameroon)"
+      }
     },
     {
-      "rule_id": "PLACEHOLDER-VALUE",
+      "rule_id": "TAX-CIT-ANOMALY",
+      "v_number": "V10",
       "severity": "med",
       "scope": "country",
       "confidence": "in-dossier",
-      "message": "Target dossier has placeholder text in investment promotion agency: 'Verify current agency'.",
-      "evidence": [
-        {
-          "value": "Verify current agency",
-          "file": "gabon.md",
-          "section": "5",
-          "line": 47,
-          "raw": "**Investment promotion agency:** Verify current agency. **Incentives:** Timber/oil-linked frameworks; investment charter.",
-          "canonical": null,
-          "qualifier": null,
-          "is_boilerplate": false,
-          "meta": {},
-          "citation": "(source: gabon.md §5, line 47)"
-        }
-      ],
-      "why_it_matters": "The dossier does not name a verified office to contact for this step.",
-      "suggested_check": "Check the national government portal or Ministry of Finance/Commerce for the current investment promotion agency."
-    },
-    {
-      "rule_id": "TAX-UNCOMPARABLE",
-      "severity": "med",
-      "scope": "country",
-      "confidence": "in-dossier",
-      "message": "Corporate income tax (CIT) cannot be subtracted directly (compound/multi-rate cell); all rates are shown without computing a single delta.",
+      "message": "Cameroon CIT cell '30% (33% for some sectors)' flagged (compound/multi-rate cell).",
       "evidence": [
         {
           "value": "30% (33% for some sectors)",
@@ -2063,64 +3074,43 @@
             "is_compound": true
           },
           "citation": "(source: cameroon.md §5, line 44)"
-        },
-        {
-          "value": "30%",
-          "file": "gabon.md",
-          "section": "5",
-          "line": 44,
-          "raw": "| Standard corporate income tax | 30% |",
-          "canonical": null,
-          "qualifier": null,
-          "is_boilerplate": false,
-          "meta": {
-            "numbers": [
-              30.0
-            ],
-            "has_numeric": true,
-            "is_compound": false
-          },
-          "citation": "(source: gabon.md §5, line 44)"
         }
       ],
-      "why_it_matters": "Different business sectors or company sizes can face different tax rates, so a single subtraction could mislead your budget.",
-      "suggested_check": "Confirm which tax bracket applies to your company with each country's national revenue authority."
-    },
-    {
-      "rule_id": "BLOC-QUALIFIER-UNCONFIRMED",
-      "severity": "low",
-      "scope": "bloc",
-      "confidence": "in-dossier",
-      "message": "Home dossier lists 'ECOWAS (observer)', which carries a 'observer' qualifier and is absent from the partner dossier.",
-      "evidence": [
-        {
-          "value": "ECOWAS (observer)",
-          "file": "cameroon.md",
-          "section": "1",
-          "line": 13,
-          "raw": "| Regional blocs | African Union; CEMAC; ECOWAS (observer) |",
-          "canonical": "ECOWAS",
-          "qualifier": "observer",
-          "is_boilerplate": false,
-          "meta": {}
-        }
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast.",
+      "suggested_check": "Confirm the exact tax bracket for your sector with the national revenue authority.",
+      "affected_count": 1,
+      "countries": [
+        "cameroon"
       ],
-      "why_it_matters": "Observer or unverified bloc status does not grant the trade or licensing benefits of full membership.",
-      "suggested_check": "Do not rely on this bloc for cross-border licensing; confirm membership status on the bloc's official registry."
+      "params": {
+        "country": "Cameroon",
+        "tax": "CIT",
+        "detail": "30% (33% for some sectors)",
+        "reason": "compound/multi-rate cell"
+      }
     }
   ],
   "template_banner": [
     {
-      "rule_id": "TPL-S4-LICENSOR",
+      "rule_id": "S4-DPA-AS-LICENSOR",
+      "v_number": "V01",
       "affected_count": 54,
       "corpus_total": 54,
-      "message": "Section 4 Fintech row names the data protection authority as the payments and lending licensor instead of the central bank."
+      "message": "Section 4 Fintech row names the data protection authority as the payments and lending licensor instead of the central bank (54 of 54 dossiers)."
     },
     {
-      "rule_id": "TPL-S4-VAT-LEAK",
+      "rule_id": "S4-PERCENT-IN-ENERGY-SLOT",
+      "v_number": "V02",
       "affected_count": 54,
       "corpus_total": 54,
-      "message": "Section 4 Fintech row inserts the Section 5 VAT percentage inside the data-protection registration fee slot."
+      "message": "Section 4 Energy & manufacturing row puts a percentage inside the Energy regulator slot instead of an authority name (54 of 54 dossiers)."
+    },
+    {
+      "rule_id": "S4-TAX-LEAKED-FROM-S5",
+      "v_number": "V03",
+      "affected_count": 54,
+      "corpus_total": 54,
+      "message": "Section 4 reuses Section 5 VAT or CIT values inside fee or regulator slots (54 of 54 dossiers)."
     }
   ],
   "our_checks": [
@@ -2173,15 +3163,77 @@
       "confidence": "our-check"
     }
   ],
+  "demo_shortlist": [
+    {
+      "rule": "V01",
+      "rule_id": "S4-DPA-AS-LICENSOR",
+      "severity": "high",
+      "scope": "template",
+      "confidence": "in-dossier",
+      "location": "cameroon.md §4, line 33; gabon.md §4, line 33",
+      "message": "Section 4 Fintech row names the data protection authority as the payments and lending licensor instead of the central bank (54 of 54 dossiers).",
+      "why_it_matters": "Asking a privacy office for a payment licence wastes time because central banks handle financial licensing."
+    },
+    {
+      "rule": "V03",
+      "rule_id": "S4-TAX-LEAKED-FROM-S5",
+      "severity": "high",
+      "scope": "template",
+      "confidence": "in-dossier",
+      "location": "cameroon.md §4, line 33; gabon.md §4, line 33",
+      "message": "Section 4 reuses Section 5 VAT or CIT values inside fee or regulator slots (54 of 54 dossiers).",
+      "why_it_matters": "A sales-tax or profit-tax percentage is not a registration fee, so budgeting from Section 4 would be wrong."
+    },
+    {
+      "rule": "V08",
+      "rule_id": "DPA-EXPANSION-MISMATCH",
+      "severity": "med",
+      "scope": "bloc",
+      "confidence": "in-dossier",
+      "location": "cameroon.md §2, line 21; gabon.md §2, line 21",
+      "message": "Data-protection acronym 'CNPD' has 2 different expansions across dossiers: 'Commission Nationale pour la Protection des Données' (Gabon) vs 'Commission Nationale pour la Protection des Données à Caractère Personnel' (Cameroon).",
+      "why_it_matters": "Conflicting agency names suggest the dossier entry may be templated rather than verified against national law."
+    },
+    {
+      "rule": "V10",
+      "rule_id": "TAX-CIT-ANOMALY",
+      "severity": "med",
+      "scope": "country",
+      "confidence": "in-dossier",
+      "location": "cameroon.md §5, line 44",
+      "message": "Cameroon CIT cell '30% (33% for some sectors)' flagged (compound/multi-rate cell).",
+      "why_it_matters": "Multiple brackets, missing numbers, or extreme tax rates mean a simple headline figure can mislead your financial forecast."
+    },
+    {
+      "rule": "V06",
+      "rule_id": "BLOC-ASYMMETRY",
+      "severity": "med",
+      "scope": "bloc",
+      "confidence": "in-dossier",
+      "location": "cameroon.md §1, line 13",
+      "message": "Cameroon lists 'ECOWAS (observer)' (carries 'observer' qualifier; unconfirmed by partner dossiers).",
+      "why_it_matters": "Observer or single-country bloc claims do not guarantee shared trade, customs, or licensing rules."
+    },
+    {
+      "rule": "EXT-01",
+      "rule_id": "EXTERNAL-CHECK",
+      "severity": "med",
+      "scope": "bloc",
+      "confidence": "our-check",
+      "location": "data/external_checks.json (unverified, outside dossier)",
+      "message": "In CEMAC, banking and payment-institution licensing and supervision involve a regional banking supervisor alongside BEAC and national finance ministries; no regional banking supervisor is mentioned in any CEMAC dossier.",
+      "why_it_matters": "Highlights an institutional gap absent from the dossiers while keeping external knowledge strictly labelled unverified."
+    }
+  ],
   "scores": {
     "label": "High",
     "counts": {
       "high": 0,
-      "med": 4,
-      "low": 1,
+      "med": 5,
+      "low": 0,
       "total": 5
     },
-    "template_flag_count": 2,
+    "template_flag_count": 3,
     "note_en": "Measures source-dossier data quality for this route (country & bloc flags only), never legal risk.",
     "note_fr": "Mesure uniquement la qualité des dossiers sources pour cet itinéraire (alertes pays et bloc), jamais le risque juridique."
   },
